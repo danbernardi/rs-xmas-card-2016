@@ -14,12 +14,7 @@ const Index = props => {
     <div className="layout--flex layout--fullheight">
       <div className="row typ--center">
         <h1 className="typ--bold mb6">Welcome to the holiday card POC</h1>
-
         <button className="btn" onClick={ () => switchActiveSheet('question-1') }>Get started</button>
-
-        <span className="pink">Pink</span>
-        <span className="green">Green</span>
-        <span className="blue">Blue</span>
       </div>
     </div>
   )
@@ -27,7 +22,7 @@ const Index = props => {
 
 Index.propTypes = {
   dispatch: React.PropTypes.func,
-  activeSheetID: React.PropTypes.Object
+  activeSheetID: React.PropTypes.object
 };
 
 const injectStateProps = state => ({

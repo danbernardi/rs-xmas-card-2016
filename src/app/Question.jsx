@@ -10,19 +10,22 @@ const Question = props => {
     dispatch(actions.setActiveSheetID(targetID));
   }
 
+  const selectAnswer = (answer, targetID) => {
+    switchActiveSheet(targetID);
+    dispatch(actions.setAnswerToQuestion(activeSheetID.current, answer));
+  }
+
   return (
     <div className="question__page" style={ { backgroundColor: color } }>
       <div className="row">
         <h1 className="quesiton__label">{ question }</h1>
-        <ul className="question__answers mb6">
+        <ul className="list--inline question__answers mt2 mb6">
           { answers.map((a, i) => (
-            <li key={i  }>
+            <li style={ { color } } className="mx1" key={i  } onClick={ () => selectAnswer(a, nextPage) }>
               { a }
             </li>
           )) }
         </ul>
-
-        <button className="btn" onClick={ () => switchActiveSheet(nextPage) }>{ nextPage }</button>
       </div>
     </div>
   );

@@ -14,7 +14,7 @@ const NavSheet = props => {
     dispatch(actions.revertToPreviousSheetID());
   }
   
-  const initialStyles = { transition: 'transform 0.2s ease-in-out' };
+  const initialStyles = { transition: 'transform 0.5s ease-in-out' };
   let transformStyles = {};
 
   if (activeSheetID.current === id) {
@@ -30,8 +30,8 @@ const NavSheet = props => {
 
   return (
     <div className="nav__sheet" style={ Object.assign(initialStyles, transformStyles) }>
-      { activeSheetID.previous.length > 0 ? <span onClick={ () => revertActiveSheet() }>Back</span> : null }
-      { component && component }
+      { activeSheetID.previous.length > 0 ? <h4 className="navsheet__back typ--medium" onClick={ () => revertActiveSheet() }>Back</h4> : null }
+      { component && React.cloneElement(component, { onAdvance: (targetID) => switchActiveSheet(targetID) }) }
     </div>
   );
 };
