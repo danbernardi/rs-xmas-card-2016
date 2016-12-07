@@ -1,6 +1,6 @@
 # Redshift Holiday Card 2016
 ---
 
-1. **run** `npm install`
-2. **run** `npm start`
-3. **navigate to** `http://localhost:8888/`
+1. `npm install`
+2. `npm start`
+3. `http://localhost:8888/`
