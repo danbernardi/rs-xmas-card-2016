@@ -1,0 +1,6 @@
+.question__page {
+  @extend .layout--fullheight;
+  @extend .layout--flex;
+  text-align: center;
+  color: $white;
+}
