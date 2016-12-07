@@ -1,2 +1,1 @@
-# danbernardi.com
-My personal websites & portfolio. Build with React, redux, babel, & sass.
+# Redshift Holiday Card 2016
