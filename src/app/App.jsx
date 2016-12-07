@@ -3,6 +3,7 @@ import React from 'react';
 import Nav from './Nav';
 import Question from './Question';
 import Index from './Index';
+import Result from './Result';
 
 const App = () => {
   const pages = [
@@ -19,14 +20,14 @@ const App = () => {
     {
       id: 'question-2',
       question: 'What is your favorite holiday movie?',
-      answers: [ 'Home Alone', 'Home Alone 2: Lost in New York', 'Ferngully' ],
+      answers: [ 'Home Alone', 'Die Hard', 'Ferngully' ],
       color: '#a4d73d',
       nextPage: 'question-3'
     },
     {
       id: 'question-3',
       question: 'What is your favorite holiday music?',
-      answers: [ 'Rudolf the Red Nosed Reindeer', 'Silent Night', 'Jingle Bells' ],
+      answers: [ 'Rudolf the Red Nosed Reindeer', 'Silent Night', 'Jingle Bells, batman smells' ],
       color: '#33b5b5',
       nextPage: 'result'
     }
@@ -46,7 +47,7 @@ const App = () => {
     pages.push({ id: q.id, component: question });
   });
 
-  console.log(pages);
+  pages.push({ id: 'result', component: <Result /> });
 
   return (
     <div className="pages">
