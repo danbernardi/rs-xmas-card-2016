@@ -9,6 +9,8 @@ var lostGrid = require('lost');
 const HOST = process.env.HOST || "127.0.0.1";
 const PORT = process.env.PORT || "8888";
 
+const inProduction = process.env.NODE_ENV === 'production';
+
 // global css
 loaders.push({
 	test: /[\/\\](node_modules|global)[\/\\].*\.css$/,
@@ -24,25 +26,43 @@ loaders.push({
 	loaders: ['style?sourceMap', 'css?sourceMap', 'postcss?sourceMap', 'sass?sourceMap']
 });
 
-// local css modules
-loaders.push({
-	test: /[\/\\]src[\/\\].*\.css/,
-	loaders: [
-		'style?sourceMap',
-		'css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]'
-	]
-});
+const entry = [];
+const plugins = [];
 
-var devFlagPlugin = new webpack.DefinePlugin({  
-  __DEV__: JSON.stringify(JSON.parse(process.env.DEBUG || 'false'))
-});
+if (!inProduction) {
+  // local css modules
+  loaders.push({
+	  test: /[\/\\]src[\/\\].*\.css/,
+	  loaders: [
+		  'style?sourceMap',
+		  'css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]'
+	  ]
+  });
 
-module.exports = {
-	entry: [
+
+  var devFlagPlugin = new webpack.DefinePlugin({  
+    __DEV__: JSON.stringify(JSON.parse(process.env.DEBUG || 'false'))
+  });
+
+  [ new webpack.NoErrorsPlugin(),
+		new webpack.HotModuleReplacementPlugin(),
+		new HtmlWebpackPlugin({
+			template: './src/template.html',
+      title: 'Redshift Winter 2016'
+		}),
+		devFlagPlugin
+	].map(plugin => plugins.push(plugin));
+
+  [
 		`webpack-dev-server/client?http://${HOST}:${PORT}`,
 		`webpack/hot/only-dev-server`,
 		`./src/index.jsx` // Your appʼs entry point
-	],
+	].map(entrypoint => entry.push(entrypoint));
+}
+
+
+module.exports = {
+	entry,
 	devtool: process.env.WEBPACK_DEVTOOL || 'cheap-module-source-map',
 	output: {
 		path: path.join(__dirname, 'public'),
@@ -68,14 +88,7 @@ module.exports = {
 		port: PORT,
 		host: HOST
 	},
-	plugins: [
-		new webpack.NoErrorsPlugin(),
-		new webpack.HotModuleReplacementPlugin(),
-		new HtmlWebpackPlugin({
-			template: './src/template.html'
-		}),
-		devFlagPlugin
-	],
+	plugins: plugins,
 
 	postcss: () => ([
     autoprefixer({ browsers: ['> 1%', 'ie 9'] }),

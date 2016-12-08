@@ -1,20 +1,19 @@
 {
-  "name": "Redshift Holiday Card 2016",
+  "name": "rs-xmas-card-2016",
   "version": "1.0.0",
   "description": "",
   "main": "''",
   "scripts": {
-    "build": "webpack --config webpack.production.config.js --progress --profile --colors",
+    "build": "NODE_ENV=production node node_modules/webpack/bin/webpack -p --config webpack.config.js --progress --profile --colors",
     "start": "webpack-dev-server --progress --profile --colors",
     "lint": "eslint --ext js --ext jsx src || exit 0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/alicoding/react-webpack-babel"
+    "url": "https://github.com/weareredshift/rs-xmas-card-2016/"
   },
-  "author": "Ali Al Dallal",
-  "license": "MIT",
-  "homepage": "https://github.com/alicoding/react-webpack-babel#readme",
+  "author": "Redshift Digital",
+  "homepage": "https://github.com/weareredshift/rs-xmas-card-2016/README.md",
   "dependencies": {
     "autoprefixer": "^6.4.1",
     "imports-loader": "^0.6.5",
