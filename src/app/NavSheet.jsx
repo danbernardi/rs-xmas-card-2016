@@ -19,7 +19,7 @@ const NavSheet = props => {
 
   if (activeSheetID.current === id) {
     // if sheet is currently active
-    transformStyles = { transform: 'translateX(0)' };
+    transformStyles = { transform: 'none' };
   } else if (activeSheetID.previous.indexOf(id) !== -1) {
     // if sheet has been active in the past
     transformStyles = { transform: 'translateX(-100%)' };
