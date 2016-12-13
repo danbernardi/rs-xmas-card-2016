@@ -30,6 +30,7 @@ $content-width: 142rem;
   @extend .cf;
   position: relative;
   clear: both;
+  width: 100%;
 }
 
 @for $i from 1 through $columns {

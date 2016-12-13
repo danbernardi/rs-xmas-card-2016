@@ -1,8 +1,10 @@
 .question__page {
   @extend .layout--fullheight;
   @extend .layout--flex;
-  text-align: center;
   color: $white;
+  background-image: url(../assets/img/question_bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .question__answers li {

@@ -11,10 +11,12 @@ const Index = props => {
   }
 
   return (
-    <div className="layout--flex layout--fullheight">
+    <div className="layout--flex layout--fullheight hero index theme--dark">
       <div className="row typ--center">
-        <h1 className="typ--bold mb6">Welcome to the holiday card POC</h1>
-        <button className="btn" onClick={ () => switchActiveSheet('question-1') }>Get started</button>
+        <div className="col-8 col-center" style={ { marginTop: '-20rem' } }>
+          <h1 className="typ--bold mb6">However you like to celebrate the holidays, we have a cocktail for you!</h1>
+          <button className="btn" onClick={ () => switchActiveSheet('question-1') }>Start</button>
+        </div>
       </div>
     </div>
   )

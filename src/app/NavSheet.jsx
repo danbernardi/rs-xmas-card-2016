@@ -22,15 +22,15 @@ const NavSheet = props => {
     transformStyles = { transform: 'none' };
   } else if (activeSheetID.previous.indexOf(id) !== -1) {
     // if sheet has been active in the past
-    transformStyles = { transform: 'translateX(-100%)' };
+    transformStyles = { transform: 'translateY(-100%)' };
   } else {
     // if sheet isn't and hasn't yet been active
-    transformStyles = { transform: 'translateX(100%)' };
+    transformStyles = { transform: 'translateY(100%)' };
   }
 
   return (
     <div className="nav__sheet" style={ Object.assign(initialStyles, transformStyles) }>
-      { activeSheetID.previous.length > 0 ? <h4 className="navsheet__back typ--medium" onClick={ () => revertActiveSheet() }>Back</h4> : null }
+      {/* activeSheetID.previous.length > 0 ? <h4 className="navsheet__back typ--medium" onClick={ () => revertActiveSheet() }>Back</h4> : null */}
       { component && React.cloneElement(component, { onAdvance: (targetID) => switchActiveSheet(targetID) }) }
     </div>
   );

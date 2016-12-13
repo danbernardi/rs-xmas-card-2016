@@ -1,11 +1,6 @@
 .btn {
-  background: $blue;
-  padding: 1rem 2rem;
-  color: white;
-  border-radius: 1rem;
+  background: $offwhite;
+  padding: 1rem 5rem;
+  border-radius: 2rem;
   cursor: pointer;
-
-  &:hover {
-    background: saturate($blue, 20);
-  }
 }
