@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="410px" height="462px" viewBox="0 0 410 462" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="MASTER" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="The-Rose-Jack" transform="translate(-165.000000, -249.000000)">
+            <g id="Group-2" transform="translate(165.000000, 249.000000)">
+                <path d="M220.894155,229.694416 C212.116056,240.356596 197.883904,240.356546 189.105845,229.694416 L0,0 L410,5.68434189e-14 L220.894155,229.694416 Z" id="Triangle" fill="#E1D6C7"></path>
+                <path d="M33.5,56.5 L385.5,40.5" id="Line" stroke="#6BA891" stroke-width="4" stroke-linecap="square"></path>
+                <path d="M234.352213,208.416974 C222.64093,223.796852 203.366949,224.011465 191.319519,208.917558 L98,92 L323,92 L234.352213,208.416974 Z" id="Triangle-2" fill="#EF4557"></path>
+                <path d="M214,231.5 L214,443.5" id="Line" stroke="#E1D6C7" stroke-width="14" stroke-linecap="square"></path>
+                <ellipse id="Oval-2" fill="#E1D6C7" cx="226.5" cy="451.5" rx="114.5" ry="10.5"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>

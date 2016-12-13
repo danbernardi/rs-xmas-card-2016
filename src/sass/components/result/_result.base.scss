@@ -1,0 +1,22 @@
+.result {
+  overflow: auto;
+  height: 100%;
+}
+
+.recipe {
+  padding-top: 10rem;
+  padding-bottom: 26rem;
+  min-height: 100vh;
+}
+
+
+.result__name {
+  font-size: 5rem;
+}
+
+.recipe__trigger {
+  position: absolute;
+  bottom: 6.4rem;
+  width: 100%;
+  text-align: center;
+}
