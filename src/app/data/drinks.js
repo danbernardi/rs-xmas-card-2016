@@ -17,7 +17,12 @@ export const drinks = [
     ],
     garnish: [
       '1 lemon twist'
-    ]
+    ],
+    scores: {
+      strength: 6,
+      weirness: 0,
+      fruitiness: 1
+    }
   },
 
   {
@@ -42,7 +47,12 @@ export const drinks = [
     garnish: [
       'Brandied cherry',
       '(preferably Luxardo)'
-    ]
+    ],
+    scores: {
+      strength: 7,
+      weirness: 0,
+      fruitiness: 2
+    }
   },
 
   {
@@ -59,7 +69,12 @@ export const drinks = [
     instructions: [
       'Shake all ingredients well with ice.',
       'Strain into a cocktail glass or serve over ice.'
-    ]
+    ],
+    scores: {
+      strength: 2,
+      weirness: 2,
+      fruitiness: 5
+    }
   },
 
   {
@@ -80,7 +95,12 @@ export const drinks = [
     ],
     garnish: [
       'lime twist'
-    ]
+    ],
+    scores: {
+      strength: 4,
+      weirness: 5,
+      fruitiness: 6
+    }
   },
 
   {
@@ -98,7 +118,12 @@ export const drinks = [
     instructions: [
       'Add all ingredients to a shaker and fill with ice.',
       'Shake, and strain intoa  coupe glass.'
-    ]
+    ],
+    scores: {
+      strength: 5,
+      weirness: 1,
+      fruitiness: 7
+    }
   },
 
   {
@@ -120,7 +145,12 @@ export const drinks = [
     garnish: [
       '2 cucumber slices',
       '1 pinch mint'
-    ]
+    ],
+    scores: {
+      strength: 3,
+      weirness: 2,
+      fruitiness: 7
+    }
   },
 
   {
@@ -141,7 +171,12 @@ export const drinks = [
     ],
     garnish: [
       'Strip of orange peel with pith, once inch wide'
-    ]
+    ],
+    scores: {
+      strength: 8,
+      weirness: 4,
+      fruitiness: 0
+    }
   },
 
   {
@@ -164,7 +199,12 @@ export const drinks = [
     ],
     garnish: [
       'orange peel'
-    ]
+    ],
+    scores: {
+      strength: 5,
+      weirness: 8,
+      fruitiness: 5
+    }
   },
 
   {
@@ -190,7 +230,12 @@ export const drinks = [
     garnish: [
       'lime slice',
       'mint sprig'
-    ]
+    ],
+    scores: {
+      strength: 5,
+      weirness: 1,
+      fruitiness: 9
+    }
   },
 
   {
@@ -218,7 +263,12 @@ export const drinks = [
       'pineapple spear',
       'an orchid',
       'three brandied cherries'
-    ]
+    ],
+    scores: {
+      strength: 8,
+      weirness: 8,
+      fruitiness: 5
+    }
   },
 
   {
@@ -244,7 +294,12 @@ export const drinks = [
     ],
     garnish: [
       '1 mint sprig'
-    ]
+    ],
+    scores: {
+      strength: 7,
+      weirness: 4,
+      fruitiness: 5
+    }
   },
 
   {
@@ -270,7 +325,12 @@ export const drinks = [
     ],
     garnish: [
       '1 mint sprig'
-    ]
+    ],
+    scores: {
+      strength: 9,
+      weirness: 8,
+      fruitiness: 8
+    }
   },
 
   {
@@ -292,6 +352,11 @@ export const drinks = [
     ],
     garnish: [
       'Cinnamon stick'
-    ]
+    ],
+    scores: {
+      strength: 3,
+      weirness: 0,
+      fruitiness: 8
+    }
   },
 ]
