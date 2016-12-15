@@ -10,6 +10,10 @@
   vertical-align: top;
 }
 
+.layout--relative {
+  position: relative;
+}
+
 // clearfix
 .cf {
   clear: both;
@@ -42,4 +46,5 @@
 
 ol {
   list-style-type: decimal;
+  margin-left: 1.6rem;
 }

@@ -66,7 +66,7 @@ class Question extends React.Component {
               )) }
             </ul>
           </div>
-          <div className={ `response-section ${this.state.showResponse ? '' : 'hidden'}`}>
+          <div className={ `response-section ${showResponse ? '' : 'hidden'}`}>
             <ul>
               <li className='mx1'>{ this.state.response }</li>
             </ul>

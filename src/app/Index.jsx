@@ -14,7 +14,9 @@ const Index = props => {
     <div className="layout--flex layout--fullheight hero index theme--dark">
       <div className="row typ--center">
         <div className="col-8 col-center" style={ { marginTop: '-20rem' } }>
-          <h1 className="typ--bold mb6">However you like to celebrate the holidays, we have a cocktail for you!</h1>
+          <h1 className="typ--bold mb4">It’s been quite a year, so we thought you might enjoy a cocktail, or two.</h1>
+          <h1 className="typ--bold mb10">We’ve created a cocktail recipe generator to help you find your perfect drink this holiday season.</h1>
+
           <button className="btn" onClick={ () => switchActiveSheet('question-1') }>Start</button>
         </div>
       </div>
