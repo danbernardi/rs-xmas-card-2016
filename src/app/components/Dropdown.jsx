@@ -12,7 +12,13 @@ class Dropdown extends React.Component {
     const { answers, onAnswerSelect } = this.props;
 
     return (
-      <div className={ `dropdown ${ open ? 'open' : '' }` }>
+      <div
+        className={ `dropdown ${ open ? 'open' : '' }` }
+        tabIndex="0"
+        onBlur={
+          () => { this.setState({ open: false }) }
+        }
+      >
         <div className="dropdown__toggle" onClick={ () => this.setState({ open: true }) }>
           <h6 className="dropdown__title">{ title }</h6>
           <span className="dropdown__icon">

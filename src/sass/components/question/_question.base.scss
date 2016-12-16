@@ -9,10 +9,18 @@
 
 .question-section, .response-section, .next-section {
   opacity: 1;
-  transition: opacity 1s ease;
+  transition: opacity 0.75s ease;
   &.hidden {
     opacity: 0;
   }
+}
+
+.response-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -5rem;
 }
 
 .question__wrap {
