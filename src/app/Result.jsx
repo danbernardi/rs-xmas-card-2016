@@ -35,26 +35,27 @@ const Index = props => {
   }
 
   if (questionAnswerPairs.length === questions.length) {
-    debugger
+    // debugger
   }
 
   return (
     <div className="result">
       { drink ?
         <div>
-          <div className="theme--dark py10" style={ { backgroundColor: drink.color, height: 'calc(100vh - 11.5rem)' } }>
-            <div className="row">
-              <div className="col-8 col-center">
-                <h3 className="mb10 typ--center">{ drink.heading }</h3>
+          <div className="theme--dark py10 layout--relative" style={ { backgroundColor: drink.color, height: 'calc(100vh - 11.5rem)' } }>
+            <div className="col-8 col-center">
+              <h3 className="mb10 typ--center">{ drink.heading }</h3>
+            </div>
 
-                <div className="col-6">
-                  <img src={ drink.img } alt={ drink.name } />
-                </div>
-
-                <div className="col-6 col-last pl5">
-                  <h1 className="result__name">{ drink.name }</h1>
-                </div>
+            <div className="cf result__drink col-8 col-center pt10">
+              <div className="col-6">
+                <img src={ drink.img } alt={ drink.name } />
               </div>
+
+              <div className="col-6 col-last">
+                <h1 className="result__name pl5 pt6">{ drink.name }</h1>
+              </div>
+
             </div>
           </div>
 
@@ -104,7 +105,7 @@ const Index = props => {
               </ol>
             </div>
 
-            <Footer showAddress={ true } color={ drink.color } dontHide={ true } row={ false } />
+            <Footer showAddress={ true } color={ drink.color } dontHide={ true } />
           </article>
         </div>
       : <p>There was an error. No drinks were returned.</p> }
