@@ -17,7 +17,8 @@ export const drinks = [
     ],
     garnish: [
       '1 lemon twist'
-    ]
+    ],
+    scores: [6, 0, 1] // [Strength, Weirdness, Fruitiness], out of 10
   },
 
   {
@@ -42,7 +43,8 @@ export const drinks = [
     garnish: [
       'Brandied cherry',
       '(preferably Luxardo)'
-    ]
+    ],
+    scores: [7, 0, 2]
   },
 
   {
@@ -59,7 +61,8 @@ export const drinks = [
     instructions: [
       'Shake all ingredients well with ice.',
       'Strain into a cocktail glass or serve over ice.'
-    ]
+    ],
+    scores: [2, 2, 5]
   },
 
   {
@@ -80,7 +83,8 @@ export const drinks = [
     ],
     garnish: [
       'lime twist'
-    ]
+    ],
+    scores: [4, 5, 6]
   },
 
   {
@@ -98,7 +102,8 @@ export const drinks = [
     instructions: [
       'Add all ingredients to a shaker and fill with ice.',
       'Shake, and strain intoa  coupe glass.'
-    ]
+    ],
+    scores: [5, 1, 7]
   },
 
   {
@@ -120,7 +125,8 @@ export const drinks = [
     garnish: [
       '2 cucumber slices',
       '1 pinch mint'
-    ]
+    ],
+    scores: [3, 2, 7]
   },
 
   {
@@ -141,7 +147,8 @@ export const drinks = [
     ],
     garnish: [
       'Strip of orange peel with pith, once inch wide'
-    ]
+    ],
+    scores: [8, 4, 0]
   },
 
   {
@@ -164,7 +171,8 @@ export const drinks = [
     ],
     garnish: [
       'orange peel'
-    ]
+    ],
+    scores: [5, 8, 5]
   },
 
   {
@@ -190,7 +198,8 @@ export const drinks = [
     garnish: [
       'lime slice',
       'mint sprig'
-    ]
+    ],
+    scores: [5, 1, 9]
   },
 
   {
@@ -218,7 +227,8 @@ export const drinks = [
       'pineapple spear',
       'an orchid',
       'three brandied cherries'
-    ]
+    ],
+    scores: [8, 8, 5]
   },
 
   {
@@ -244,7 +254,8 @@ export const drinks = [
     ],
     garnish: [
       '1 mint sprig'
-    ]
+    ],
+    scores: [7, 4, 5]
   },
 
   {
@@ -270,12 +281,13 @@ export const drinks = [
     ],
     garnish: [
       '1 mint sprig'
-    ]
+    ],
+    scores: [9, 8, 8]
   },
 
   {
     name: 'Hot Apple Pie',
-    heading: 'You are positively rakish, sexy and swashbuckling, may we recomment...',
+    heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
     img: require('../../assets/img/drinks/placeholder.svg'),
     color: '#C90037',
     description: 'Tuaca Liqueur is a popular vanilla liqueur that has roots dating back 500 years to the time of Lorenzo the Magnificent. The legend is that this patron of Italian Renaissance arts enjoyed this liqueur and it was lost until 1938, when brothers-in-law Gaetano Tuoni and Giorgio Canepa revived the recipe, naming it using a combination of their own surnames.  Tuaca saw a rise in popularity during World War II.',
@@ -292,6 +304,17 @@ export const drinks = [
     ],
     garnish: [
       'Cinnamon stick'
-    ]
-  },
-]
+    ],
+    scores: [3, 0, 8]
+  }
+];
+
+export const beer = {
+  name: "Cheap Beer",
+  heading: "You are a rock and roll party animal. May we recommend...",
+  img: require('../../assets/img/drinks/placeholder.svg'),
+  color: '#6A3661',
+  description: "Cheap beer doesn’t mean you are cheap. You are a priceless inscrutable artifact of dive bars; a life-saving, rule breaking anti-hero. When work is done, it is done. If someone tries to strike up a conversation about politics, you only respond in pig latin. Cheap beer allows you to leave the house and be in it for the long haul. You can drink all night, stay up till dawn, tell a few jokes of questionable integrity, hit four parties and still manage to hold back someone’s hair at the porcelain throne.",
+  ingredients: ['1 can'],
+  instructions: ['Open can']
+};

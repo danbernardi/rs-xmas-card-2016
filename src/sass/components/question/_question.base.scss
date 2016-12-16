@@ -7,6 +7,14 @@
   background-repeat: no-repeat;
 }
 
+.question-section, .response-section {
+  opacity: 1;
+  transition: opacity 1s ease;
+  &.hidden {
+    opacity: 0;
+  }
+}
+
 .question__answers li {
   @include font(medium);
   padding: 0.5rem 2rem;
