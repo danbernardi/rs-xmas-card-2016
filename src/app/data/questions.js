@@ -4,7 +4,7 @@ export const questions = [
     question: 'Have you been naughty or nice?',
     answers: [{
       name: 'Naughty',
-      responses: ['Meow', '😼', "We'll make it a double then..." ],
+      responses: ['Meow 😼', "We'll make it a double then..." ],
       scores: [8, 4, 6], // [Badassness, Weirdness, Fun], out of 10
       beer: true
     }, {
@@ -47,7 +47,7 @@ export const questions = [
     answers: [
       {
         name: 'Make a snow angel',
-        responses: [""],
+        responses: ["How ⛄️🌲🌟 of you."],
         scores: [0, 0, 2]
       },
       {
