@@ -12,7 +12,7 @@ class ImageSelector extends React.Component {
     const { answers, onAnswerSelect } = this.props;
 
     return (
-      <div className="image-selector">
+      <div className="image-selector col-center">
         <ul className="image-list">
           {
             answers.map((answer, index) => (

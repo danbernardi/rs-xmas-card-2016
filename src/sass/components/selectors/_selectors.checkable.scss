@@ -1,0 +1,49 @@
+.checkable {
+  position: relative;
+  padding: 1rem 8rem;
+  display: block;
+  cursor: pointer;
+
+  input[type='radio'] {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  input[type='radio']:checked + .checkable__mark {
+    background: $red;
+    border-color: $red;
+  }
+
+  input[type='radio']:checked + .checkable__label {
+    color: $red;
+  }
+}
+
+.checkable__group {
+  width: 50rem;
+
+  li {
+    border-radius: 0.5rem;
+
+    &:hover {
+      background: rgba($red, 0.1);
+    }
+  }
+}
+
+
+.checkable__mark {
+  position: absolute;
+  left: 3rem;
+  top: 1.1rem;
+  width: 2rem;
+  height: 2rem;
+  border: 0.2rem solid $bodytext;
+  border-radius: 50%;
+  display: block;
+}

@@ -14,7 +14,7 @@ class Dropdown extends React.Component {
     return (
       <div className={ `dropdown ${ open ? 'open' : '' }` }>
         <div className="dropdown__toggle" onClick={ () => this.setState({ open: true }) }>
-          <span className="dropdown__title">{ title }</span>
+          <h6 className="dropdown__title">{ title }</h6>
           <span className="dropdown__icon">
             <img src={ require('../../assets/img/dropdown-carrot.svg')} />
           </span>
@@ -32,7 +32,7 @@ class Dropdown extends React.Component {
                       onAnswerSelect(answer);
                     } }
                   >
-                    { answer.name }
+                    <h6>{ answer.name }</h6>
                   </li>
                 ))
               }
