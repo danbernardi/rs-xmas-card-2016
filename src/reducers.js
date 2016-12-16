@@ -3,7 +3,20 @@ import _ from 'lodash';
 
 const initialState = {
   activeSheetID: { current: 'index', previous: [] },
-  questionAnswerPairs: []
+  questionAnswerPairs: [{ // Set a default for the slider, so you don't have to click to move on
+    "questionID": "naughty",
+    "answer": {
+      "name": "Middle",
+      "responses": [
+        "Hmm. Bartender's choice..."
+      ],
+      "scores": [
+        2,
+        8,
+        2
+      ]
+    }
+  }]
 };
 
 const activeSheetID = (state = initialState.activeSheetID, action) => {
