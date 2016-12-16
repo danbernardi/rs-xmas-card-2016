@@ -11,7 +11,7 @@ class Question extends React.Component {
     super(props);
 
     this.state = {
-      responseDelay: 1000,
+      responseDelay: 800,
       hideQuestion: false,
       selectedAnswer: props.selectedAnswer
     };
@@ -52,9 +52,8 @@ class Question extends React.Component {
     const callbacks = [];
 
     // Fill array of sequential actions to fade out question, show responses, then move
-    callbacks.push(() => {
-      this.setState({ hideQuestion: true }); // Fade out old
-    });
+    this.setState({ hideQuestion: true }); // Fade out old
+
     responses.forEach((response, index) => {
       callbacks.push(() => {
         this.setState({ showResponse: false }); // Fade out old

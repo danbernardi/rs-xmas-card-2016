@@ -29,7 +29,7 @@ export const questions = [
     answers: [
       {
         name: 'Setting intentions and expressing gratitude.',
-        responses: ["Mmm Hmm.", "Totally..."],
+        responses: ["Mmm Hmm.", "Totally.", "So... light on the drink?"],
         scores: [0, 0, 0]
       },
       {
@@ -91,7 +91,7 @@ export const questions = [
       },
       {
         name: <Drinks />,
-        responses: ["Well that's convenient.", "We've got just the holiday meal for you..."],
+        responses: ["Well that's convenient.", "We've got just the holiday \"meal\" for you..."],
         scores: [9, 5, 5]
       }
     ],
