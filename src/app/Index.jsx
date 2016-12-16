@@ -1,27 +1,51 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
+import snowfall from '../utils/snowfall';
 
-const Index = props => {
-  const { dispatch, activeSheetID } = props;
+class Index extends React.Component {
 
-  const switchActiveSheet = (targetID) => {
-    dispatch(actions.addPreviousSheetID(activeSheetID.current));
-    dispatch(actions.setActiveSheetID(targetID));
+  componentDidMount() {
+    const el = this.div;
+    window.snowfall = snowfall
+    setTimeout(() => {
+      snowfall.snow(this.div, {
+        flakeCount: 250,
+        minSize: 2,
+        maxSize: 3,
+        round: true
+      });
+    }, 100);
   }
 
-  return (
-    <div className="layout--flex layout--fullheight hero index theme--dark">
-      <div className="row typ--center">
-        <div className="col-8 col-center" style={ { marginTop: '-20rem' } }>
-          <h1 className="typ--bold mb4">It’s been quite a year, so we thought you might enjoy a cocktail, or two.</h1>
-          <h1 className="typ--bold mb10">We’ve created a cocktail recipe generator to help you find your perfect drink this holiday season.</h1>
+  componentWillUnmount() {
 
-          <button className="btn" onClick={ () => switchActiveSheet('naughty') }>Start</button>
+  }
+
+  render() {
+    const { dispatch, activeSheetID } = this.props;
+
+    const switchActiveSheet = (targetID) => {
+      dispatch(actions.addPreviousSheetID(activeSheetID.current));
+      dispatch(actions.setActiveSheetID(targetID));
+    }
+
+    return (
+      <div
+        className="layout--flex layout--fullheight hero index theme--dark"
+        ref={ (el) => this.div = el }
+      >
+        <div className="row typ--center">
+          <div className="col-8 col-center" style={ { marginTop: '-20rem' } }>
+            <h1 className="typ--bold mb4">It’s been quite a year, so we thought you might enjoy a cocktail, or two.</h1>
+            <h1 className="typ--bold mb10">We’ve created a cocktail recipe generator to help you find your perfect drink this holiday season.</h1>
+
+            <button className="btn" onClick={ () => switchActiveSheet('naughty') }>Start</button>
+          </div>
         </div>
       </div>
-    </div>
-  )
+    )
+  }
 }
 
 Index.propTypes = {
