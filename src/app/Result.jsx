@@ -1,18 +1,49 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
-import { drinks } from './data/drinks';
+import { drinks, beer } from './data/drinks';
+import { questions } from './data/questions';
 
 const Index = props => {
   const { dispatch, questionAnswerPairs } = props;
+
+  const distance = (a1, a2) => Math.abs(
+    (a1[0] - a2[0]) +
+    (a1[1] - a2[1]) +
+    (a1[2] - a2[2])
+  );
+
+  const randomElem = array => array[Math.floor(Math.random() * array.length)];
 
   const resetPreviousHistory = (targetID) => {
     dispatch(actions.resetPreviousHistory());
     dispatch(actions.setActiveSheetID(targetID));
   }
 
-  const drink = drinks && drinks.length ? drinks[5] : null;
-  // debugger;
+  const scores = questionAnswerPairs.map(obj => obj.answer.scores);
+  const strength = scores.map(score => score[0]).reduce((total, elem) => total + elem, 0) / (scores.length);
+  const weirdness = scores.map(score => score[1]).reduce((total, elem) => total + elem, 0) / (scores.length);
+  const fruitiness = scores.map(score => score[2]).reduce((total, elem) => total + elem, 0) / (scores.length);
+
+  const idealDrink = { scores: [strength, weirdness, fruitiness] };
+
+  const sortedDrinks = drinks.map(drink => Object.assign(drink, {
+    distance: parseInt(distance(drink.scores, idealDrink.scores))
+  })).sort((drinkA, drinkB) => drinkA.distance - drinkB.distance);
+
+  const beerFriendlyAnswers = questionAnswerPairs.map(obj => obj.answer.beer).filter(bool => bool);
+  let drink;
+
+  if (beerFriendlyAnswers.length === questions.length) {
+    drink = beer;
+  } else {
+    // Randomly select one of the closest drinks
+    drink = randomElem(sortedDrinks.filter(drink => drink.distance === sortedDrinks[0].distance));
+  }
+
+  if (questionAnswerPairs.length === questions.length) {
+    debugger
+  }
 
   return (
     <div className="result">
@@ -22,7 +53,7 @@ const Index = props => {
             <div className="row">
               <div className="col-8 col-center">
                 <h3 className="mb10 typ--center">{ drink.heading }</h3>
-                
+
                 <div className="col-6">
                   <img src={ drink.img } alt={ drink.name } />
                 </div>
