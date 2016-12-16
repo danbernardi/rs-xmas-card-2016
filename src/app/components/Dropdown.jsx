@@ -15,7 +15,9 @@ class Dropdown extends React.Component {
       <div className={ `dropdown ${ open ? 'open' : '' }` }>
         <div className="dropdown__toggle" onClick={ () => this.setState({ open: true }) }>
           <span className="dropdown__title">{ title }</span>
-          <span className="dropdown__icon">v</span>
+          <span className="dropdown__icon">
+            <img src={ require('../../assets/img/dropdown-carrot.svg')} />
+          </span>
         </div>
         { open &&
           <div className="dropdown__menu">
