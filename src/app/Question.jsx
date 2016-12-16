@@ -33,6 +33,7 @@ class Question extends React.Component {
     }
   }
 
+<<<<<<< HEAD
   setResponseTo(response, onResponseComplete = () => {}) {
     // If replacing an old response with a new one, fade it out first
     if (this.state.response && this.state.showResponse) {
@@ -80,6 +81,27 @@ class Question extends React.Component {
               </li>
             )) }
           </ul> */}
+=======
+  const getFormComponent = formComponent => ({
+    rangeslider: <RangeSlider />
+  }[formComponent]);
+
+  return (
+    <div className="question__page">
+      <div className="row">
+        <h1 className="quesiton__label typ--center">{ question }</h1>
+
+        { getFormComponent('rangeslider') }
+
+
+        {/* <ul className="list--inline question__answers mt2 mb6">
+          { answers.map((a, i) => (
+            <li style={ { color } } className="mx1" key={i  } onClick={ () => selectAnswer(a, nextPage) }>
+              { a }
+            </li>
+          )) }
+        </ul> */}
+>>>>>>> 3d999d8a466e1befe5fcb5b4de5fc88f92e491bd
 
         <div className="typ--center mt10">
           <button className="btn btn--ghost">Next</button>
