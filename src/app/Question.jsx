@@ -1,6 +1,9 @@
 import React from 'react';
 import * as actions from '../actions';
 import { connect } from 'react-redux';
+import RangeSlider from './components/RangeSlider';
+import Dropdown from './components/Dropdown';
+import RadioGroup from './components/RadioGroup';
 
 class Question extends React.Component {
   constructor(props) {
@@ -8,26 +11,24 @@ class Question extends React.Component {
     this.state = { responseDelay: 750, hideQuestion: false };
   }
 
-  switchActiveSheet(targetID) {
+  switchActiveSheet(targetID, responseIndex) {
     const { activeSheetID, dispatch } = this.props;
+    const { selectedAnswer } = this.state;
 
-    dispatch(actions.addPreviousSheetID(activeSheetID.current));
-    dispatch(actions.setActiveSheetID(targetID));
-  }
+    if (!selectedAnswer) {
+      return null;
+    }
 
-  selectAnswer(answer, targetID, responseNumber) {
-    const { dispatch, activeSheetID } = this.props;
-
-    const response = answer.responses[responseNumber];
+    const response = selectedAnswer.responses[responseIndex];
 
     if (response) {
       this.setResponseTo(response, () => {
-        this.selectAnswer(answer, targetID, responseNumber + 1);
+        this.switchActiveSheet(targetID, responseIndex + 1);
       });
     } else {
       setTimeout(() => {
-        this.switchActiveSheet(targetID);
-        dispatch(actions.setAnswerToQuestion(activeSheetID.current, answer));
+        dispatch(actions.addPreviousSheetID(activeSheetID.current));
+        dispatch(actions.setActiveSheetID(targetID));
       }, this.state.responseDelay)
     }
   }
@@ -50,26 +51,40 @@ class Question extends React.Component {
   }
 
   render() {
-    const { question, answers, color, nextPage } = this.props;
-    const { showResponse, hideQuestion } = this.state;
+    const { question, answers, color, nextPage, id, activeSheetID, dispatch } = this.props;
+    const { showResponse, hideQuestion, selectedAnswer } = this.state;
+
+    const onAnswerSelect = (answer) => {
+      this.setState({ selectedAnswer: answer });
+      dispatch(actions.setAnswerToQuestion(activeSheetID.current, answer))
+    };
+
+    const component = {
+      naughty: <RangeSlider answers={ answers } onAnswerSelect={ (answer) => { onAnswerSelect(answer) } } />,
+      party: <Dropdown answers={ answers } onAnswerSelect={ (answer) => { onAnswerSelect(answer) } } />,
+      snow: <RadioGroup answers={ answers } onAnswerSelect={ (answer) => { onAnswerSelect(answer) } }/>,
+      // meal: <Images />
+    }[id];
 
     return (
-      <div className="question__page" style={ { backgroundColor: color } }>
+      <div className="question__page">
         <div className="row">
           <div className={ `question-section ${ hideQuestion ? 'hidden' : '' }` }>
             <h1 className="question__label">{ question }</h1>
-            <ul className="list--inline question__answers mt2 mb6">
-              { answers.map((a, i) => (
-                <li style={ { color } } className="mx1" key={i  } onClick={ () => this.selectAnswer(a, nextPage, 0) }>
-                  { a.name }
-                </li>
-              )) }
-            </ul>
+            { component }
           </div>
           <div className={ `response-section ${showResponse ? '' : 'hidden'}`}>
-            <ul>
-              <li className='mx1'>{ this.state.response }</li>
-            </ul>
+            <h1 className="question__label">{ this.state.response }</h1>
+          </div>
+        </div>
+
+        <div className="typ--center mt10">
+          <div className={ `next-section typ--center mt10 ${ hideQuestion ? 'hidden' : '' }` }>
+            <button className="btn btn--ghost" onClick={ () => {
+              this.switchActiveSheet(nextPage, 0) }
+            }>
+              Next
+            </button>
           </div>
         </div>
       </div>

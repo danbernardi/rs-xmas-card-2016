@@ -14,6 +14,7 @@ if (__DEV__) {
 }
 
 export function renderDevTools(store) {
+  window.state = store.getState();
   if (__DEV__) {
     let {DevTools, DebugPanel, LogMonitor} = require('redux-devtools/lib/react');
 

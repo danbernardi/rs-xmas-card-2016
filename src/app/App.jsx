@@ -20,7 +20,8 @@ const App = () => {
         question={ q.question }
         answers={ q.answers }
         color={ q.color }
-        nextPage={ q.nextPage }
+        nextPage={ questions[i + 1] ? questions[i + 1].id : 'result' }
+        id={ q.id }
       />
     );
 

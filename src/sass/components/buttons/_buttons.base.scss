@@ -1,6 +1,11 @@
 .btn {
   background: $offwhite;
-  padding: 1rem 5rem;
-  border-radius: 2rem;
+  padding: 1.8rem 8rem;
+  border-radius: 3rem;
   cursor: pointer;
+}
+
+.btn--ghost {
+  background: transparent;
+  border: 0.2rem solid $bodytext;
 }

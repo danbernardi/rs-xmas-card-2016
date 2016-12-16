@@ -1,6 +1,6 @@
 export const questions = [
   {
-    id: 'question-1',
+    id: 'naughty',
     question: 'Have you been naughty or nice?',
     answers: [{
       name: 'Naughty',
@@ -8,19 +8,18 @@ export const questions = [
       scores: [8, 4, 6], // [Badassness, Weirdness, Fun], out of 10
       beer: true
     }, {
-      name: 'Red',
+      name: 'Middle',
       responses: ["Hmm. Bartender's choice..."],
       scores: [2, 8, 2]
     }, {
       name: 'Nice',
-      responses: ["Sounds good. We'll put some ice in your water..."],
+      responses: ["Sounds good.", "We'll put some ice in your water..."],
       scores: [0, 0, 0]
     }],
-    color: '#95801D',
-    nextPage: 'question-2'
+    color: '#95801D'
   },
   {
-    id: 'question-2',
+    id: 'party',
     question: 'My idea of a holiday party consists of',
     answers: [
       {
@@ -30,7 +29,7 @@ export const questions = [
       },
       {
         name: 'Lots of sequins and screaming.',
-        responses: ["Wooooooooooooooooo!", "Live hard die young. We've got just the drink for you..."],
+        responses: ["Wooooooooooooooooo!", "Live hard die young.",  "We've got just the drink for you..."],
         scores: [4, 2, 8]
       },
       {
@@ -40,11 +39,10 @@ export const questions = [
         beer: true
       }
     ],
-    color: '#555626',
-    nextPage: 'question-3'
+    color: '#555626'
   },
   {
-    id: 'question-3',
+    id: 'snow',
     question: 'What do you do at the first snow fall?',
     answers: [
       {
@@ -64,26 +62,25 @@ export const questions = [
       },
       {
         name: 'Write my name...',
-        responses: ["Wait.", "In the snow?", "Gross..."],
+        responses: ["Wait. In the snow?", "Gross..."],
         scores: [9, 9, 0],
         beer: true
       }
     ],
-    color: '#145446',
-    nextPage: 'question-4'
+    color: '#145446'
   },
   {
-    id: 'question-4',
+    id: 'meal',
     question: 'My ideal holiday meal is...',
     answers: [
       {
         name: 'ham.svg',
-        responses: ["Solid.", "Dependable", "Classic..."],
+        responses: ["Solid. Dependable", "Classic..."],
         scores: [2, 0, 4]
       },
       {
         name: 'takeout.svg',
-        responses: ["I feel ya.", "Burned one too many turkeys..."],
+        responses: ["I feel ya.", "Burned (by) one too many turkeys..."],
         scores: [5, 9, 2],
         beer: true
       },
@@ -93,7 +90,6 @@ export const questions = [
         scores: [9, 5, 5]
       }
     ],
-    color: '#B8021C',
-    nextPage: 'result'
+    color: '#B8021C'
   }
 ];

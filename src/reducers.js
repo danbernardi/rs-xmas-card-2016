@@ -42,7 +42,7 @@ const questionAnswerPairs = (state = initialState.questionAnswerPairs, action) =
         const existingQuestionIndex = _.findIndex(newState, (a) => a.questionID === action.sheetID);
         newState[existingQuestionIndex] = { questionID: action.sheetID, answer: action.answer };
       } else {
-        newState.push({ questionID: action.sheetID, answer: action.answer }); 
+        newState.push({ questionID: action.sheetID, answer: action.answer });
       }
 
       return newState;
