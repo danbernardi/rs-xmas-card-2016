@@ -68,24 +68,21 @@ class Question extends React.Component {
     }[id];
 
     return (
-      <div className="question__page">
-        <div className="row">
+      <div className="question__page typ--center">
+        <div className="question__wrap row">
           <div className={ `question-section ${ hideQuestion ? 'hidden' : '' }` }>
-            <h1 className="question__label">{ question }</h1>
+            <h1 className="question__label mb6">{ question }</h1>
             { component }
           </div>
+
           <div className={ `response-section ${showResponse ? '' : 'hidden'}` }>
             <h1 className="question__label">{ this.state.response }</h1>
           </div>
-        </div>
 
-        <div className="typ--center mt10">
-          <div className={ `next-section typ--center mt10 ${ hideQuestion ? 'hidden' : '' }` }>
+          <div className={ `next-section mt10 ${ hideQuestion ? 'hidden' : '' }` }>
             <button className="btn btn--ghost" onClick={ () => {
               this.switchActiveSheet(nextPage, 0) }
-            }>
-              Next
-            </button>
+            }>Next</button>
           </div>
         </div>
       </div>

@@ -3,9 +3,19 @@
   padding: 1.8rem 8rem;
   border-radius: 3rem;
   cursor: pointer;
+
+  transition: color 0.1s ease-in-out,
+              background-color 0.1s ease-in-out,
+              border-color 0.1s ease-in-out;
 }
 
 .btn--ghost {
   background: transparent;
   border: 0.2rem solid $bodytext;
+
+  &:hover {
+    color: $offwhite;
+    background-color: #BB191A;
+    border-color: #BB191A;
+  }
 }

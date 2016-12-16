@@ -1,3 +1,8 @@
+import React from 'react';
+import Ham from '../svgs/Ham';
+import Takeout from '../svgs/Takeout';
+import Drinks from '../svgs/Drinks';
+
 export const questions = [
   {
     id: 'naughty',
@@ -74,18 +79,18 @@ export const questions = [
     question: 'My ideal holiday meal is...',
     answers: [
       {
-        name: 'ham.svg',
+        name: <Ham />,
         responses: ["Solid. Dependable", "Classic..."],
         scores: [2, 0, 4]
       },
       {
-        name: 'takeout.svg',
+        name: <Takeout />,
         responses: ["I feel ya.", "Burned (by) one too many turkeys..."],
         scores: [5, 9, 2],
         beer: true
       },
       {
-        name: 'drinks.svg',
+        name: <Drinks />,
         responses: ["Well that's convenient.", "We've got just the holiday meal for you..."],
         scores: [9, 5, 5]
       }

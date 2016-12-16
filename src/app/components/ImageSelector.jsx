@@ -12,7 +12,7 @@ class ImageSelector extends React.Component {
     const { answers, onAnswerSelect } = this.props;
 
     return (
-      <div className="image-selector">
+      <div className="image-selector col-center">
         <ul className="image-list">
           {
             answers.map((answer, index) => (
@@ -24,9 +24,7 @@ class ImageSelector extends React.Component {
                   onAnswerSelect(answer);
                 } }
               >
-                <img
-                  src={ require(`../../assets/img/${answer.name}`) }
-                />
+                { answer.name }
               </li>
             ))
           }
@@ -34,7 +32,7 @@ class ImageSelector extends React.Component {
       </div>
     );
   }
-};
+}
 
 ImageSelector.propTypes = {
   onAnswerSelect: React.PropTypes.func,
