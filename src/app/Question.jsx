@@ -1,6 +1,7 @@
 import React from 'react';
 import * as actions from '../actions';
 import { connect } from 'react-redux';
+import RangeSlider from './components/RangeSlider';
 
 const Question = props => {
   const { dispatch, question, answers, color, nextPage, activeSheetID } = props;
@@ -15,17 +16,29 @@ const Question = props => {
     dispatch(actions.setAnswerToQuestion(activeSheetID.current, answer));
   }
 
+  const getFormComponent = formComponent => ({
+    rangeslider: <RangeSlider />
+  }[formComponent]);
+
   return (
-    <div className="question__page" style={ { backgroundColor: color } }>
+    <div className="question__page">
       <div className="row">
-        <h1 className="quesiton__label">{ question }</h1>
-        <ul className="list--inline question__answers mt2 mb6">
+        <h1 className="quesiton__label typ--center">{ question }</h1>
+
+        { getFormComponent('rangeslider') }
+
+
+        {/* <ul className="list--inline question__answers mt2 mb6">
           { answers.map((a, i) => (
             <li style={ { color } } className="mx1" key={i  } onClick={ () => selectAnswer(a, nextPage) }>
               { a }
             </li>
           )) }
-        </ul>
+        </ul> */}
+
+        <div className="typ--center mt10">
+          <button className="btn btn--ghost">Next</button>
+        </div>
       </div>
     </div>
   );

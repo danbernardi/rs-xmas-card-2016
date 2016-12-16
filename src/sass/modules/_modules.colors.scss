@@ -1,13 +1,6 @@
 // colors
-$darkgrey: #35383D;
-$darkestgrey: #313337;
-$lightgrey: #F7F7F7;
-$lightblue: #98A4AC;
-$blue: saturate(#4A9E9E, 20);
-$green: saturate(#9CBF54, 20);
-$pink: #ED7070;
-$bodytext: #444;
 
+$bodytext: #454545;
 $offwhite: #FBF7EF;
 $darkgreen: #265347;
 
@@ -31,7 +24,3 @@ $sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;;
     background: linear-gradient(to bottom, $from 0%, $to 100%);
   }
 }
-
-.blue { background: $blue; color: $white; padding: 3rem; }
-.green { background: $green; color: $white; padding: 3rem; }
-.pink { background: $pink; color: $white; padding: 3rem; }

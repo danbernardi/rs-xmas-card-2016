@@ -1,8 +1,7 @@
 .question__page {
   @extend .layout--fullheight;
   @extend .layout--flex;
-  color: $white;
-  background-image: url(../assets/img/question_bg.svg);
+  color: #454545;
   background-position: center;
   background-repeat: no-repeat;
 }
