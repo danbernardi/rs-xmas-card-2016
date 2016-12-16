@@ -1,6 +1,7 @@
 import React from 'react';
 import * as actions from '../actions';
 import { connect } from 'react-redux';
+import RangeSlider from './components/RangeSlider';
 
 class Question extends React.Component {
   constructor(props) {
@@ -71,6 +72,17 @@ class Question extends React.Component {
               <li className='mx1'>{ this.state.response }</li>
             </ul>
           </div>
+
+          {/* <ul className="list--inline question__answers mt2 mb6">
+            { answers.map((a, i) => (
+              <li style={ { color } } className="mx1" key={i  } onClick={ () => selectAnswer(a, nextPage) }>
+                { a }
+              </li>
+            )) }
+          </ul> */}
+
+        <div className="typ--center mt10">
+          <button className="btn btn--ghost">Next</button>
         </div>
       </div>
     );
