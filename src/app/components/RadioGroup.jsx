@@ -12,7 +12,6 @@ const RadioGroup  = props => {
               <input
                 type="radio"
                 value={ answer.name }
-                defaultChecked={ index === 0 }
                 name={ id }
                 className="checkable__input"
                 onChange={ (event) => onAnswerSelect(answer) }
