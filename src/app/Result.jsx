@@ -118,12 +118,9 @@ Index.propTypes = {
   questionAnswerPairs: React.PropTypes.array
 };
 
-const injectStateProps = state => {
-  window.state = state;
-  return {
-    activeSheetID: state.activeSheetID,
-    questionAnswerPairs: state.questionAnswerPairs
-  };
-}
+const injectStateProps = state => ({
+  activeSheetID: state.activeSheetID,
+  questionAnswerPairs: state.questionAnswerPairs
+});
 
 export default connect(injectStateProps)(Index);
