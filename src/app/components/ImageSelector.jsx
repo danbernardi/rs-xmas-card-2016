@@ -24,9 +24,7 @@ class ImageSelector extends React.Component {
                   onAnswerSelect(answer);
                 } }
               >
-                <img
-                  src={ require(`../../assets/img/${answer.name}`) }
-                />
+                { answer.name }
               </li>
             ))
           }
@@ -34,7 +32,7 @@ class ImageSelector extends React.Component {
       </div>
     );
   }
-};
+}
 
 ImageSelector.propTypes = {
   onAnswerSelect: React.PropTypes.func,

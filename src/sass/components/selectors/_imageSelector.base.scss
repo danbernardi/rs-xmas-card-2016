@@ -6,6 +6,7 @@ ul.image-list {
   @extend .cf;
   
   .image__item {
+    cursor: pointer;
     width: 28rem;
     height: 28rem;
     float: left;
@@ -15,10 +16,16 @@ ul.image-list {
     margin: 0 2rem;
 
     &:hover {
-      background-color: rgba($red, 0.1);
+      background-color: rgba($red, 0.04);
     }
 
-    img {
+    &.selected { background-color: rgba($red, 0.1); }
+
+    &.selected svg {
+      path, polygon, polyline { stroke: $red !important; }
+    }
+
+    svg {
       position: absolute;
       top: 50%;
       left: 50%;
