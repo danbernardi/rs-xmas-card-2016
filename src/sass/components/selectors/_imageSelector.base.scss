@@ -1,0 +1,10 @@
+ul.image-list {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  .image__item {
+    display: flex:
+    align-self: center;
+  }
+}

@@ -27,7 +27,7 @@ const RangeSlider  = props => {
 
 RangeSlider.propTypes = {
   range: React.PropTypes.array,
-  sheetID: React.PropTypes.string,
+  onAnswerSelect: React.PropTypes.func,
   answers: React.PropTypes.array
 };
 
