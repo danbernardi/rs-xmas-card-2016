@@ -28,7 +28,7 @@ const RadioGroup  = props => {
 };
 
 RadioGroup.propTypes = {
-  sheetID: React.PropTypes.string,
+  onAnswerSelect: React.PropTypes.func,
   answers: React.PropTypes.array,
   id: React.PropTypes.string
 };

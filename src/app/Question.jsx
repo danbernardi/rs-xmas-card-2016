@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import RangeSlider from './components/RangeSlider';
 import Dropdown from './components/Dropdown';
 import RadioGroup from './components/RadioGroup';
+import ImageSelector from './components/ImageSelector';
 
 class Question extends React.Component {
   constructor(props) {
@@ -63,7 +64,7 @@ class Question extends React.Component {
       naughty: <RangeSlider answers={ answers } onAnswerSelect={ (answer) => { onAnswerSelect(answer) } } />,
       party: <Dropdown answers={ answers } onAnswerSelect={ (answer) => { onAnswerSelect(answer) } } />,
       snow: <RadioGroup answers={ answers } onAnswerSelect={ (answer) => { onAnswerSelect(answer) } }/>,
-      // meal: <Images />
+      meal: <ImageSelector answers={ answers } onAnswerSelect={ (answer) => { onAnswerSelect(answer) } } />
     }[id];
 
     return (
@@ -73,7 +74,7 @@ class Question extends React.Component {
             <h1 className="question__label">{ question }</h1>
             { component }
           </div>
-          <div className={ `response-section ${showResponse ? '' : 'hidden'}`}>
+          <div className={ `response-section ${showResponse ? '' : 'hidden'}` }>
             <h1 className="question__label">{ this.state.response }</h1>
           </div>
         </div>
