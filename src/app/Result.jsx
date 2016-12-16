@@ -71,7 +71,7 @@ const Index = props => {
             </div>
 
             <div className="col-5">
-              <h3 className="mb2">Ingredients:</h3>
+              <h3 className="mb2">Ingredients</h3>
               <ul className="mb2">
                 { drink.ingredients.map((ing, index) => (
                   <li key={ index }>
@@ -95,7 +95,7 @@ const Index = props => {
             </div>
 
             <div className="col-7 col-last">
-              <h3 className="mb2">Instructions:</h3>
+              <h3 className="mb2">Instructions</h3>
               <ol>
                 { drink.instructions.map((ins, index) => (
                   <li key={ index }>
