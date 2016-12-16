@@ -1,6 +1,7 @@
 export const drinks = [
   {
     name: 'The Martinez',
+    illustration: require('../../assets/img/drinks/the-martinez_illust.svg'),
     heading: 'You are positively rakish, sexy and swashbuckling, may we recomment...',
     img: require('../../assets/img/drinks/placeholder.svg'),
     color: '#8F311A',
@@ -23,6 +24,7 @@ export const drinks = [
 
   {
     name: 'Remember The Maine',
+    illustration: require('../../assets/img/drinks/remember-the-maine_illust.svg'),
     heading: 'You are positively rakish, sexy and swashbuckling, may we recomment...',
     img: require('../../assets/img/drinks/placeholder.svg'),
     color: '#6A3661',
@@ -49,6 +51,7 @@ export const drinks = [
 
   {
     name: 'The Jack Rose',
+    illustration: require('../../assets/img/drinks/the-jack-rose_illust.svg'),
     heading: 'You are positively rakish, sexy and swashbuckling, may we recomment...',
     img: require('../../assets/img/drinks/placeholder.svg'),
     color: '#58B094',
@@ -67,6 +70,7 @@ export const drinks = [
 
   {
     name: 'The Last Word',
+    illustration: require('../../assets/img/drinks/the-last-word_illust.svg'),
     heading: 'You are positively rakish, sexy and swashbuckling, may we recomment...',
     img: require('../../assets/img/drinks/placeholder.svg'),
     color: '#8C8E49',
@@ -89,6 +93,7 @@ export const drinks = [
 
   {
     name: 'Paper Plane',
+    illustration: require('../../assets/img/drinks/paper-plane_illust.svg'),
     heading: 'You are positively rakish, sexy and swashbuckling, may we recomment...',
     img: require('../../assets/img/drinks/placeholder.svg'),
     color: '#437BA4',
@@ -108,6 +113,7 @@ export const drinks = [
 
   {
     name: 'East Side',
+    illustration: require('../../assets/img/drinks/east-side_illust.svg'),
     heading: 'You are positively rakish, sexy and swashbuckling, may we recomment...',
     img: require('../../assets/img/drinks/placeholder.svg'),
     color: '#705E4D',
@@ -131,6 +137,7 @@ export const drinks = [
 
   {
     name: 'Oaxaca Old Fashioned',
+    illustration: require('../../assets/img/drinks/oaxaca-old-fasioned_illust.svg'),
     heading: 'You are positively rakish, sexy and swashbuckling, may we recomment...',
     img: require('../../assets/img/drinks/placeholder.svg'),
     color: '#715E4D',
@@ -153,6 +160,7 @@ export const drinks = [
 
   {
     name: 'Blood and Sand',
+    illustration: require('../../assets/img/drinks/blood-and-sand_illust.svg'),
     heading: 'You are positively rakish, sexy and swashbuckling, may we recomment...',
     img: require('../../assets/img/drinks/placeholder.svg'),
     color: '#DE1D5F',
@@ -177,6 +185,7 @@ export const drinks = [
 
   {
     name: 'Old Cuban',
+    illustration: require('../../assets/img/drinks/old-cuban_illust.svg'),
     heading: 'You are positively rakish, sexy and swashbuckling, may we recomment...',
     img: require('../../assets/img/drinks/placeholder.svg'),
     color: '#F6772D',
@@ -204,6 +213,7 @@ export const drinks = [
 
   {
     name: 'Three Dots and a Dash',
+    illustration: require('../../assets/img/drinks/three-dots-and-a-dash_illust.svg'),
     heading: 'You are positively rakish, sexy and swashbuckling, may we recomment...',
     img: require('../../assets/img/drinks/placeholder.svg'),
     color: '#FFBA00',
@@ -233,6 +243,7 @@ export const drinks = [
 
   {
     name: 'Fog Cutter',
+    illustration: require('../../assets/img/drinks/fog-cutter_illust.svg'),
     heading: 'You are positively rakish, sexy and swashbuckling, may we recomment...',
     img: require('../../assets/img/drinks/placeholder.svg'),
     color: '#BEBFBF',
@@ -260,6 +271,7 @@ export const drinks = [
 
   {
     name: 'Zombie',
+    illustration: require('../../assets/img/drinks/zombie_illust.svg'),
     heading: 'You are positively rakish, sexy and swashbuckling, may we recomment...',
     img: require('../../assets/img/drinks/placeholder.svg'),
     color: '#3B87A3',
@@ -288,6 +300,7 @@ export const drinks = [
   {
     name: 'Hot Apple Pie',
     heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
+    illustration: require('../../assets/img/drinks/hot-apple-pie_illust.svg'),
     img: require('../../assets/img/drinks/placeholder.svg'),
     color: '#C90037',
     description: 'Tuaca Liqueur is a popular vanilla liqueur that has roots dating back 500 years to the time of Lorenzo the Magnificent. The legend is that this patron of Italian Renaissance arts enjoyed this liqueur and it was lost until 1938, when brothers-in-law Gaetano Tuoni and Giorgio Canepa revived the recipe, naming it using a combination of their own surnames.  Tuaca saw a rise in popularity during World War II.',
