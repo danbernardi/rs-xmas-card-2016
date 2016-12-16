@@ -10,10 +10,13 @@ class Index extends React.Component {
     window.snowfall = snowfall
     setTimeout(() => {
       snowfall.snow(this.div, {
-        flakeCount: 250,
+        flakeCount: 75,
         minSize: 2,
-        maxSize: 3,
-        round: true
+        maxSize: 5,
+        round: true,
+        maxSpeed: 2,
+        minSpeed: 0.5,
+        flakeColor: 'rgba(255, 255, 255, 0.75)'
       });
     }, 100);
   }
