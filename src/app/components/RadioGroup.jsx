@@ -4,7 +4,7 @@ const RadioGroup  = props => {
   const { answers, onAnswerSelect, id } = props;
 
   return (
-    <ul className="list--block">
+    <ul className="checkable__group list--block typ--left col-center">
       {
         answers.map((answer, index) => (
           <li key={ index }>
@@ -17,7 +17,7 @@ const RadioGroup  = props => {
                 onChange={ (event) => onAnswerSelect(answer) }
               />
               <span className="checkable__mark"></span>
-              <span className="checkable__label">{ answer.name }</span>
+              <span className="checkable__label typ--h6">{ answer.name }</span>
             </label>
           </li>
         ))
