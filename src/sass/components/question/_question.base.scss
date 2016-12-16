@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
 }
 
-.question-section, .response-section {
+.question-section, .response-section, .next-section {
   opacity: 1;
   transition: opacity 1s ease;
   &.hidden {
