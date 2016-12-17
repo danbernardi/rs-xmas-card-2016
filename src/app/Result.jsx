@@ -5,43 +5,19 @@ import { questions } from './data/questions';
 import Footer from './Footer';
 
 const Index = props => {
-  const { questionAnswerPairs } = props;
-
-  const distance = (a1, a2) => Math.abs(
-    (a1[0] - a2[0]) +
-    (a1[1] - a2[1]) +
-    (a1[2] - a2[2])
-  );
-
-  const randomElem = array => array[Math.floor(Math.random() * array.length)];
-
-  const scores = questionAnswerPairs.map(obj => obj.answer.scores);
-  const strength = scores.map(score => score[0]).reduce((total, elem) => total + elem, 0) / (scores.length);
-  const weirdness = scores.map(score => score[1]).reduce((total, elem) => total + elem, 0) / (scores.length);
-  const fruitiness = scores.map(score => score[2]).reduce((total, elem) => total + elem, 0) / (scores.length);
-
-  const idealDrink = { scores: [strength, weirdness, fruitiness] };
-
-  const sortedDrinks = drinks.map(d => Object.assign(d, {
-    distance: parseInt(distance(d.scores, idealDrink.scores))
-  })).sort((drinkA, drinkB) => drinkA.distance - drinkB.distance);
-
-  const beerFriendlyAnswers = questionAnswerPairs.map(obj => obj.answer.beer).filter(bool => bool);
-
-  let drink = randomElem(sortedDrinks.filter(d => d.distance === sortedDrinks[0].distance));
-
-  if (beerFriendlyAnswers.length === questions.length) {
-    drink = beer;
-  }
-
-  if (questionAnswerPairs.length === questions.length) {
-    // debugger
-  }
+  const { questionAnswerPairs, drink } = props;
 
   return (
     <div className="result">
       { drink ?
         <div>
+
+          { drink.music &&
+            <audio controls autoPlay={ true }>
+              <source src={ drink.music } type="audio/mpeg" />
+            </audio>
+          }
+
           <div className="theme--dark py10 layout--relative" style={ { backgroundColor: drink.color, height: 'calc(100vh - 11.5rem)' } }>
             <div className="col-8 col-center">
               <h3 className="mb10 typ--center">{ drink.heading }</h3>
@@ -120,7 +96,8 @@ Index.propTypes = {
 
 const injectStateProps = state => ({
   activeSheetID: state.activeSheetID,
-  questionAnswerPairs: state.questionAnswerPairs
+  questionAnswerPairs: state.questionAnswerPairs,
+  drink: state.drink
 });
 
 export default connect(injectStateProps)(Index);

@@ -67,9 +67,21 @@ const questionAnswerPairs = (state = initialState.questionAnswerPairs, action) =
   }
 }
 
+const drink = (state = null, action) => {
+  switch(action.type) {
+    case 'SET_DRINK_TO': {
+      return action.drink;
+    }
+    default: {
+      return state;
+    }
+  }
+}
+
 const reducers = combineReducers({
   activeSheetID,
-  questionAnswerPairs
+  questionAnswerPairs,
+  drink
 });
 
 export default reducers;

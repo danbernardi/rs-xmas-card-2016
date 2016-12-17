@@ -17,3 +17,7 @@ export const revertToPreviousSheetID = () => ({
 export const setAnswerToQuestion = (sheetID, answer) => ({
   type: 'SET_ANSWER_TO_QUESTION', sheetID, answer
 });
+
+export const setDrinkTo = (drink) => ({
+  type: 'SET_DRINK_TO', drink
+});

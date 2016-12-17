@@ -2,7 +2,7 @@ export const drinks = [
   {
     name: 'The Martinez',
     illustration: require('../../assets/img/drinks/the-martinez_illust.svg'),
-    heading: 'You are positively rakish, sexy and swashbuckling, may we recomment...',
+    heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
     img: require('../../assets/img/drinks/placeholder.svg'),
     color: '#8F311A',
     description: 'For what some have called the evolutionary link between the Manhattan and the Martini, the Martinez came from humble beginnings. As the story goes, a traveller came into a San Francisco bar and asked for a stout drink before his trip to Martinez, a town north of the city. The bartender reached for Old Tom Gin, which, at the time, was a “poorly distilled gin with sugar added so it’d be palatable.” This sweetened gin became the drink’s signature ingredient, and since then, the Martinez has grown into a balanced but strong sipping drink.',
@@ -19,13 +19,14 @@ export const drinks = [
     garnish: [
       '1 lemon twist'
     ],
-    scores: [6, 0, 1] // [Strength, Weirdness, Fruitiness], out of 10
+    scores: [6, 0, 1], // [Strength, Weirdness, Fruitiness], out of 10,
+    music: require('../../assets/audio/martinez.mp3')
   },
 
   {
     name: 'Remember The Maine',
     illustration: require('../../assets/img/drinks/remember-the-maine_illust.svg'),
-    heading: 'You are positively rakish, sexy and swashbuckling, may we recomment...',
+    heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
     img: require('../../assets/img/drinks/placeholder.svg'),
     color: '#6A3661',
     description: 'The Maine, a U.S. naval ship, was sitting off the coast of Havana in 1898 in a bout of saber-rattling with Spain, which controlled Cuba at the time. When it mysteriously exploded and sank (some blame a coal fire), warmongering journalists used the phrase “Remember the Maine, to Hell with Spain” as a rallying cry that would jumpstart the Spanish-American war, leading to Cuban independence.',
@@ -46,13 +47,14 @@ export const drinks = [
       'Brandied cherry',
       '(preferably Luxardo)'
     ],
-    scores: [7, 0, 2]
+    scores: [7, 0, 2],
+    music: require('../../assets/audio/remember-the-maine.mp3')
   },
 
   {
     name: 'The Jack Rose',
     illustration: require('../../assets/img/drinks/the-jack-rose_illust.svg'),
-    heading: 'You are positively rakish, sexy and swashbuckling, may we recomment...',
+    heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
     img: require('../../assets/img/drinks/placeholder.svg'),
     color: '#58B094',
     description: 'A Jack Rose is a cocktail containing applejack, grenadine, and lemon or lime juice. It was popular in the 1920s and 1930s, notably appearing in Ernest Hemingway’s 1926 classic, The Sun Also Rises, in which Jake Barnes, the narrator, drinks a Jack Rose in the Crillon Paris hotel bar while awaiting the arrival of Lady Brett Ashley. It was also a favorite drink of author John Steinbeck.',
@@ -65,36 +67,38 @@ export const drinks = [
       'Shake all ingredients well with ice.',
       'Strain into a cocktail glass or serve over ice.'
     ],
-    scores: [2, 2, 5]
+    scores: [2, 2, 5],
+    music: require('../../assets/audio/jack-rose.mp3')
   },
 
-  {
-    name: 'The Last Word',
-    illustration: require('../../assets/img/drinks/the-last-word_illust.svg'),
-    heading: 'You are positively rakish, sexy and swashbuckling, may we recomment...',
-    img: require('../../assets/img/drinks/placeholder.svg'),
-    color: '#8C8E49',
-    description: 'The Last Word is a gin-based prohibition-era cocktail originally developed at the Detroit Athletic Club. While the drink eventually fell out of favor, it has recently enjoyed a renewed popularity after being rediscovered as a cult hit in the Seattle area by bartender Murray Stenson during his tenure at the Zig Zag Café.',
-    ingredients: [
-      '3/4 ounce gin',
-      '3/4 ounce marachino liqueur',
-      '3/4 ounce green Chartreuse',
-      '3/4 ounce line juice'
-    ],
-    instructions: [
-      'Vigorously shake all ingredients together with ice.',
-      'Strain into a martini glass or a coupe and garnish with lime twist.'
-    ],
-    garnish: [
-      'lime twist'
-    ],
-    scores: [4, 5, 6]
-  },
+  // {
+  //   name: 'The Last Word',
+  //   illustration: require('../../assets/img/drinks/the-last-word_illust.svg'),
+  //   heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
+  //   img: require('../../assets/img/drinks/placeholder.svg'),
+  //   color: '#8C8E49',
+  //   description: 'The Last Word is a gin-based prohibition-era cocktail originally developed at the Detroit Athletic Club. While the drink eventually fell out of favor, it has recently enjoyed a renewed popularity after being rediscovered as a cult hit in the Seattle area by bartender Murray Stenson during his tenure at the Zig Zag Café.',
+  //   ingredients: [
+  //     '3/4 ounce gin',
+  //     '3/4 ounce marachino liqueur',
+  //     '3/4 ounce green Chartreuse',
+  //     '3/4 ounce line juice'
+  //   ],
+  //   instructions: [
+  //     'Vigorously shake all ingredients together with ice.',
+  //     'Strain into a martini glass or a coupe and garnish with lime twist.'
+  //   ],
+  //   garnish: [
+  //     'lime twist'
+  //   ],
+  //   scores: [4, 5, 6],
+  //   music: require('../../assets/audio/last-word.mp3')
+  // },
 
   {
     name: 'Paper Plane',
     illustration: require('../../assets/img/drinks/paper-plane_illust.svg'),
-    heading: 'You are positively rakish, sexy and swashbuckling, may we recomment...',
+    heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
     img: require('../../assets/img/drinks/placeholder.svg'),
     color: '#437BA4',
     description: 'This quattro-proportioned drink was created by Sam Ross of New York’s Little Branch. It got its name from M.I.A.’s song, which Ross was listening to when the drink was created.',
@@ -108,13 +112,14 @@ export const drinks = [
       'Add all ingredients to a shaker and fill with ice.',
       'Shake, and strain intoa  coupe glass.'
     ],
-    scores: [5, 1, 7]
+    scores: [5, 1, 7],
+    music: require('../../assets/audio/paper-plane.mp3')
   },
 
   {
     name: 'East Side',
     illustration: require('../../assets/img/drinks/east-side_illust.svg'),
-    heading: 'You are positively rakish, sexy and swashbuckling, may we recomment...',
+    heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
     img: require('../../assets/img/drinks/placeholder.svg'),
     color: '#705E4D',
     description: 'According to one story, the drink was the preferred beverage of Al Capone, whose gang dominated Chicago’s South Side.[3] The gin imported by Capone’s rivals on the North Side of Chicago was smooth, and usually consumed with ginger ale.[3] However, the gin run by Capone’s gang had a rougher edge to it, and required more sweeteners to make it palatable.[3] Thus the South Side was born.[3]',
@@ -132,13 +137,14 @@ export const drinks = [
       '2 cucumber slices',
       '1 pinch mint'
     ],
-    scores: [3, 2, 7]
+    scores: [3, 2, 7],
+    music: require('../../assets/audio/east-side.mp3')
   },
 
   {
     name: 'Oaxaca Old Fashioned',
     illustration: require('../../assets/img/drinks/oaxaca-old-fasioned_illust.svg'),
-    heading: 'You are positively rakish, sexy and swashbuckling, may we recomment...',
+    heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
     img: require('../../assets/img/drinks/placeholder.svg'),
     color: '#715E4D',
     description: 'When the Most Interesting Man in the World says he doesn’t always drink beer, he was probably drinking this:',
@@ -155,13 +161,14 @@ export const drinks = [
     garnish: [
       'Strip of orange peel with pith, once inch wide'
     ],
-    scores: [8, 4, 0]
+    scores: [8, 4, 0],
+    music: require('../../assets/audio/oaxaca.mp3')
   },
 
   {
     name: 'Blood and Sand',
     illustration: require('../../assets/img/drinks/blood-and-sand_illust.svg'),
-    heading: 'You are positively rakish, sexy and swashbuckling, may we recomment...',
+    heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
     img: require('../../assets/img/drinks/placeholder.svg'),
     color: '#DE1D5F',
     description: 'Rudolph Valentino, known as “The Latin Lover,” was a star and sex symbol of the silent film era. His 1922 bullfighter movie Blood and Sand has not stood the test of time. But the drink named after it has.',
@@ -180,13 +187,14 @@ export const drinks = [
     garnish: [
       'orange peel'
     ],
-    scores: [5, 8, 5]
+    scores: [5, 8, 5],
+    music: require('../../assets/audio/blood-and-sand.mp3')
   },
 
   {
     name: 'Old Cuban',
     illustration: require('../../assets/img/drinks/old-cuban_illust.svg'),
-    heading: 'You are positively rakish, sexy and swashbuckling, may we recomment...',
+    heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
     img: require('../../assets/img/drinks/placeholder.svg'),
     color: '#F6772D',
     description: 'This quattro-proportioned drink was created by Sam Ross of New York’s Little Branch. It got its name from M.I.A.’s song, which Ross was listening to when the drink was created.',
@@ -208,13 +216,14 @@ export const drinks = [
       'lime slice',
       'mint sprig'
     ],
-    scores: [5, 1, 9]
+    scores: [5, 1, 9],
+    music: require('../../assets/audio/old-cuban.mp3')
   },
 
   {
     name: 'Three Dots and a Dash',
     illustration: require('../../assets/img/drinks/three-dots-and-a-dash_illust.svg'),
-    heading: 'You are positively rakish, sexy and swashbuckling, may we recomment...',
+    heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
     img: require('../../assets/img/drinks/placeholder.svg'),
     color: '#FFBA00',
     description: 'This tiki classic was created during WWII by the godfather of the genre himself, Don the Beachcomber. The name “Three dots and a dash” means “victory” in Morse Code.',
@@ -238,13 +247,14 @@ export const drinks = [
       'an orchid',
       'three brandied cherries'
     ],
-    scores: [8, 8, 5]
+    scores: [8, 8, 5],
+    music: require('../../assets/audio/three-dots.mp3')
   },
 
   {
     name: 'Fog Cutter',
     illustration: require('../../assets/img/drinks/fog-cutter_illust.svg'),
-    heading: 'You are positively rakish, sexy and swashbuckling, may we recomment...',
+    heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
     img: require('../../assets/img/drinks/placeholder.svg'),
     color: '#BEBFBF',
     description: '“Fog Cutter, hell, after two of these you won’t even see the stuff” -Victor Bergeron (“Trader Vic”) The Fog Cutter was created by Don the Beachcomber’s rival, Trader Vic, during the “Tiki Era” in the Hollywood bar scene.',
@@ -266,13 +276,14 @@ export const drinks = [
     garnish: [
       '1 mint sprig'
     ],
-    scores: [7, 4, 5]
+    scores: [7, 4, 5],
+    music: require('../../assets/audio/fog-cutter.mp3')
   },
 
   {
     name: 'Zombie',
     illustration: require('../../assets/img/drinks/zombie_illust.svg'),
-    heading: 'You are positively rakish, sexy and swashbuckling, may we recomment...',
+    heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
     img: require('../../assets/img/drinks/placeholder.svg'),
     color: '#3B87A3',
     description: 'Legend has it that Donn Beach originally concocted the Zombie to help a hung-over customer get through a business meeting.[2]The customer returned several days later to complain that he had been turned into a zombie for his entire trip. Its smooth, fruity taste works to conceal its extremely high alcoholiccontent. Don the Beachcomber restaurants limit their customers to two Zombies apiece.',
@@ -294,7 +305,8 @@ export const drinks = [
     garnish: [
       '1 mint sprig'
     ],
-    scores: [9, 8, 8]
+    scores: [9, 8, 8],
+    music: require('../../assets/audio/zombie.mp3')
   },
 
   {
@@ -318,7 +330,8 @@ export const drinks = [
     garnish: [
       'Cinnamon stick'
     ],
-    scores: [3, 0, 8]
+    scores: [3, 0, 8],
+    music: require('../../assets/audio/hot-apple-pie.mp3')
   }
 ];
 
@@ -329,5 +342,7 @@ export const beer = {
   color: '#6A3661',
   description: "Cheap beer doesn’t mean you are cheap. You are a priceless inscrutable artifact of dive bars; a life-saving, rule breaking anti-hero. When work is done, it is done. If someone tries to strike up a conversation about politics, you only respond in pig latin. Cheap beer allows you to leave the house and be in it for the long haul. You can drink all night, stay up till dawn, tell a few jokes of questionable integrity, hit four parties and still manage to hold back someone’s hair at the porcelain throne.",
   ingredients: ['1 can'],
-  instructions: ['Open can']
+  instructions: ['Open can'],
+  illustration: require('../../assets/img/drinks/beer_illust.svg'),
+  music: require('../../assets/audio/beer.mp3')
 };
