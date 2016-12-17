@@ -47,7 +47,7 @@ const Index = props => {
               <h3 className="mb10 typ--center">{ drink.heading }</h3>
             </div>
 
-            <div className="cf result__drink col-8 col-center pt10">
+            <div className="cf result__drink row col-center pt10">
               <div className="col-6">
                 <img src={ drink.img } alt={ drink.name } />
               </div>

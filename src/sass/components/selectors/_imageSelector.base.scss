@@ -7,7 +7,7 @@ ul.image-list {
   
   .image__item {
     cursor: pointer;
-    width: 28rem;
+    width: calc(33.333333% - 4rem);
     height: 28rem;
     float: left;
     position: relative;
@@ -26,6 +26,8 @@ ul.image-list {
     }
 
     svg {
+      width: 100%;
+      height: auto;
       position: absolute;
       top: 50%;
       left: 50%;

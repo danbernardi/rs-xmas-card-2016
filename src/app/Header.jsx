@@ -18,7 +18,9 @@ const Header = props => {
       className="header row"
       style={ Object.assign(initialStyles, transformStyles) }
     >
-      <img src={ require('../assets/img/redshift_logo.svg') } alt="Redshift Digital" />
+      <a href="http://redshiftdigital.com/" target="_blank">
+        <img src={ require('../assets/img/redshift_logo.svg') } alt="Redshift Digital" />
+      </a>
     </div>
   );
 };

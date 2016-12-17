@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Drinks = () => (
-  <svg width="195px" height="140px">
+  <svg width="195px" height="140px" viewBox="0 0 195 140">
     <g id="Holiday-Card" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd" strokeLinejoin="round">
       <g id="Question-04" transform="translate(-945.000000, -448.000000)" stroke="#454545" strokeWidth="2">
         <g id="Page-1" transform="translate(946.000000, 449.000000)">

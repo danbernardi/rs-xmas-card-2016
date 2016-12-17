@@ -28,6 +28,15 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  // media queries
+  @include breakpoint($mobile-lg) {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
 }
 
 .question__answers li {
