@@ -3,33 +3,24 @@
 $sliderTrackHeight: .2rem;
 $sliderThumbHeight: 2rem;
 
-
-.rangeslider{
-  width: 100%;
+.flex-fields {
   display: flex;
-  flex-flow: row;
+  justify-content: space-between;
 }
 
-.rangeslider span{
-  flex: 1 auto;
-  height: 2rem;
-  width: 100%;
-
-  &:last-child{
-    text-align: right;
-  }
-}
-
-.rangeslider input[type=range] {
-  flex: 2 auto;
-  width: 100%;
+.flex-inline {
+  flex-shrink: 0;
+  margin: 0 1.5rem;
+  padding: 0.8rem 0 0;
 }
 
 input[type=range] {
-  -webkit-appearance: none;
+  flex: 1 auto;
+  appearance: none;
   background: none;
   vertical-align: middle;
-  margin-top: 5px;
+  position: relative;
+  top: 1.5rem;
   height: 1.2rem;
   border-right: .2rem #454545 solid;
   border-left: .2rem #454545 solid;
@@ -45,7 +36,7 @@ input[type=range]::-webkit-slider-runnable-track {
   height: $sliderTrackHeight;
 }
 input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
+  appearance: none;
   cursor: pointer;
   background: #E04848;
   width: $sliderThumbHeight;
@@ -56,6 +47,32 @@ input[type=range]::-webkit-slider-thumb {
 
 input[type=range]:focus::-webkit-slider-runnable-track {
   background: #454545;
+}
+
+.tick-fields {
+  position: absolute;
+  width: 100%;
+  pointer-events: none;
+  top: 0;
+}
+
+.ticks{
+  width: 100%;
+  display: flex;
+  flex: 1 auto;
+  position: relative;
+  top: 1.7rem;
+
+}
+
+.tick-mark{
+  flex: 1;
+  margin-right: 1rem;
+  height: 1.2rem;
+  border-right: .2rem solid #454545;
+  &:last-child{
+    border: none;
+  }
 }
 
 // input[type=range]::-moz-range-track {
