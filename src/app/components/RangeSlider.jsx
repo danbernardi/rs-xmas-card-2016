@@ -19,9 +19,15 @@ const RangeSlider  = props => {
 
   return (
     <div className="layout--relative">
+      <div className="rangeslider flex-fields">
+        <span className="flex-inline">{ range[0] }</span>
+        <input className="input__range_slider" type="range" min="1" max="9" defaultValue="5" step="1" onChange={ (event) => dispatchValue(event) } />
+        <span className="flex-inline">{ range[1] }</span>
+      </div>
       <div className="tick-fields flex-fields">
         <span className="flex-inline">{ range[0] }</span>
         <div className="ticks">
+          <div className="track"></div>
           <div className="tick-mark"></div>
           <div className="tick-mark"></div>
           <div className="tick-mark"></div>
@@ -31,11 +37,6 @@ const RangeSlider  = props => {
           <div className="tick-mark"></div>
           <div className="tick-mark"></div>
         </div>
-        <span className="flex-inline">{ range[1] }</span>
-      </div>
-      <div className="rangeslider flex-fields">
-        <span className="flex-inline">{ range[0] }</span>
-        <input className="input__range_slider" type="range" min="1" max="9" defaultValue="5" step="1" onChange={ (event) => dispatchValue(event) } />
         <span className="flex-inline">{ range[1] }</span>
       </div>
     </div>
