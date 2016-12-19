@@ -17,10 +17,10 @@ class Loader extends React.Component {
             && !drink && activeSheetID.current === 'loader') {
       dispatch(setDrinkTo(this.calculateDrink()));
       setTimeout(() => {
-        // this.setState({ fired: true });
-        // setTimeout(() => {
-        //   dispatch(setActiveSheetID('result'));
-        // }, 1000)
+        this.setState({ fired: true });
+        setTimeout(() => {
+          dispatch(setActiveSheetID('result'));
+        }, 1000)
       }, 9000);
     }
   }
