@@ -142,7 +142,7 @@ Question.propTypes = {
 
 const injectStateProps = state => {
   const sheet = state.activeSheetID;
-  const pair = state.questionAnswerPairs.find(pair => pair.questionID === sheet.current)
+  const pair = state.questionAnswerPairs.find(p => p.questionID === sheet.current)
   return {
     activeSheetID: sheet,
     selectedAnswer: pair && pair.answer
