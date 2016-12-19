@@ -12,7 +12,7 @@ const Result = props => {
 
           { drink.music &&
             <audio controls autoPlay={ true }>
-              <source src={ drink.music } type="audio/mpeg" />
+              <source src={ drink.music.file } type="audio/mpeg" />
             </audio>
           }
 
