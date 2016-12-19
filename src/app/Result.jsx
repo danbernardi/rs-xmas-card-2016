@@ -1,11 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { drinks, beer } from './data/drinks';
-import { questions } from './data/questions';
 import Footer from './Footer';
 
-const Index = props => {
-  const { questionAnswerPairs, drink } = props;
+const Result = props => {
+  const { drink } = props;
 
   return (
     <div className="result">
@@ -88,16 +86,13 @@ const Index = props => {
   )
 }
 
-Index.propTypes = {
+Result.propTypes = {
   dispatch: React.PropTypes.func,
-  activeSheetID: React.PropTypes.object,
-  questionAnswerPairs: React.PropTypes.array
+  drink: React.PropTypes.object
 };
 
 const injectStateProps = state => ({
-  activeSheetID: state.activeSheetID,
-  questionAnswerPairs: state.questionAnswerPairs,
   drink: state.drink
 });
 
-export default connect(injectStateProps)(Index);
+export default connect(injectStateProps)(Result);
