@@ -2,9 +2,22 @@
   color: $offwhite;
 
   &.index {
-    background-color: $darkgreen;
-    background-image: url(../assets/img/question_bg.svg);
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: $darkblue;
+    // background-image: url(../assets/img/hero_bg.svg);
+    // background-position: center;
+    // background-repeat: no-repeat;
+  }
+  .btn {
+    color: #235e94;
+  }
+
+  .typ--center {
+    position: relative;
+    .col--center {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+    }
   }
 }

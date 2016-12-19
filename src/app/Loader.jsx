@@ -8,15 +8,20 @@ import { setDrinkTo, setActiveSheetID } from '../actions';
 class Loader extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {};
   }
 
   componentWillReceiveProps(props) {
-    const { dispatch, questionAnswerPairs, drink } = props;
-    if (questions.length === questionAnswerPairs.length && !drink) {
+    const { dispatch, questionAnswerPairs, drink, activeSheetID } = props;
+    if (questions.length === questionAnswerPairs.length
+            && !drink && activeSheetID.current === 'loader') {
       dispatch(setDrinkTo(this.calculateDrink()));
       setTimeout(() => {
-        dispatch(setActiveSheetID('result'));
-      }, 8000); // Long delay song build and transition timing
+        this.setState({ fired: true });
+        setTimeout(() => {
+          dispatch(setActiveSheetID('result'));
+        }, 1000)
+      }, 9000);
     }
   }
 
@@ -55,7 +60,7 @@ class Loader extends React.Component {
 
   render() {
     return (
-      <div className={ `loader ${ this.props.drink ? 'hidden' : ''}`} >
+      <div className={ `loader ${ this.state.fired ? 'hidden' : ''}`} >
         <img src={ require('../assets/img/loader.gif') } />
         <h4>[Mixing your cocktail...]</h4>
       </div>

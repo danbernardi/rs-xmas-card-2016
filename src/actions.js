@@ -21,3 +21,7 @@ export const setAnswerToQuestion = (sheetID, answer) => ({
 export const setDrinkTo = (drink) => ({
   type: 'SET_DRINK_TO', drink
 });
+
+export const setMusicTo = nextBool => ({
+  type: 'SET_MUSIC_TO', nextBool
+});

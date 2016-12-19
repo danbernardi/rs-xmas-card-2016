@@ -78,10 +78,22 @@ const drink = (state = null, action) => {
   }
 }
 
+const musicOn = (state = true, action) => {
+  switch(action.type) {
+    case 'SET_MUSIC_TO': {
+      return action.nextBool;
+    }
+    default: {
+      return state;
+    }
+  }
+}
+
 const reducers = combineReducers({
   activeSheetID,
   questionAnswerPairs,
-  drink
+  drink,
+  musicOn
 });
 
 export default reducers;

@@ -20,7 +20,11 @@ export const drinks = [
       '1 lemon twist'
     ],
     scores: [6, 0, 1], // [Strength, Weirdness, Fruitiness], out of 10,
-    music: require('../../assets/audio/martinez.mp3')
+    music: {
+      file: require('../../assets/audio/martinez.mp3'),
+      artist: 'Riz Ortolani Al Caiola',
+      name: 'Holiday on Skis'
+    }
   },
 
   {
@@ -48,7 +52,11 @@ export const drinks = [
       '(preferably Luxardo)'
     ],
     scores: [7, 0, 2],
-    music: require('../../assets/audio/remember-the-maine.mp3')
+    music: {
+      file: require('../../assets/audio/remember-the-maine.mp3'),
+      artist: 'The Soul Saints Orchestra',
+      name: 'Santa\'s Got a Bag of Soul'
+    }
   },
 
   {
@@ -68,32 +76,40 @@ export const drinks = [
       'Strain into a cocktail glass or serve over ice.'
     ],
     scores: [2, 2, 5],
-    music: require('../../assets/audio/jack-rose.mp3')
+    music: {
+      file: require('../../assets/audio/jack-rose.mp3'),
+      artist: 'Esquivel',
+      name: 'Jingle Bells'
+    }
   },
 
-  // {
-  //   name: 'The Last Word',
-  //   illustration: require('../../assets/img/drinks/the-last-word_illust.svg'),
-  //   heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
-  //   img: require('../../assets/img/drinks/placeholder.svg'),
-  //   color: '#8C8E49',
-  //   description: 'The Last Word is a gin-based prohibition-era cocktail originally developed at the Detroit Athletic Club. While the drink eventually fell out of favor, it has recently enjoyed a renewed popularity after being rediscovered as a cult hit in the Seattle area by bartender Murray Stenson during his tenure at the Zig Zag Café.',
-  //   ingredients: [
-  //     '3/4 ounce gin',
-  //     '3/4 ounce marachino liqueur',
-  //     '3/4 ounce green Chartreuse',
-  //     '3/4 ounce line juice'
-  //   ],
-  //   instructions: [
-  //     'Vigorously shake all ingredients together with ice.',
-  //     'Strain into a martini glass or a coupe and garnish with lime twist.'
-  //   ],
-  //   garnish: [
-  //     'lime twist'
-  //   ],
-  //   scores: [4, 5, 6],
-  //   music: require('../../assets/audio/last-word.mp3')
-  // },
+  // // {
+  // //   name: 'The Last Word',
+  // //   illustration: require('../../assets/img/drinks/the-last-word_illust.svg'),
+  // //   heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
+  // //   img: require('../../assets/img/drinks/placeholder.svg'),
+  // //   color: '#8C8E49',
+  // //   description: 'The Last Word is a gin-based prohibition-era cocktail originally developed at the Detroit Athletic Club. While the drink eventually fell out of favor, it has recently enjoyed a renewed popularity after being rediscovered as a cult hit in the Seattle area by bartender Murray Stenson during his tenure at the Zig Zag Café.',
+  // //   ingredients: [
+  // //     '3/4 ounce gin',
+  // //     '3/4 ounce marachino liqueur',
+  // //     '3/4 ounce green Chartreuse',
+  // //     '3/4 ounce line juice'
+  // //   ],
+  // //   instructions: [
+  // //     'Vigorously shake all ingredients together with ice.',
+  // //     'Strain into a martini glass or a coupe and garnish with lime twist.'
+  // //   ],
+  // //   garnish: [
+  // //     'lime twist'
+  // //   ],
+  // //   scores: [4, 5, 6],
+  // //   music: {
+  //   file: require('../../assets/audio/last-word.mp3'),
+  //   artist: ,
+  //   name:
+  // }
+  // // },
 
   {
     name: 'Paper Plane',
@@ -113,7 +129,11 @@ export const drinks = [
       'Shake, and strain intoa  coupe glass.'
     ],
     scores: [5, 1, 7],
-    music: require('../../assets/audio/paper-plane.mp3')
+    music: {
+      file: require('../../assets/audio/paper-plane.mp3'),
+      artist: 'RUN DMC',
+      name: 'Christmas in Hollis'
+    }
   },
 
   {
@@ -138,7 +158,11 @@ export const drinks = [
       '1 pinch mint'
     ],
     scores: [3, 2, 7],
-    music: require('../../assets/audio/east-side.mp3')
+    music: {
+      file: require('../../assets/audio/east-side.mp3'),
+      artist: 'El Vez',
+      name: 'Sleigh Ride'
+    }
   },
 
   {
@@ -162,7 +186,11 @@ export const drinks = [
       'Strip of orange peel with pith, once inch wide'
     ],
     scores: [8, 4, 0],
-    music: require('../../assets/audio/oaxaca.mp3')
+    music: {
+      file: require('../../assets/audio/oaxaca.mp3'),
+      artist: 'The Ventures',
+      name: 'Frosty the Snowman'
+    }
   },
 
   {
@@ -188,7 +216,11 @@ export const drinks = [
       'orange peel'
     ],
     scores: [5, 8, 5],
-    music: require('../../assets/audio/blood-and-sand.mp3')
+    music: {
+      file: require('../../assets/audio/blood-and-sand.mp3'),
+      artist: 'Los Straitjackets',
+      name: 'Feliz Navidad'
+    }
   },
 
   {
@@ -217,7 +249,11 @@ export const drinks = [
       'mint sprig'
     ],
     scores: [5, 1, 9],
-    music: require('../../assets/audio/old-cuban.mp3')
+    music: {
+      file: require('../../assets/audio/old-cuban.mp3'),
+      artist: 'The Youngsters',
+      name: 'Christmas in Jail'
+    }
   },
 
   {
@@ -248,7 +284,11 @@ export const drinks = [
       'three brandied cherries'
     ],
     scores: [8, 8, 5],
-    music: require('../../assets/audio/three-dots.mp3')
+    music: {
+      file: require('../../assets/audio/three-dots.mp3'),
+      artist: 'Lynett Kaopuiki Paglinawan',
+      name: 'Mele Kalikimaka la `Oe'
+    }
   },
 
   {
@@ -277,7 +317,11 @@ export const drinks = [
       '1 mint sprig'
     ],
     scores: [7, 4, 5],
-    music: require('../../assets/audio/fog-cutter.mp3')
+    music: {
+      file: require('../../assets/audio/fog-cutter.mp3'),
+      artist: 'Strange Manor',
+      name: 'Run Rude Rudolph'
+    }
   },
 
   {
@@ -306,7 +350,11 @@ export const drinks = [
       '1 mint sprig'
     ],
     scores: [9, 8, 8],
-    music: require('../../assets/audio/zombie.mp3')
+    music: {
+      file: require('../../assets/audio/zombie.mp3'),
+      artist: 'Lord Jellicoe',
+      name: 'Zombie Jamboree'
+    }
   },
 
   {
@@ -331,7 +379,11 @@ export const drinks = [
       'Cinnamon stick'
     ],
     scores: [3, 0, 8],
-    music: require('../../assets/audio/hot-apple-pie.mp3')
+    music: {
+      file: require('../../assets/audio/hot-apple-pie.mp3'),
+      artist: 'The Jive Turkeys',
+      name: 'Get Down Santa'
+    }
   }
 ];
 
@@ -344,5 +396,9 @@ export const beer = {
   ingredients: ['1 can'],
   instructions: ['Open can'],
   illustration: require('../../assets/img/drinks/beer_illust.svg'),
-  music: require('../../assets/audio/beer.mp3')
+  music: {
+    file: require('../../assets/audio/beer.mp3'),
+    artist: 'Twisted Sister',
+    name: 'Oh Come All Ye Faithful'
+  }
 };

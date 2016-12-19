@@ -11,6 +11,9 @@
   @if $weight == 'base' {
     font-family: 'avenirregular', sans-serif;
     font-weight: 300;
+  } @else if $weight == 'button' {
+    font-family: 'Averia Serif Libre', cursive;
+    font-weight: 700;
   } @else if $weight == 'heading' {
     font-family: 'Averia Serif Libre', cursive;
     font-weight: 700;
