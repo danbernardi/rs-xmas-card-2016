@@ -23,9 +23,9 @@ const Footer = props => {
   let transformStyles = {};
 
   if (activeSheetID.current === 'index' || dontHide) {
-    transformStyles = { opacity: '1', 'pointer-events': 'auto' };
+    transformStyles = { opacity: '1', 'pointerEvents': 'auto' };
   } else {
-    transformStyles = { opacity: '0', 'pointer-events': 'none' };
+    transformStyles = { opacity: '0', 'pointerEvents': 'none' };
   }
 
   return (

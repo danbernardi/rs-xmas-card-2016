@@ -21,10 +21,6 @@ class Index extends React.Component {
     }, 100);
   }
 
-  componentWillUnmount() {
-
-  }
-
   render() {
     const { dispatch, activeSheetID } = this.props;
 

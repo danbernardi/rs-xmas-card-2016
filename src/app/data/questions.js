@@ -35,13 +35,13 @@ export const questions = [
       {
         name: 'Lots of sequins and screaming.',
         responses: ["Wooooooooooooooooo!", "Live hard die young.",  "We've got just the drink for you..."],
-        scores: [4, 2, 8]
+        scores: [4, 2, 8],
+        beer: true
       },
       {
         name: 'Is it still a party if I\'m asleep in bed?',
         responses: ["Ummm.", "I guess if you drank a few of these first..."],
-        scores: [0, 6, 3],
-        beer: true
+        scores: [0, 6, 3]
       }
     ],
     color: '#555626'
@@ -58,7 +58,8 @@ export const questions = [
       {
         name: 'Start a snowball fight',
         responses: ["Nice!", "Early bird gets the unsuspecting victim..."],
-        scores: [5, 2, 9]
+        scores: [5, 2, 9],
+        beer: true
       },
       {
         name: 'Eww... snow!',
@@ -68,8 +69,7 @@ export const questions = [
       {
         name: 'Write my name...',
         responses: ["Wait. In the snow?", "Gross..."],
-        scores: [9, 9, 0],
-        beer: true
+        scores: [9, 9, 0]
       }
     ],
     color: '#145446'
@@ -86,13 +86,13 @@ export const questions = [
       {
         name: <Takeout />,
         responses: ["I feel ya.", "Burned (by) one too many turkeys..."],
-        scores: [5, 9, 2],
-        beer: true
+        scores: [5, 9, 2]
       },
       {
         name: <Drinks />,
         responses: ["Well that's convenient.", "We've got just the holiday \"meal\" for you..."],
-        scores: [9, 5, 5]
+        scores: [9, 5, 5],
+        beer: true
       }
     ],
     color: '#B8021C'

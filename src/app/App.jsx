@@ -4,6 +4,7 @@ import Nav from './Nav';
 import Question from './Question';
 import Index from './Index';
 import Result from './Result';
+import Loader from './Loader';
 import { questions } from './data/questions';
 import Header from './Header';
 import Footer from './Footer';
@@ -20,7 +21,7 @@ const App = () => {
         question={ q.question }
         answers={ q.answers }
         color={ q.color }
-        nextPage={ questions[i + 1] ? questions[i + 1].id : 'result' }
+        nextPage={ questions[i + 1] ? questions[i + 1].id : 'loader' }
         id={ q.id }
       />
     );
@@ -28,6 +29,7 @@ const App = () => {
     pages.push({ id: q.id, component: question });
   });
 
+  pages.push({ id: 'loader', component: <Loader /> });
   pages.push({ id: 'result', component: <Result /> });
 
   return (
