@@ -9,7 +9,7 @@ const NavSheet = props => {
     dispatch(actions.addPreviousSheetID(activeSheetID.current));
     dispatch(actions.setActiveSheetID(targetID));
   }
-  
+
   const initialStyles = { transition: 'transform 0.5s ease-in-out' };
   let transformStyles = {};
 
@@ -25,7 +25,7 @@ const NavSheet = props => {
   }
 
   return (
-    <div className="nav__sheet" style={ Object.assign(initialStyles, transformStyles) }>
+    <div className={ `nav__sheet sheet-${id}` } style={ Object.assign(initialStyles, transformStyles) }>
       { component && React.cloneElement(component, { onAdvance: (targetID) => switchActiveSheet(targetID) }) }
     </div>
   );

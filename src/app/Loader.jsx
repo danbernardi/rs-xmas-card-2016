@@ -3,23 +3,20 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { drinks, beer } from './data/drinks';
 import { questions } from './data/questions';
-import { setDrinkTo, addPreviousSheetID, setActiveSheetID } from '../actions';
+import { setDrinkTo, setActiveSheetID } from '../actions';
 
 class Loader extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
   }
 
   componentWillReceiveProps(props) {
-    const { dispatch, activeSheetID, questionAnswerPairs } = props;
-    if (questions.length === questionAnswerPairs.length && !this.state.fired) {
-      this.setState({ fired: true });
+    const { dispatch, questionAnswerPairs, drink } = props;
+    if (questions.length === questionAnswerPairs.length && !drink) {
+      dispatch(setDrinkTo(this.calculateDrink()));
       setTimeout(() => {
-        dispatch(setDrinkTo(this.calculateDrink()));
-        dispatch(addPreviousSheetID(activeSheetID.current));
         dispatch(setActiveSheetID('result'));
-      }, 2000);
+      }, 8000); // Long delay song build and transition timing
     }
   }
 
@@ -58,8 +55,9 @@ class Loader extends React.Component {
 
   render() {
     return (
-      <div style={{ height: '100%' }} >
-        <img src={ require('../assets/img/loader.gif') } style={{ width: '50%' }} />
+      <div className={ `loader ${ this.props.drink ? 'hidden' : ''}`} >
+        <img src={ require('../assets/img/loader.gif') } />
+        <h4>[Mixing your cocktail...]</h4>
       </div>
     );
   }
