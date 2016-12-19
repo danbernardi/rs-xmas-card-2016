@@ -81,7 +81,7 @@ class Question extends React.Component {
   }
 
   render() {
-    const { question, answers, nextPage, activeSheetID, dispatch } = this.props;
+    const { question, answers, nextPage, id, activeSheetID, dispatch } = this.props;
     const { showResponse, hideQuestion, selectedAnswer } = this.state;
 
     const onAnswerSelect = (answer) => {
@@ -136,7 +136,8 @@ Question.propTypes = {
   nextPage: React.PropTypes.string,
   dispatch: React.PropTypes.func,
   activeSheetID: React.PropTypes.object,
-  selectedAnswer: React.PropTypes.object
+  selectedAnswer: React.PropTypes.object,
+  id: React.PropTypes.string
 };
 
 const injectStateProps = state => {
