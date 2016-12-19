@@ -26,7 +26,8 @@
 }
 
 .checkable__group {
-  width: 50rem;
+  width: 100%;
+  max-width: 33.4rem;
 
   li {
     border-radius: 0.5rem;

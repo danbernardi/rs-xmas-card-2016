@@ -7,13 +7,19 @@ ul.image-list {
   
   .image__item {
     cursor: pointer;
-    width: 28rem;
+    width: calc(33.333333% - 4rem);
     height: 28rem;
     float: left;
     position: relative;
     border-radius: 0.5rem;
     transition: background-color 0.1s ease-in-out;
     margin: 0 2rem;
+    // media queries
+    @include breakpoint($mobile-lg) {
+      width: 100%;
+      margin: 0;
+      height: 18rem;
+    }
 
     &:hover {
       background-color: rgba($red, 0.04);
@@ -26,10 +32,39 @@ ul.image-list {
     }
 
     svg {
+      // width: 100%;
+      // height: auto;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
     }
+  }
+}
+
+.svg__ham {
+  width: 21.9rem;
+  // height: 11.5rem;
+  // media queries
+  @include breakpoint($tablet-md) {
+    width: 17.9rem;
+  }
+}
+
+.svg__takeout {
+  width: 13.8rem;
+  // height: 18.3rem;
+  // media queries
+  @include breakpoint($tablet-md) {
+    width: 11.8rem;
+  }
+}
+
+.svg__drinks {
+  width: 19.5rem;
+  // height: 14rem;
+  // media queries
+  @include breakpoint($tablet-md) {
+    width: 15.5rem;
   }
 }

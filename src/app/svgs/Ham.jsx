@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Ham = () => (
-  <svg width="219px" height="115px" viewBox="0 0 219 115">
+  <svg className="svg__ham" width="219px" height="115px" viewBox="0 0 219 115">
     <g id="Holiday-Card" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd" strokeLinejoin="round">
       <g id="Question-04" transform="translate(-300.000000, -469.000000)" strokeWidth="2" stroke="#454545">
         <g id="Page-1" transform="translate(301.000000, 470.000000)">

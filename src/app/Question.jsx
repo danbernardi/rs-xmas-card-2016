@@ -22,7 +22,6 @@ class Question extends React.Component {
   }
 
   respondOrSwitchPages(targetID) {
-    const { activeSheetID, dispatch } = this.props;
     const { selectedAnswer } = this.state;
 
     if (!selectedAnswer) {
@@ -47,14 +46,14 @@ class Question extends React.Component {
   }
 
   setResponses(switchPage) {
-    const { showResponse, responseDelay, selectedAnswer } = this.state;
+    const { selectedAnswer } = this.state;
     const responses = selectedAnswer.responses;
     const callbacks = [];
 
     // Fill array of sequential actions to fade out question, show responses, then move
     this.setState({ hideQuestion: true }); // Fade out old
 
-    responses.forEach((response, index) => {
+    responses.forEach(response => {
       callbacks.push(() => {
         this.setState({ showResponse: false }); // Fade out old
       });
@@ -82,7 +81,7 @@ class Question extends React.Component {
   }
 
   render() {
-    const { question, answers, color, nextPage, id, activeSheetID, dispatch } = this.props;
+    const { question, answers, nextPage, id, activeSheetID, dispatch } = this.props;
     const { showResponse, hideQuestion, selectedAnswer } = this.state;
 
     const onAnswerSelect = (answer) => {
@@ -102,7 +101,7 @@ class Question extends React.Component {
       <div className="question__page typ--center">
         <div className="question__wrap row">
           <div className={ `question-section ${ hideQuestion ? 'hidden' : '' }` }>
-            <h1 className="question__label mb6">{ question }</h1>
+            <h1 className="question__label mb6 mb3--mlg">{ question }</h1>
             <QuestionComponent
               answers={ answers }
               onAnswerSelect={ answer => { onAnswerSelect(answer) } }
@@ -114,7 +113,7 @@ class Question extends React.Component {
             <h1 className="question__label">{ this.state.response }</h1>
           </div>
 
-          <div className={ `next-section typ--center mt10 ${ hideQuestion ? 'hidden' : '' }` }>
+          <div className={ `next-section mt10 mt6--mlg ${ hideQuestion ? 'hidden' : '' }` }>
             <button
               className={ `btn btn--ghost ${ selectedAnswer ? '' : 'disabled' }` }
               onClick={ () => {
@@ -137,12 +136,13 @@ Question.propTypes = {
   nextPage: React.PropTypes.string,
   dispatch: React.PropTypes.func,
   activeSheetID: React.PropTypes.object,
-  selectedAnswer: React.PropTypes.object
+  selectedAnswer: React.PropTypes.object,
+  id: React.PropTypes.string
 };
 
 const injectStateProps = state => {
   const sheet = state.activeSheetID;
-  const pair = state.questionAnswerPairs.find(pair => pair.questionID === sheet.current)
+  const pair = state.questionAnswerPairs.find(p => p.questionID === sheet.current)
   return {
     activeSheetID: sheet,
     selectedAnswer: pair && pair.answer
