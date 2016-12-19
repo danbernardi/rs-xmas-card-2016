@@ -78,7 +78,7 @@ export const drinks = [
     scores: [2, 2, 5],
     music: {
       file: require('../../assets/audio/jack-rose.mp3'),
-      artist: 'Esquivel,
+      artist: 'Esquivel',
       name: 'Jingle Bells'
     }
   },

@@ -35,10 +35,9 @@ class Index extends React.Component {
         ref={ (el) => this.div = el }
       >
         <div className="row typ--center">
-          <div className="col-9 col-12--tlg col-center" style={ { marginTop: '-20rem' } }>
-            <h1 className="typ--bold mb4">It’s been quite a year, so we thought you might enjoy a cocktail, or two.</h1>
-            <h1 className="typ--bold mb10">We’ve created a cocktail recipe generator to help you find your perfect drink this holiday season.</h1>
-
+          <div className="col-9 col-12--tlg col-center">
+            <img src={ require('../assets/img/empty_glasses.svg') } />
+            <h1 className="typ--bold mb5 mt5">This holiday season, let us help you find the perfect holiday drink.</h1>
             <button className="btn" onClick={ () => switchActiveSheet('naughty') }>Start</button>
           </div>
         </div>

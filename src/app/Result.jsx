@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import Footer from './Footer';
 
 const Result = props => {
-  const { drink } = props;
+  const { drink, musicOn } = props;
 
   return (
     <div className="result">
@@ -11,7 +11,7 @@ const Result = props => {
         <div>
 
           { drink.music &&
-            <audio controls autoPlay={ true }>
+            <audio controls autoPlay={ true } muted={ !musicOn }>
               <source src={ drink.music.file } type="audio/mpeg" />
             </audio>
           }
@@ -33,7 +33,10 @@ const Result = props => {
           </div>
 
           <article className="recipe row" style={ { color: drink.color } }>
-            <span className="recipe__trigger typ--caps">See recipe <span className='fa-caret-down'></span></span>
+            <span className="recipe__trigger typ--caps">
+              See recipe
+              <img src={ require('../../assets/img/dropdown-carrot.svg')} />
+            </span>
 
             <h3>{ drink.description }</h3>
 
@@ -88,11 +91,13 @@ const Result = props => {
 
 Result.propTypes = {
   dispatch: React.PropTypes.func,
-  drink: React.PropTypes.object
+  drink: React.PropTypes.object,
+  musicOn: React.PropTypes.bool
 };
 
 const injectStateProps = state => ({
-  drink: state.drink
+  drink: state.drink,
+  musicOn: state.musicOn
 });
 
 export default connect(injectStateProps)(Result);
