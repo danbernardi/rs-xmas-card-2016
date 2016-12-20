@@ -41,6 +41,7 @@ class Result extends React.Component {
             }
 
             <div className="theme--dark py10 layout--relative" style={ { backgroundColor: drink.color, height: 'calc(100vh - 11.5rem)' } }>
+              <div className="result__gradient-overlay"></div>
               <div className="col-8 col-center">
                 <h3 className="typ--center">{drink.heading}</h3>
                 <h3 className="mb10 typ--center">May we recommend...</h3>

@@ -4,7 +4,7 @@ export const drinks = [
     illustration: 'the-martinez_illust.svg',
     heading: 'Your tastes are strong and steeped in tradition.',
     img: 'martinez.png',
-    color: '#934224',
+    color: '#752719',
     description: 'For what some call the evolutionary link between the Manhattan and the Martini, the Martinez came from humble beginnings. As the story goes, a traveller came into a San Francisco bar and asked for a stout drink before his trip to Martinez, a town north of the city. The bartender reached for Old Tom Gin, which, at the time, was a “poorly distilled gin with sugar added so it’d be palatable.” This sweetened gin became the signature ingredient of this robust yet balanced sipping cocktail.',
     ingredients: [
       '1½ ounces Old Tom gin',
@@ -32,7 +32,7 @@ export const drinks = [
     illustration: 'remember-the-maine_illust.svg',
     heading: 'You\'ve got a dash of the revolutionary in you.',
     img: 'remember_the_maine.png',
-    color: '#6A3661',
+    color: '#66385C',
     description: '"Remember the Maine, to hell with Spain!" went the rallying cry of warmongering journalists when the USS Maine exploded in the Havana Harbor in 1898 under mysterious circumstances. But when famed spirits writer Charles H. Baker first told of this drink, a rye-based number that draws comparisons to both the Sazerac and Manhattan, he was speaking in context of the 1933 Cuban revolution. At the time, he sat in a hotel bar in Havana, "when each swallow was punctuated with bombs going off on the Prado."',
     ingredients: [
       '2 ounces rye',
@@ -64,7 +64,7 @@ export const drinks = [
     illustration: 'the-jack-rose_illust.svg',
     heading: 'You have a whimsical, literary sense about you.',
     img: 'jack_rose.png',
-    color: '#58B094',
+    color: '#427667',
     description: 'Like so many cocktails, the Jack Rose is embodied by the colorful characters who sipped it—from prohibition-era gangsters, to author John Steinbeck, to Hemingway’s wounded, languishing narrator in The Sun Also Rises. The drink is a sour made from apple brandy—”applejack” as it was known then—and it remains a simple but solid addition to the canon.',
     ingredients: [
       '1 ounce fresh lemon juice',
@@ -116,7 +116,7 @@ export const drinks = [
     illustration: 'paper-plane_illust.svg',
     heading: 'You\'re a smooth operator with swagger and style.',
     img: 'paper_plane.png',
-    color: '#437BA4',
+    color: '#385A24',
     description: 'With four equal parts bourbon, aperol, amaro, and lemon juice—this aperitivo is a cinch to make and a pleasure to drink. If you like sour-forward cocktails, you\'ll find this drink immediately likeable. And yes, it\'s name is a reference to MIA\'s hit song "Paper Planes"',
     ingredients: [
       '3/4 ounces bourbon',
@@ -141,7 +141,7 @@ export const drinks = [
     illustration: 'east-side_illust.svg',
     heading: 'You shake up any scene like Al Capone with a Tommy Gun.',
     img: 'east_side.png',
-    color: '#705E4D',
+    color: '#243C56',
     description: 'The gin that gangsters smuggled into the South Side of Chicago had a harsh bite, requiring cocktails with sweeter mixers than their North Side counterparts. At least that\'s the story surrounding Al Capone and his alleged drink of choice -- the South Side -- a gin-based number with lime juice, simple syrup, and sprigs of mint. The East Side does something similar but with the added brightness of St. Germain’s and cucumber.',
     ingredients: [
       '2 ounces Plymouth gin',
@@ -170,7 +170,7 @@ export const drinks = [
     illustration: 'oaxaca-old-fasioned_illust.svg',
     heading: 'You aren\'t afraid to send up an old tradition with sophistication and style.',
     img: 'oaxaca_old_fashioned.png',
-    color: '#715E4D',
+    color: '#6B3C1D',
     description: 'Swap whiskey with tequila and mescal for this smokey and strong yet subtly balanced South-of-the-Border riff on an old classic. Invented by Philip Ward in the East Village in 2007, the instant popularity of the Oaxaca Old Fashioned helped lead to a resurgence in cocktails featuring Mexican spirits.',
     ingredients: [
       '1½ ounces reposado tequila',
@@ -198,7 +198,7 @@ export const drinks = [
     illustration: 'blood-and-sand_illust.svg',
     heading: 'Like a victorious matador, you are rakish, sexy, and swashbuckling.',
     img: 'blood_and_sand.png',
-    color: '#DE1D5F',
+    color: '#A4264D',
     description: 'Rudolph Valentino, known as "The Latin Lover," was a star and sex symbol of the silent film era. While his 1922 bullfighter movie "Blood and Sand" may not have stood the test of time, the dashing drink named after it sure has.',
     ingredients: [
       '3/4 ounces The Glenrothes Select',
@@ -228,7 +228,7 @@ export const drinks = [
     illustration: 'old-cuban_illust.svg',
     heading: 'You are a modern day warrior and sophisticate, open to adventure and partial to aged rum.',
     img: 'old_cuban.png',
-    color: '#F6772D',
+    color: '#AF5012',
     description: 'A sophisticated cousin to the mojito, The Old Cuban is the creation of modern cocktail master Audry Saunders. Its name conjures up the classic Hemingway tale The Old Man and the Sea, in which an old Cuban fisherman wrestles with a legendary marlin for days on end—a toiling, painful, delirious battle—and when the marlin is finally caught, the fisherman must watch in horror as his prize is eaten by sharks. Surely time for a drink, no?',
     ingredients: [
       '1½ ounces Bacardí 8-year-old rum',
@@ -261,7 +261,7 @@ export const drinks = [
     illustration: 'three-dots-and-a-dash_illust.svg',
     heading: 'You bring adventure, glory, and a little mystery to the mix.',
     img: 'three_dots_and_a_dash.png',
-    color: '#FFBA00',
+    color: '#D56F22',
     description: 'A strong but dangerously drinkable tiki cocktail invented by legendary Don the Beachcomber after World War II, this cocktail gets its namesake from the morse code signal for “Victory”: two dots and a dash. Its name is cleverly reflected in the garnish of three maraschino cherries on a cocktail pick (the dots) and one pineapple frond (the dash).',
     ingredients: [
       '1 ounce rhum agricole (preferably Duquesne Agricole Eleve Sous Bois)',
@@ -296,7 +296,7 @@ export const drinks = [
     illustration: 'fog-cutter_illust.svg',
     heading: 'You are never one to let the fog of today block hopes for tomorrow.',
     img: 'fog_cutter.png',
-    color: '#BEBFBF',
+    color: '#78767B',
     description: 'In the 50’s and 60’s there were two Tiki Bar gods in California: Hollywood’s Donn Beach (“Don the Beachcomber”) and Oakland’s Victor Bergeron (“Trader Vic”). Fierce rivals, their followings each lay claim to classics like the Mai Tai, the Zombie, and every variation of Punch you can imagine. The Fog-Cutter is a lesser-known Tiki drink from Trader Vic, but it\'s not to be underestimated. A flamboyant combination of fruity flavor and boozey pep, it’s your island vacation in a glass.',
     ingredients: [
       '½ ounce fresh lemon juice',
@@ -329,7 +329,7 @@ export const drinks = [
     illustration: 'zombie_illust.svg',
     heading: 'Zombies don\'t phase you, and memory won\'t serve you.',
     img: 'zombie.png',
-    color: '#3B87A3',
+    color: '#2C668E',
     description: 'A hungover customer walked into the legendary Don the Beachcomber’s tikli bar and asked for something to help him through his business travels. Several days later, the customer returned rubbing his head, complaining that Don’s concoction had turned him into a zombie for the rest of the trip. And thus, bleary-eyed and troublemaking, the Zombie was born. The drink’s fun and fruity tenor belies a potency that has forced Beachcomber restaurants to instill a two-Zombie-per-person limit.',
     ingredients: [
       '3/4 ounce fresh lime juice',
@@ -362,7 +362,7 @@ export const drinks = [
     heading: 'Your ideal holiday is inside by the fire, swapping stories with loved ones (between naps, that is).',
     illustration: 'hot-apple-pie_illust.svg',
     img: 'hot_apple_pie.png',
-    color: '#C90037',
+    color: '#8C171F',
     description: 'Winter nights are always better with a steaming mug in your hands. But if you really want to "treat yo self," go for the Hot Apple Pie. It calls for Tuaca, a vanilla-citrus Italian liquor that dates back 500 years, which makes this apple-cinnamon treat a little more interesting than that splash of whisky in your cocoa.',
     ingredients: [
       '2 ounces Tuaca',
