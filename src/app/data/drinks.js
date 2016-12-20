@@ -41,7 +41,7 @@ export const drinks = [
       '1 dash absinthe'
     ],
     instructions: [
-      'In a chilled coupe or cocktail glass, add a dash of adsinthe. Roll around to coat and discard excess.',
+      'In a chilled coupe or cocktail glass, add a dash of absinthe. Roll around to coat and discard excess.',
       'Add all ingredients to a mixing glass.',
       'Add ice and stir well.',
       'Strain into prepared coupe or cocktail glass.',
