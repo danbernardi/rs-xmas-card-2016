@@ -69,12 +69,16 @@ class Result extends React.Component {
             </div>
 
             <article className="recipe row" style={ { color: drink.color } }>
-              <span className="recipe__trigger typ--caps">
+              <span
+                className="recipe__trigger typ--caps"
+                onClick={(e) => {
+                  e.target.scrollIntoView({ behavior: 'smooth' })
+                }}
+              >
                 See recipe
                 <i
                   className="fa fa-chevron-down"
                   style={{ color: drink.color }}
-
                 />
               </span>
 
