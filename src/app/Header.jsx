@@ -2,9 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 const Header = props => {
-  const { activeSheetID logoStyle } = props;
+  const { activeSheetID, logoStyle } = props;
   const logoFileName = logoStyle && logoStyle === 'dark' ? 'redshift_logo_dark.svg' : 'redshift_logo.svg';
-
 
   const initialStyles = { transition: 'opacity 0.5s ease-in-out' };
   let transformStyles = {};
@@ -28,8 +27,7 @@ const Header = props => {
 };
 
 Header.propTypes = {
-  activeSheetID: React.PropTypes.object,
-  music: React.PropTypes.object
+  activeSheetID: React.PropTypes.object
 };
 
 const injectStateProps = state => ({

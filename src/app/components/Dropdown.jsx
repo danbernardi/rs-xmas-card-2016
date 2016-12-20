@@ -23,7 +23,7 @@ class Dropdown extends React.Component {
           <h6 className="dropdown__title">{ title }</h6>
           {
             (!open && !title) ?
-              <h1 className="dropdown__hint">Pick one</h1> :
+              <h1 className="dropdown__hint">Select one</h1> :
               null
           }
           <span className="dropdown__icon">

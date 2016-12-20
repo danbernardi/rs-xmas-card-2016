@@ -285,7 +285,7 @@ export const drinks = [
     ],
     scores: [8, 8, 5],
     music: {
-      file: require('../../assets/audio/three-dots.mp3'),
+      file: require('../../assets/audio/three-dots-and-a-dash.mp3'),
       artist: 'Lynett Kaopuiki Paglinawan',
       name: 'Mele Kalikimaka la `Oe'
     }
