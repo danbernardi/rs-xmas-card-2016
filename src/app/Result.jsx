@@ -4,14 +4,51 @@ import { setActiveSheetID } from '../actions';
 import Footer from './Footer';
 import { setMusicTo } from '../actions';
 
+
+//Animated scroll function
+function scrollTo(element, to, duration) {
+    var start = element.scrollTop,
+        change = to - start,
+        currentTime = 0,
+        increment = 20;
+
+    var animateScroll = function(){
+        currentTime += increment;
+        var val = Math.easeInOutQuad(currentTime, start, change, duration);
+        element.scrollTop = val;
+        if(currentTime < duration) {
+            setTimeout(animateScroll, increment);
+        }
+    };
+    animateScroll();
+}
+
+
+//Add Easing To scrolling animation
+//t = current time
+//b = start value
+//c = change in value
+//d = duration
+Math.easeInOutQuad = function (t, b, c, d) {
+  t /= d/2;
+  if (t < 1) return c/2*t*t + b;
+  t--;
+  return -c/2 * (t*(t-2) - 1) + b;
+};
+
+
+
+
 class Result extends React.Component {
   constructor(props) {
     super(props);
+    this.container = null;
     this.state = {};
   }
 
   componentWillReceiveProps(newProps) {
     if (this.drinkChanged(newProps)) {
+      scrollTo(this.container, 0, 0);
       this.setState({ playMusic: false });
       setTimeout(() => {
         this.setState({ playMusic: true });
@@ -30,9 +67,9 @@ class Result extends React.Component {
     const { playMusic } = this.state;
 
     return (
-      <div className="result">
+      <div className="result" ref={(element) => this.container = element }>
         { drink ?
-          <div>
+          <div className="result-inner">
 
             { drink.music && playMusic &&
               <audio controls autoPlay={ true } muted={ !musicOn }>
@@ -73,8 +110,8 @@ class Result extends React.Component {
             <article className="recipe row" style={ { color: drink.color } }>
               <span
                 className="recipe__trigger typ--caps"
-                onClick={(e) => {
-                  e.target.scrollIntoView({ behavior: 'smooth' })
+                onClick={() => {
+                  scrollTo(this.container, window.innerHeight, 500);
                 }}
               >
                 See recipe
