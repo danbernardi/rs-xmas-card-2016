@@ -40,7 +40,7 @@ const Gallery = props => {
         <button
           className={ 'btn btn--ghost' }
           onClick={ () => {
-            // this.respondOrSwitchPages(nextPage)
+            window.location = 'http://redshiftdigital.com/';
           }
         }>
           Take the quiz again
