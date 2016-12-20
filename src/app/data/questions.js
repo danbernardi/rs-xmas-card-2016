@@ -9,7 +9,7 @@ export const questions = [
     question: 'Have you been naughty or nice?',
     answers: [{
       name: 'Naughty',
-      responses: ['Meow 😼', "We'll make it a double then..." ],
+      responses: ["Meow 😼\nWe'll make it a double then..."],
       scores: [8, 4, 6], // [Badassness, Weirdness, Fun], out of 10
       beer: true
     }, {
@@ -18,7 +18,7 @@ export const questions = [
       scores: [2, 8, 2]
     }, {
       name: 'Nice',
-      responses: ["Sounds good.", "We'll put some ice in your water..."],
+      responses: ["Sounds good.\nWe'll put some ice in your water..."],
       scores: [0, 0, 0]
     }],
     color: '#95801D'
@@ -29,18 +29,18 @@ export const questions = [
     answers: [
       {
         name: 'Setting intentions and expressing gratitude.',
-        responses: ["Mmm Hmm.", "Totally.", "So... light on the drink?"],
+        responses: ["Mmm Hmm... Totally.\nSo... light on the drink?"],
         scores: [0, 0, 0]
       },
       {
         name: 'Lots of sequins and screaming.',
-        responses: ["Wooooooooooooooooo!", "Live hard die young.",  "We've got just the drink for you..."],
+        responses: ["Wooooooooooooooooo!\nLive hard die young.",  "We've got just the drink for you..."],
         scores: [4, 2, 8],
         beer: true
       },
       {
         name: 'Is it still a party if I\'m asleep in bed?',
-        responses: ["Ummm.", "I guess if you drank a few of these first..."],
+        responses: ["Ummm....\nI guess if you drank a few of these first..."],
         scores: [0, 6, 3]
       }
     ],
@@ -57,18 +57,18 @@ export const questions = [
       },
       {
         name: 'Start a snowball fight',
-        responses: ["Nice!", "Early bird gets the unsuspecting victim..."],
+        responses: ["Nice!\nEarly bird gets the unsuspecting victim..."],
         scores: [5, 2, 9],
         beer: true
       },
       {
         name: 'Eww... snow!',
-        responses: ["Huh.", "Different strokes I guess..."],
+        responses: ["Huh.\nDifferent strokes I guess..."],
         scores: [0, 9, 2]
       },
       {
         name: 'Write my name...',
-        responses: ["Wait. In the snow?", "Gross..."],
+        responses: ["Wait. In the snow?\nGross..."],
         scores: [9, 9, 0]
       }
     ],
@@ -80,17 +80,17 @@ export const questions = [
     answers: [
       {
         name: <Ham />,
-        responses: ["Solid. Dependable", "Classic..."],
+        responses: ["Solid. Dependable\nClassic..."],
         scores: [2, 0, 4]
       },
       {
         name: <Takeout />,
-        responses: ["I feel ya.", "Burned (by) one too many turkeys..."],
+        responses: ["I feel ya.\nBurned (by) one too many turkeys..."],
         scores: [5, 9, 2]
       },
       {
         name: <Drinks />,
-        responses: ["Well that's convenient.", "We've got just the holiday \"meal\" for you..."],
+        responses: ["Well that's convenient.\nWe've got just the holiday \"meal\" for you..."],
         scores: [9, 5, 5],
         beer: true
       }

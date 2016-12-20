@@ -4,7 +4,7 @@ export const drinks = [
     illustration: require('../../assets/img/drinks/the-martinez_illust.svg'),
     heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
     img: require('../../assets/img/drinks/martinez.svg'),
-    color: '#8F311A',
+    color: '#934224',
     description: 'For what some have called the evolutionary link between the Manhattan and the Martini, the Martinez came from humble beginnings. As the story goes, a traveller came into a San Francisco bar and asked for a stout drink before his trip to Martinez, a town north of the city. The bartender reached for Old Tom Gin, which, at the time, was a “poorly distilled gin with sugar added so it’d be palatable.” This sweetened gin became the drink’s signature ingredient, and since then, the Martinez has grown into a balanced but strong sipping drink.',
     ingredients: [
       '1½ ounces Old Tom gin',
@@ -285,7 +285,7 @@ export const drinks = [
     ],
     scores: [8, 8, 5],
     music: {
-      file: require('../../assets/audio/three-dots.mp3'),
+      file: require('../../assets/audio/three-dots-and-a-dash.mp3'),
       artist: 'Lynett Kaopuiki Paglinawan',
       name: 'Mele Kalikimaka la `Oe'
     }

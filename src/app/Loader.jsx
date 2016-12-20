@@ -15,13 +15,13 @@ class Loader extends React.Component {
     const { dispatch, questionAnswerPairs, drink, activeSheetID } = props;
     if (questions.length === questionAnswerPairs.length
             && !drink && activeSheetID.current === 'loader') {
-      dispatch(setDrinkTo(this.calculateDrink()));
       setTimeout(() => {
         this.setState({ fired: true });
         setTimeout(() => {
+          dispatch(setDrinkTo(this.calculateDrink()));
           dispatch(setActiveSheetID('result'));
         }, 1000)
-      }, 9000);
+      }, 5000);
     }
   }
 

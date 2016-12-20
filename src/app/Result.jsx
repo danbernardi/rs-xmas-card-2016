@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { setActiveSheetID } from '../actions';
 import Footer from './Footer';
+import { setMusicTo } from '../actions';
 
 const Result = props => {
   const { drink, musicOn, dispatch } = props;
@@ -31,12 +32,28 @@ const Result = props => {
                 <img src={ drink.img } alt={ drink.name } />
               </div>
             </div>
+            <div
+              className={ `audio-control ${drink.music ? '' : 'hidden'}` }
+              onClick={ () => { dispatch(setMusicTo(!musicOn)) } }
+            >
+              <div className="audio-child">
+                <i className={ musicOn ? 'fa fa-pause' : 'fa fa-play' } style={{ display: 'inline-block' }}/>
+                <div style={{ display: 'inline-block' }}>
+                  <p>{ drink.music.name }</p>
+                  <p>{ drink.music.artist }</p>
+                </div>
+              </div>
+            </div>
           </div>
 
           <article className="recipe row" style={ { color: drink.color } }>
             <span className="recipe__trigger typ--caps">
               See recipe
-              <img src={ require('../assets/img/dropdown-carrot.svg')} />
+              <img
+                src={ require('../assets/img/dropdown-carrot.svg')}
+                style={{ color: drink.color, marginLeft: '10px' }}
+
+              />
             </span>
 
             <h3>{ drink.description }</h3>

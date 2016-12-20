@@ -1,20 +1,11 @@
-.header {
-  z-index: 10;
-  position: fixed;
-  top: 6rem;
+.header-component {
+  .header {
+    z-index: 10;
+    position: fixed;
+    top: 6rem;
 
-  img {
-    width: 3.1rem;
-  }
-
-  .audio-control {
-    cursor: pointer;
-    position: absolute;
-    right: 6rem;
-    opacity: 1;
-    transition: 1s opacity ease;
-    &.hidden {
-      opacity: 0;
+    img {
+      width: 3.1rem;
     }
   }
 }

@@ -11,7 +11,7 @@ class Question extends React.Component {
     super(props);
 
     this.state = {
-      responseDelay: 800,
+      responseDelay: 1000,
       hideQuestion: false,
       selectedAnswer: props.selectedAnswer
     };
@@ -60,6 +60,7 @@ class Question extends React.Component {
       callbacks.push(() =>  {
         this.setState({ showResponse: true, response }); // Show new
       });
+      callbacks.push(() => {})
     });
 
     callbacks.push(switchPage);
@@ -82,7 +83,7 @@ class Question extends React.Component {
 
   render() {
     const { question, answers, nextPage, id, activeSheetID, dispatch } = this.props;
-    const { showResponse, hideQuestion, selectedAnswer } = this.state;
+    const { showResponse, hideQuestion, selectedAnswer, response } = this.state;
 
     const onAnswerSelect = (answer) => {
       this.setState({ selectedAnswer: answer });
@@ -110,7 +111,11 @@ class Question extends React.Component {
           </div>
 
           <div className={ `response-section ${showResponse ? '' : 'hidden'}` }>
-            <h1 className="question__label">{ this.state.response }</h1>
+            {
+              response && response.split('\n').map((resp, ind) => (
+                <h2 className="question__label" key={ ind }>{ resp }</h2>
+              ))
+            }
           </div>
 
           <div className={ `next-section mt10 mt6--mlg ${ hideQuestion ? 'hidden' : '' }` }>

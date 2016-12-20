@@ -6,8 +6,6 @@ import snowfall from '../utils/snowfall';
 class Index extends React.Component {
 
   componentDidMount() {
-    const el = this.div;
-    window.snowfall = snowfall
     setTimeout(() => {
       snowfall.snow(this.div, {
         flakeCount: 75,
@@ -19,6 +17,16 @@ class Index extends React.Component {
         flakeColor: 'rgba(255, 255, 255, 0.75)'
       });
     }, 100);
+  }
+
+  componentWillReceiveProps(newProps) {
+    if (newProps.activeSheetID.current === 'naughty') {
+      const els = document.getElementsByClassName('snowfall-flakes');
+      const parent = document.getElementsByClassName('hero')[0];
+      [].forEach.call(els, el => {
+        parent.removeChild(el);
+      });
+    }
   }
 
   render() {
@@ -35,10 +43,10 @@ class Index extends React.Component {
         ref={ (el) => this.div = el }
       >
         <div className="row typ--center">
-          <div className="col-9 col-12--tlg col-center">
+          <div className="col-12 col-12--tlg col-center">
             <img src={ require('../assets/img/empty_glasses.svg') } />
-            <h1 className="typ--bold mb5 mt5">This holiday season, let us help you find the perfect holiday drink.</h1>
-            <button className="btn" onClick={ () => switchActiveSheet('naughty') }>Start</button>
+            <h1 className="typ--bold mb10 mt10">We've created a cocktail recipe generator to help you find your perfect drink this holiday season.</h1>
+            <button className="btn mb10" onClick={ () => switchActiveSheet('naughty') }>Start</button>
           </div>
         </div>
       </div>

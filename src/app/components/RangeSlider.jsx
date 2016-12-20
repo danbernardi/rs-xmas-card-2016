@@ -18,7 +18,7 @@ const RangeSlider  = props => {
   };
 
   return (
-    <div className="layout--relative rangeslider-component">
+    <div className="layout--relative rangeslider-component mt10">
       <div className="rangeslider flex-fields">
         <span className="flex-inline">{ range[0] }</span>
         <input className="input__range_slider" type="range" min="1" max="9" defaultValue="5" step="1" onChange={ (event) => dispatchValue(event) } />
