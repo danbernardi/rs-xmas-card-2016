@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { createStore, renderDevTools } from './utils/devtools';
+import { createStore } from './utils/devtools';
 import reducers from './reducers';
 import { Router, browserHistory } from 'react-router';
 import routeConfig from './routes';
@@ -15,7 +15,6 @@ const Index = () => {
         <Router history={ browserHistory } routes={ routeConfig(store) } />
       </Provider>
 
-      { renderDevTools(store) }
     </div>
   )
 }

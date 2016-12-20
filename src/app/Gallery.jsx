@@ -20,7 +20,7 @@ const Gallery = props => {
       >
         <div className="drink-wrapper">
 
-            <img src={ drink.img } alt={ drink.name }/>
+            <img src={ `http://redshiftdigital.com/holiday2016/assets/img/${drink.img}` } alt={ drink.name }/>
             {/*<span className="grid-title">{ drink.name }</span>*/}
         </div>
       </li>
