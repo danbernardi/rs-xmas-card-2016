@@ -31,7 +31,7 @@ export const drinks = [
     name: 'Remember The Maine',
     illustration: require('../../assets/img/drinks/remember-the-maine_illust.svg'),
     heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
-    img: require('../../assets/img/drinks/placeholder.svg'),
+    img: require('../../assets/img/drinks/remember_the_maine.svg'),
     color: '#6A3661',
     description: 'The Maine, a U.S. naval ship, was sitting off the coast of Havana in 1898 in a bout of saber-rattling with Spain, which controlled Cuba at the time. When it mysteriously exploded and sank (some blame a coal fire), warmongering journalists used the phrase “Remember the Maine, to Hell with Spain” as a rallying cry that would jumpstart the Spanish-American war, leading to Cuban independence.',
     ingredients: [
@@ -115,7 +115,7 @@ export const drinks = [
     name: 'Paper Plane',
     illustration: require('../../assets/img/drinks/paper-plane_illust.svg'),
     heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
-    img: require('../../assets/img/drinks/placeholder.svg'),
+    img: require('../../assets/img/drinks/paper_plane.svg'),
     color: '#437BA4',
     description: 'This quattro-proportioned drink was created by Sam Ross of New York’s Little Branch. It got its name from M.I.A.’s song, which Ross was listening to when the drink was created.',
     ingredients: [
@@ -140,7 +140,7 @@ export const drinks = [
     name: 'East Side',
     illustration: require('../../assets/img/drinks/east-side_illust.svg'),
     heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
-    img: require('../../assets/img/drinks/placeholder.svg'),
+    img: require('../../assets/img/drinks/east_side.svg'),
     color: '#705E4D',
     description: 'According to one story, the drink was the preferred beverage of Al Capone, whose gang dominated Chicago’s South Side.[3] The gin imported by Capone’s rivals on the North Side of Chicago was smooth, and usually consumed with ginger ale.[3] However, the gin run by Capone’s gang had a rougher edge to it, and required more sweeteners to make it palatable.[3] Thus the South Side was born.[3]',
     ingredients: [
@@ -295,7 +295,7 @@ export const drinks = [
     name: 'Fog Cutter',
     illustration: require('../../assets/img/drinks/fog-cutter_illust.svg'),
     heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
-    img: require('../../assets/img/drinks/placeholder.svg'),
+    img: require('../../assets/img/drinks/fog_cutter.svg'),
     color: '#BEBFBF',
     description: '“Fog Cutter, hell, after two of these you won’t even see the stuff” -Victor Bergeron (“Trader Vic”) The Fog Cutter was created by Don the Beachcomber’s rival, Trader Vic, during the “Tiki Era” in the Hollywood bar scene.',
     ingredients: [
@@ -390,7 +390,7 @@ export const drinks = [
 export const beer = {
   name: "Cheap Beer",
   heading: "You are a rock and roll party animal. May we recommend...",
-  img: require('../../assets/img/drinks/placeholder.svg'),
+  img: require('../../assets/img/drinks/cheap_beer.svg'),
   color: '#6A3661',
   description: "Cheap beer doesn’t mean you are cheap. You are a priceless inscrutable artifact of dive bars; a life-saving, rule breaking anti-hero. When work is done, it is done. If someone tries to strike up a conversation about politics, you only respond in pig latin. Cheap beer allows you to leave the house and be in it for the long haul. You can drink all night, stay up till dawn, tell a few jokes of questionable integrity, hit four parties and still manage to hold back someone’s hair at the porcelain throne.",
   ingredients: ['1 can'],

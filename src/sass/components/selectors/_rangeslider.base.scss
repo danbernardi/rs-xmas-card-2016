@@ -29,17 +29,21 @@ input[type=range] {
   position: relative;
   top: 1.5rem;
   height: 1.2rem;
-  // border-right: .2rem #454545 solid;
-  // border-left: .2rem #454545 solid;
+}
+
+@-moz-document url-prefix() {
+  input[type=range] {
+    top: 1.7rem;
+  }
 }
 
 input[type=range]:focus {
   outline: none;
+  border: 0;
 }
 
 input[type=range]::-webkit-slider-runnable-track {
   cursor: pointer;
-  // background: #454545;
   height: $sliderTrackHeight;
 }
 input[type=range]::-webkit-slider-thumb {
@@ -62,7 +66,6 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   width: 100%;
   pointer-events: none;
   top: 0;
-  // z-index: 10;
 }
 
 .tick-fields span {
@@ -102,25 +105,42 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   }
 }
 
-// input[type=range]::-moz-range-track {
-//   width: 100%;
-//   height: 8.4px;
-//   cursor: pointer;
-//   animate: 0.2s;
-//   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-//   background: #3071a9;
-//   border-radius: 1.3px;
-//   border: 0.2px solid #010101;
+input[type=range]::-moz-range-track {
+ cursor: pointer;
+ height: $sliderTrackHeight;
+ background: rbga(251, 247, 239, 0);
+}
+
+input[type=range]::-moz-range-thumb {
+  appearance: none;
+  cursor: pointer;
+  background: #E04848;
+  width: $sliderThumbHeight;
+  height: $sliderThumbHeight;
+  border-radius: 50%;
+  border: none;
+  margin-top: (($sliderThumbHeight / 2) - ($sliderTrackHeight / 2)) * -1;
+}
+
+input[type=range]::-moz-focus-outer {
+  border: 0;
+}
+
+// input[type=range]::-ms-fill-lower {
+//   background: rbga(251, 247, 239, 0);
 // }
-// input[type=range]::-moz-range-thumb {
-//   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-//   border: 1px solid #000000;
-//   height: 36px;
-//   width: 16px;
-//   border-radius: 3px;
-//   background: #ffffff;
-//   cursor: pointer;
+// input[type=range]::-ms-fill-upper {
+//   background: rbga(251, 247, 239, 0);
 // }
+
+// input[type=range]:focus::-ms-fill-lower {
+//   background: rbga(251, 247, 239, 0);
+// }
+// input[type=range]:focus::-ms-fill-upper {
+//   background: rbga(251, 247, 239, 0);
+// }
+
+
 // input[type=range]::-ms-track {
 //   width: 100%;
 //   height: 8.4px;
