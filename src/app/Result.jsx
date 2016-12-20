@@ -30,10 +30,10 @@ function scrollTo(element, to, duration) {
 //c = change in value
 //d = duration
 Math.easeInOutQuad = function (t, b, c, d) {
-  t /= d/2;
-  if (t < 1) return c/2*t*t + b;
+  t /= d / 2;
+  if (t < 1) return c / 2 * t * t + b;
   t--;
-  return -c/2 * (t*(t-2) - 1) + b;
+  return -c / 2 * (t * (t - 2) - 1) + b;
 };
 
 
@@ -77,16 +77,18 @@ class Result extends React.Component {
               </audio>
             }
 
-            <div className="theme--dark py10 layout--relative" style={ { backgroundColor: drink.color, height: 'calc(100vh - 11.5rem)' } }>
+
+            <div className="theme--dark py10 py0--mlg layout--relative result__drink--frame" style={ { backgroundColor: drink.color } }>
               <div className="result__gradient-overlay"></div>
               <div className="col-8 col-center">
                 <h3 className="typ--center">{drink.heading}</h3>
-                <h3 className="mb10 typ--center">May we recommend...</h3>
+                <h3 className="mb10 typ--center result__drink--heading">May we recommend...</h3>
+
               </div>
 
-              <div className="cf result__drink row col-center pt10 cf">
+              <div className="cf result__drink row col-center pt10 pt0--mlg cf">
                 <div className="result__drinkname">
-                  <h1 className="result__name pl5 pt6 pl0--tmd pt0--tmd">{ drink.name }</h1>
+                  <h1 className="result__name pl5 pt6 pl0--tmd pt0--tmd pt2--mlg">{ drink.name }</h1>
                 </div>
 
                 <div className="result__drinkimg">
@@ -121,7 +123,7 @@ class Result extends React.Component {
                 />
               </span>
 
-              <h3>{ drink.description }</h3>
+              <h3 className="recipe__description">{ drink.description }</h3>
 
               <div className="recipe__keyline">
                 <div className="recipe__keyline__img">

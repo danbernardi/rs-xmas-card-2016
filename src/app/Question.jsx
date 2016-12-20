@@ -102,7 +102,7 @@ class Question extends React.Component {
       <div className="question__page typ--center">
         <div className="question__wrap row">
           <div className={ `question-section ${ hideQuestion ? 'hidden' : '' }` }>
-            <h1 className="question__label mb6 mb3--mlg">{ question }</h1>
+            <h1 className="question__label mb6 mb1--mlg">{ question }</h1>
             <QuestionComponent
               answers={ answers }
               onAnswerSelect={ answer => { onAnswerSelect(answer) } }
@@ -118,7 +118,7 @@ class Question extends React.Component {
             }
           </div>
 
-          <div className={ `next-section mt10 mt6--mlg ${ hideQuestion ? 'hidden' : '' }` }>
+          <div className={ `question-button next-section mt10 ${ hideQuestion ? 'hidden' : '' }` }>
             <button
               className={ `btn btn--ghost ${ selectedAnswer ? '' : 'disabled' }` }
               onClick={ () => {

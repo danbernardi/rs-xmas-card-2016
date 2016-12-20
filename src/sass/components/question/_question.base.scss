@@ -35,8 +35,9 @@
     top: 0;
     left: 0;
     transform: none;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 12rem;
+    padding-bottom: 0;
+    height: 100%
   }
 }
 
@@ -51,5 +52,15 @@
   &:hover {
     background: transparent;
     color: $white !important;
+  }
+}
+
+.question-button {
+  // media queries
+  @include breakpoint($mobile-lg) {
+    position: absolute;
+    bottom: 12rem;
+    left: 2rem;
+    right: 2rem;
   }
 }

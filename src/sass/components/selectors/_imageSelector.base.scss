@@ -4,7 +4,7 @@
 
 ul.image-list {
   @extend .cf;
-  
+
   .image__item {
     cursor: pointer;
     width: calc(33.333333% - 4rem);
@@ -16,9 +16,10 @@ ul.image-list {
     margin: 0 2rem;
     // media queries
     @include breakpoint($mobile-lg) {
-      width: 100%;
+      width: calc(100% - 12rem);
       margin: 0;
-      height: 18rem;
+      height: 10rem;
+      margin: 0 6rem;
     }
 
     &:hover {
@@ -49,6 +50,9 @@ ul.image-list {
   @include breakpoint($tablet-md) {
     width: 17.9rem;
   }
+  @include breakpoint($mobile-lg) {
+    width: 10.9rem;
+  }
 }
 
 .svg__takeout {
@@ -58,6 +62,9 @@ ul.image-list {
   @include breakpoint($tablet-md) {
     width: 11.8rem;
   }
+  @include breakpoint($mobile-lg) {
+    width: 7.8rem;
+  }
 }
 
 .svg__drinks {
@@ -66,5 +73,8 @@ ul.image-list {
   // media queries
   @include breakpoint($tablet-md) {
     width: 15.5rem;
+  }
+  @include breakpoint($mobile-lg) {
+    width: 10.5rem;
   }
 }

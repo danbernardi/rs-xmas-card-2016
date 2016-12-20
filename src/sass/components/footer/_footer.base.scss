@@ -5,8 +5,27 @@
   z-index: 10;
   width: 100%;
   left: 0;
+  //media queries
+  @include breakpoint($mobile-lg) {
+    bottom: 1.5rem;
+  }
+}
+
+.footer__social {
+  //media queries
+  @include breakpoint($mobile-lg) {
+    position: absolute;
+    bottom: -7rem;
+  }
 }
 
 .footer__social li {
   margin-right: 3rem;
+  //media queries
+  @include breakpoint($mobile-lg) {
+    margin-right: 2.5rem;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
 }
