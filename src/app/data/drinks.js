@@ -226,7 +226,7 @@ export const drinks = [
   {
     name: 'Old Cuban',
     illustration: 'old-cuban_illust.svg',
-    heading: 'You are a modern day warrior and sophisticate, open to adventure and in need of aged rum.',
+    heading: 'You are a modern day warrior and sophisticate, open to adventure and partial to aged rum.',
     img: 'old_cuban.png',
     color: '#F6772D',
     description: 'A sophisticated cousin to the mojito, The Old Cuban is the creation of modern cocktail master Audry Saunders. Its name conjures up the classic Hemingway tale The Old Man and the Sea, in which an old Cuban fisherman wrestles with a legendary marlin for days on end—a toiling, painful, delirious battle—and when the marlin is finally caught, the fisherman must watch in horror as his prize is eaten by sharks. Surely time for a drink, no?',
