@@ -21,7 +21,7 @@ class Loader extends React.Component {
           dispatch(setDrinkTo(this.calculateDrink()));
           dispatch(setActiveSheetID('result'));
         }, 1000)
-      }, 5000);
+      }, 4000);
     }
   }
 
