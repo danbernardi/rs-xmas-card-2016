@@ -41,7 +41,7 @@ export const drinks = [
       '1 dash absinthe'
     ],
     instructions: [
-      'In a chilled coupe or cocktail glass, add a dash of adbinthe. Roll around to coat and discard excess.',
+      'In a chilled coupe or cocktail glass, add a dash of adsinthe. Roll around to coat and discard excess.',
       'Add all ingredients to a mixing glass.',
       'Add ice and stir well.',
       'Strain into prepared coupe or cocktail glass.',
@@ -64,8 +64,7 @@ export const drinks = [
     illustration: 'the-jack-rose_illust.svg',
     heading: 'You have a whimsical, literary sense about you.',
     img: 'jack_rose.png',
-    color: '#427667',
-    description: 'Like so many cocktails, the Jack Rose is embodied by the colorful characters who sipped it—from prohibition-era gangsters, to author John Steinbeck, to Hemingway’s wounded, languishing narrator in The Sun Also Rises. The drink is a sour made from apple brandy—”applejack” as it was known then—and it remains a simple but solid addition to the canon.',
+    description: 'Like so many cocktails, the Jack Rose is embodied by the colorful characters who sipped it—from prohibition-era gangsters, to author John Steinbeck, to Hemingway’s wounded, languishing narrator in The Sun Also Rises. The drink is a sour made from apple brandy — ”applejack” as it was known then — and it remains a simple but solid addition to the canon.',
     ingredients: [
       '1 ounce fresh lemon juice',
       '½ ounce grenadine',
@@ -117,7 +116,7 @@ export const drinks = [
     heading: 'You\'re a smooth operator with swagger and style.',
     img: 'paper_plane.png',
     color: '#385A24',
-    description: 'With four equal parts bourbon, aperol, amaro, and lemon juice—this aperitivo is a cinch to make and a pleasure to drink. If you like sour-forward cocktails, you\'ll find this drink immediately likeable. And yes, it\'s name is a reference to MIA\'s hit song "Paper Planes"',
+    description: 'With four equal parts bourbon, aperol, amaro, and lemon juice—this aperitivo is a cinch to make and a pleasure to drink. If you like sour-forward cocktails, you\'ll find this drink immediately likeable. And yes, its name is a reference to MIA\'s hit song "Paper Planes"',
     ingredients: [
       '3/4 ounces bourbon',
       '3/4 ounces Aperol',
@@ -151,7 +150,7 @@ export const drinks = [
     instructions: [
       'Add several mint leaves (no stems) and several cucumber slices into a shaker tin, along with the lime and simple syrup, then muddle for several seconds.',
       'Add the gin and a generous amount of ice.',
-      'Shake vigorously and strain with a Hawthorn strainer into a chilled coupe and garnish with a thin cucumber slice (if it is too thick, it will not float on top, but you can also slice the cucumber to sit on the site of the glass).'
+      'Shake vigorously and strain with a Hawthorn strainer into a chilled coupe and garnish with a thin cucumber slice (if it is too thick, it will not float on top, but you can also slice the cucumber to sit on the side of the glass).'
     ],
     garnish: [
       '2 cucumber slices',
@@ -171,7 +170,7 @@ export const drinks = [
     heading: 'You aren\'t afraid to send up an old tradition with sophistication and style.',
     img: 'oaxaca_old_fashioned.png',
     color: '#6B3C1D',
-    description: 'Swap whiskey with tequila and mescal for this smokey and strong yet subtly balanced South-of-the-Border riff on an old classic. Invented by Philip Ward in the East Village in 2007, the instant popularity of the Oaxaca Old Fashioned helped lead to a resurgence in cocktails featuring Mexican spirits.',
+    description: 'Swap whiskey with tequila and mezcal for this smokey and strong yet subtly balanced South-of-the-Border riff on an old classic. Invented by Philip Ward in the East Village in 2007, the instant popularity of the Oaxaca Old Fashioned helped lead to a resurgence in cocktails featuring Mexican spirits.',
     ingredients: [
       '1½ ounces reposado tequila',
       '½ ounce mezcal',
@@ -180,7 +179,7 @@ export const drinks = [
     ],
     instructions: [
       'Combine liquids in a cocktail shaker with a generous handful of ice. Stir until well chilled.',
-      'Hold a lighted match over drink in one hand and orange peel in other hand, with orange side facing flame and about and inch away. Carefully and quickly squeeze orange peel until oils spark.'
+      'Hold a lighted match over drink in one hand and orange peel in other hand, with the skin facing flame and about and inch away. Carefully and quickly squeeze orange peel until oils spark.'
     ],
     garnish: [
       'Strip of orange peel with pith, once inch wide'
@@ -310,7 +309,7 @@ export const drinks = [
     instructions: [
       'Fill a cocktail shaker with ice.',
       'Add the white rum, gin, brandy, orange and lemon juices and orgeat and shake well.',
-      'Strain into an ice-filled highball glsass and float the Amontillado sherry on top.',
+      'Strain into an ice-filled highball glass and float the Amontillado sherry on top.',
       'Garnish with the mint sprig.'
     ],
     garnish: [

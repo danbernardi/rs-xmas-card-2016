@@ -5,6 +5,9 @@ div.loader {
   position: relative;
   top: 20%;
   text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/img/question_bg.svg);
   h4 {
     text-align: center;
   }
