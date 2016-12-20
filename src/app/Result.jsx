@@ -71,9 +71,9 @@ class Result extends React.Component {
             <article className="recipe row" style={ { color: drink.color } }>
               <span className="recipe__trigger typ--caps">
                 See recipe
-                <img
-                  src={ require('../assets/img/dropdown-carrot.svg')}
-                  style={{ color: drink.color, marginLeft: '10px' }}
+                <i
+                  className="fa fa-chevron-down"
+                  style={{ color: drink.color }}
 
                 />
               </span>
