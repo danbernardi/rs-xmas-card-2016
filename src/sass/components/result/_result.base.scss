@@ -104,19 +104,26 @@ audio {
   cursor: pointer;
   position: absolute;
   right: 6rem;
-  bottom: 1rem;
+  bottom: 6rem;
   opacity: 1;
   transition: 1s opacity ease;
   z-index: 1000;
+  .audio-child {
+    position: relative;
+  }
   &.hidden {
     opacity: 0;
   }
   i {
-    font-size: 5rem;
+    font-size: 2.5rem;
+    display: inline-block;
+    position: absolute;
+    left: -2rem;
+    bottom: 0.9rem;
   }
   p {
-    font-size: 1.6rem;
-    line-height: 0.6;
+    font-size: 1.2rem;
+    line-height: 0.3;
     margin-left: 2rem;
   }
 }

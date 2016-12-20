@@ -36,10 +36,12 @@ const Result = props => {
               className={ `audio-control ${drink.music ? '' : 'hidden'}` }
               onClick={ () => { dispatch(setMusicTo(!musicOn)) } }
             >
-              <i className={ musicOn ? 'fa fa-pause' : 'fa fa-play' } style={{ display: 'inline-block' }}/>
-              <div style={{ display: 'inline-block' }}>
-                <p>{ drink.music.name }</p>
-                <p>{ drink.music.artist }</p>
+              <div className="audio-child">
+                <i className={ musicOn ? 'fa fa-pause' : 'fa fa-play' } style={{ display: 'inline-block' }}/>
+                <div style={{ display: 'inline-block' }}>
+                  <p>{ drink.music.name }</p>
+                  <p>{ drink.music.artist }</p>
+                </div>
               </div>
             </div>
           </div>
