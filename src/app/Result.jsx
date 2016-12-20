@@ -36,7 +36,11 @@ const Result = props => {
           <article className="recipe row" style={ { color: drink.color } }>
             <span className="recipe__trigger typ--caps">
               See recipe
-              <img src={ require('../assets/img/dropdown-carrot.svg')} />
+              <img
+                src={ require('../assets/img/dropdown-carrot.svg')}
+                style={{ color: drink.color, marginLeft: '10px' }}
+
+              />
             </span>
 
             <h3>{ drink.description }</h3>

@@ -10,7 +10,7 @@
 
 .question-section, .response-section, .next-section {
   opacity: 1;
-  transition: opacity 0.75s ease;
+  transition: opacity 0.5s ease;
   &.hidden {
     opacity: 0;
   }

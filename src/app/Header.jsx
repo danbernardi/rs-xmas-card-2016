@@ -1,9 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { setMusicTo } from '../actions';
 
 const Header = props => {
-  const { activeSheetID, music, musicOn, dispatch, logoStyle } = props;
+  const { activeSheetID logoStyle } = props;
   const logoFileName = logoStyle && logoStyle === 'dark' ? 'redshift_logo_dark.svg' : 'redshift_logo.svg';
 
 
@@ -24,26 +23,17 @@ const Header = props => {
       <a href="http://redshiftdigital.com/" target="_blank">
         <img src={ require(`../assets/img/${logoFileName}`) } alt="Redshift Digital" />
       </a>
-      <span
-        className={ `audio-control ${music ? '' : 'hidden'}` }
-        onClick={ () => { dispatch(setMusicTo(!musicOn)) } }
-      >{ musicOn ? 'PAUSE' : 'PLAY' }
-      </span>
     </div>
   );
 };
 
 Header.propTypes = {
   activeSheetID: React.PropTypes.object,
-  music: React.PropTypes.object,
-  dispatch: React.PropTypes.func,
-  musicOn: React.PropTypes.bool
+  music: React.PropTypes.object
 };
 
 const injectStateProps = state => ({
-  activeSheetID: state.activeSheetID,
-  music: state.drink && state.drink.music,
-  musicOn: state.musicOn
+  activeSheetID: state.activeSheetID
 });
 
 export default connect(injectStateProps)(Header);

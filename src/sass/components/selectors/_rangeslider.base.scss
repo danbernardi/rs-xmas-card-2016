@@ -17,6 +17,7 @@ $sliderThumbHeight: 2rem;
 .rangeslider-component {
   .flex-inline {
     @include font(button);
+    @include font-size(default);
   }
 }
 

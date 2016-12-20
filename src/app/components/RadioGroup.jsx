@@ -14,10 +14,18 @@ const RadioGroup  = props => {
                 value={ answer.name }
                 name={ id }
                 className="checkable__input"
-                onChange={ (event) => onAnswerSelect(answer) }
+                onChange={ () => onAnswerSelect(answer) }
               />
-              <span className="checkable__mark"></span>
-              <span className="checkable__label typ--h6">{ answer.name }</span>
+              <span
+                className="checkable__mark"
+                onClick={ () => { onAnswerSelect(answer) } }
+              />
+              <span
+                className="checkable__label typ--h6"
+                onClick={ () => { onAnswerSelect(answer) } }
+              >
+                { answer.name }
+              </span>
             </label>
           </li>
         ))

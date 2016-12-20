@@ -21,7 +21,7 @@ class Loader extends React.Component {
         setTimeout(() => {
           dispatch(setActiveSheetID('result'));
         }, 1000)
-      }, 9000);
+      }, 6000);
     }
   }
 
