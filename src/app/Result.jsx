@@ -7,9 +7,7 @@ import { setMusicTo } from '../actions';
 class Result extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      playMusic: true
-    };
+    this.state = {};
   }
 
   componentWillReceiveProps(newProps) {
@@ -18,6 +16,8 @@ class Result extends React.Component {
       setTimeout(() => {
         this.setState({ playMusic: true });
       }, 100);
+    } else if (!this.props.drink && newProps.drink) {
+      this.setState({ playMusic: true });
     }
   }
 
@@ -42,7 +42,8 @@ class Result extends React.Component {
 
             <div className="theme--dark py10 layout--relative" style={ { backgroundColor: drink.color, height: 'calc(100vh - 11.5rem)' } }>
               <div className="col-8 col-center">
-                <h3 className="mb10 typ--center">{ drink.heading }</h3>
+                <h3 className="typ--center">{drink.heading}</h3>
+                <h3 className="mb10 typ--center">May we recommend...</h3>
               </div>
 
               <div className="cf result__drink row col-center pt10 cf">
