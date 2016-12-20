@@ -11,6 +11,8 @@ const PORT = process.env.PORT || "8888";
 
 const inProduction = process.env.NODE_ENV === 'production';
 
+//NODE_ENV=production node --max_old_space_size=4096 node_modules/webpack/bin/webpack -p --config webpack.config.js --progress --profile --colors
+
 // global css
 loaders.push({
 	test: /[\/\\](node_modules|global)[\/\\].*\.css$/,
@@ -23,7 +25,12 @@ loaders.push({
 // local scss modules
 loaders.push({
 	test: /\.scss$/,
-	loaders: ['style?sourceMap', 'css?sourceMap', 'postcss?sourceMap', 'sass?sourceMap']
+	loaders: [
+		'style?sourceMap',
+		'css?sourceMap',
+		'postcss?sourceMap',
+		'sass?sourceMap'
+	]
 });
 
 const entry = [];
@@ -40,12 +47,12 @@ if (!inProduction) {
   });
 
 
-  var devFlagPlugin = new webpack.DefinePlugin({  
+  var devFlagPlugin = new webpack.DefinePlugin({
     __DEV__: JSON.stringify(JSON.parse(process.env.DEBUG || 'false'))
   });
 
   [ new webpack.NoErrorsPlugin(),
-		new webpack.HotModuleReplacementPlugin(),
+		// new webpack.HotModuleReplacementPlugin(),
 		new HtmlWebpackPlugin({
 			template: './src/template.html',
       title: 'Redshift Winter 2016'
@@ -56,14 +63,15 @@ if (!inProduction) {
   [
 		`webpack-dev-server/client?http://${HOST}:${PORT}`,
 		`webpack/hot/only-dev-server`,
-		`./src/index.jsx` // Your appʼs entry point
 	].map(entrypoint => entry.push(entrypoint));
 }
+
+entry.push(`./src/index.jsx`); // Your appʼs entry point
 
 
 module.exports = {
 	entry,
-	devtool: process.env.WEBPACK_DEVTOOL || 'cheap-module-source-map',
+	// devtool: process.env.WEBPACK_DEVTOOL || 'cheap-module-source-map',
 	output: {
 		path: path.join(__dirname, 'public'),
 		filename: 'bundle.js',

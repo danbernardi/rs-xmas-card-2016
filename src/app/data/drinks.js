@@ -3,7 +3,7 @@ export const drinks = [
     name: 'The Martinez',
     illustration: require('../../assets/img/drinks/the-martinez_illust.svg'),
     heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
-    img: require('../../assets/img/drinks/martinez.svg'),
+    img: require('../../assets/img/drinks/martinez.png'),
     color: '#934224',
     description: 'For what some have called the evolutionary link between the Manhattan and the Martini, the Martinez came from humble beginnings. As the story goes, a traveller came into a San Francisco bar and asked for a stout drink before his trip to Martinez, a town north of the city. The bartender reached for Old Tom Gin, which, at the time, was a “poorly distilled gin with sugar added so it’d be palatable.” This sweetened gin became the drink’s signature ingredient, and since then, the Martinez has grown into a balanced but strong sipping drink.',
     ingredients: [
@@ -31,7 +31,7 @@ export const drinks = [
     name: 'Remember The Maine',
     illustration: require('../../assets/img/drinks/remember-the-maine_illust.svg'),
     heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
-    img: require('../../assets/img/drinks/remember_the_maine.svg'),
+    img: require('../../assets/img/drinks/remember_the_maine.png'),
     color: '#6A3661',
     description: 'The Maine, a U.S. naval ship, was sitting off the coast of Havana in 1898 in a bout of saber-rattling with Spain, which controlled Cuba at the time. When it mysteriously exploded and sank (some blame a coal fire), warmongering journalists used the phrase “Remember the Maine, to Hell with Spain” as a rallying cry that would jumpstart the Spanish-American war, leading to Cuban independence.',
     ingredients: [
@@ -63,7 +63,7 @@ export const drinks = [
     name: 'The Jack Rose',
     illustration: require('../../assets/img/drinks/the-jack-rose_illust.svg'),
     heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
-    img: require('../../assets/img/drinks/jack_rose.svg'),
+    img: require('../../assets/img/drinks/jack_rose.png'),
     color: '#58B094',
     description: 'A Jack Rose is a cocktail containing applejack, grenadine, and lemon or lime juice. It was popular in the 1920s and 1930s, notably appearing in Ernest Hemingway’s 1926 classic, The Sun Also Rises, in which Jake Barnes, the narrator, drinks a Jack Rose in the Crillon Paris hotel bar while awaiting the arrival of Lady Brett Ashley. It was also a favorite drink of author John Steinbeck.',
     ingredients: [
@@ -87,7 +87,7 @@ export const drinks = [
   // //   name: 'The Last Word',
   // //   illustration: require('../../assets/img/drinks/the-last-word_illust.svg'),
   // //   heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
-  // //   img: require('../../assets/img/drinks/placeholder.svg'),
+  // //   img: require('../../assets/img/drinks/placeholder.png'),
   // //   color: '#8C8E49',
   // //   description: 'The Last Word is a gin-based prohibition-era cocktail originally developed at the Detroit Athletic Club. While the drink eventually fell out of favor, it has recently enjoyed a renewed popularity after being rediscovered as a cult hit in the Seattle area by bartender Murray Stenson during his tenure at the Zig Zag Café.',
   // //   ingredients: [
@@ -115,7 +115,7 @@ export const drinks = [
     name: 'Paper Plane',
     illustration: require('../../assets/img/drinks/paper-plane_illust.svg'),
     heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
-    img: require('../../assets/img/drinks/paper_plane.svg'),
+    img: require('../../assets/img/drinks/paper_plane.png'),
     color: '#437BA4',
     description: 'This quattro-proportioned drink was created by Sam Ross of New York’s Little Branch. It got its name from M.I.A.’s song, which Ross was listening to when the drink was created.',
     ingredients: [
@@ -140,7 +140,7 @@ export const drinks = [
     name: 'East Side',
     illustration: require('../../assets/img/drinks/east-side_illust.svg'),
     heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
-    img: require('../../assets/img/drinks/east_side.svg'),
+    img: require('../../assets/img/drinks/east_side.png'),
     color: '#705E4D',
     description: 'According to one story, the drink was the preferred beverage of Al Capone, whose gang dominated Chicago’s South Side.[3] The gin imported by Capone’s rivals on the North Side of Chicago was smooth, and usually consumed with ginger ale.[3] However, the gin run by Capone’s gang had a rougher edge to it, and required more sweeteners to make it palatable.[3] Thus the South Side was born.[3]',
     ingredients: [
@@ -169,7 +169,7 @@ export const drinks = [
     name: 'Oaxaca Old Fashioned',
     illustration: require('../../assets/img/drinks/oaxaca-old-fasioned_illust.svg'),
     heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
-    img: require('../../assets/img/drinks/oaxaca_old_fashioned.svg'),
+    img: require('../../assets/img/drinks/oaxaca_old_fashioned.png'),
     color: '#715E4D',
     description: 'When the Most Interesting Man in the World says he doesn’t always drink beer, he was probably drinking this:',
     ingredients: [
@@ -197,7 +197,7 @@ export const drinks = [
     name: 'Blood and Sand',
     illustration: require('../../assets/img/drinks/blood-and-sand_illust.svg'),
     heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
-    img: require('../../assets/img/drinks/blood_and_sand.svg'),
+    img: require('../../assets/img/drinks/blood_and_sand.png'),
     color: '#DE1D5F',
     description: 'Rudolph Valentino, known as “The Latin Lover,” was a star and sex symbol of the silent film era. His 1922 bullfighter movie Blood and Sand has not stood the test of time. But the drink named after it has.',
     ingredients: [
@@ -227,7 +227,7 @@ export const drinks = [
     name: 'Old Cuban',
     illustration: require('../../assets/img/drinks/old-cuban_illust.svg'),
     heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
-    img: require('../../assets/img/drinks/old_cuban.svg'),
+    img: require('../../assets/img/drinks/old_cuban.png'),
     color: '#F6772D',
     description: 'This quattro-proportioned drink was created by Sam Ross of New York’s Little Branch. It got its name from M.I.A.’s song, which Ross was listening to when the drink was created.',
     ingredients: [
@@ -260,7 +260,7 @@ export const drinks = [
     name: 'Three Dots and a Dash',
     illustration: require('../../assets/img/drinks/three-dots-and-a-dash_illust.svg'),
     heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
-    img: require('../../assets/img/drinks/three_dots_and_a_dash.svg'),
+    img: require('../../assets/img/drinks/three_dots_and_a_dash.png'),
     color: '#FFBA00',
     description: 'This tiki classic was created during WWII by the godfather of the genre himself, Don the Beachcomber. The name “Three dots and a dash” means “victory” in Morse Code.',
     ingredients: [
@@ -295,7 +295,7 @@ export const drinks = [
     name: 'Fog Cutter',
     illustration: require('../../assets/img/drinks/fog-cutter_illust.svg'),
     heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
-    img: require('../../assets/img/drinks/fog_cutter.svg'),
+    img: require('../../assets/img/drinks/fog_cutter.png'),
     color: '#BEBFBF',
     description: '“Fog Cutter, hell, after two of these you won’t even see the stuff” -Victor Bergeron (“Trader Vic”) The Fog Cutter was created by Don the Beachcomber’s rival, Trader Vic, during the “Tiki Era” in the Hollywood bar scene.',
     ingredients: [
@@ -328,7 +328,7 @@ export const drinks = [
     name: 'Zombie',
     illustration: require('../../assets/img/drinks/zombie_illust.svg'),
     heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
-    img: require('../../assets/img/drinks/zombie.svg'),
+    img: require('../../assets/img/drinks/zombie.png'),
     color: '#3B87A3',
     description: 'Legend has it that Donn Beach originally concocted the Zombie to help a hung-over customer get through a business meeting.[2]The customer returned several days later to complain that he had been turned into a zombie for his entire trip. Its smooth, fruity taste works to conceal its extremely high alcoholiccontent. Don the Beachcomber restaurants limit their customers to two Zombies apiece.',
     ingredients: [
@@ -361,7 +361,7 @@ export const drinks = [
     name: 'Hot Apple Pie',
     heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
     illustration: require('../../assets/img/drinks/hot-apple-pie_illust.svg'),
-    img: require('../../assets/img/drinks/hot_apple_pie.svg'),
+    img: require('../../assets/img/drinks/hot_apple_pie.png'),
     color: '#C90037',
     description: 'Tuaca Liqueur is a popular vanilla liqueur that has roots dating back 500 years to the time of Lorenzo the Magnificent. The legend is that this patron of Italian Renaissance arts enjoyed this liqueur and it was lost until 1938, when brothers-in-law Gaetano Tuoni and Giorgio Canepa revived the recipe, naming it using a combination of their own surnames.  Tuaca saw a rise in popularity during World War II.',
     ingredients: [
