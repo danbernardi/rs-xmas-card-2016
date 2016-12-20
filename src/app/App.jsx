@@ -8,6 +8,7 @@ import Loader from './Loader';
 import { questions } from './data/questions';
 import Header from './Header';
 import Footer from './Footer';
+import Gallery from './Gallery';
 
 const App = () => {
   const pages = [
@@ -31,6 +32,16 @@ const App = () => {
 
   pages.push({ id: 'loader', component: <Loader /> });
   pages.push({ id: 'result', component: <Result /> });
+  pages.push({ id: 'gallery', component: <Gallery /> });
+
+  // return (
+  //   <div className="pages">
+  //     <Header logoStyle="dark" />
+  //     <Gallery />
+  //     <Footer />
+  //   </div>
+  //  );
+
 
   return (
     <div className="pages">
