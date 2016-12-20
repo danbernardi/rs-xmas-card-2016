@@ -68,7 +68,6 @@ if (!inProduction) {
 
 entry.push(`./src/index.jsx`); // Your appʼs entry point
 
-
 module.exports = {
 	entry,
 	devtool: process.env.WEBPACK_DEVTOOL || 'cheap-module-source-map',
