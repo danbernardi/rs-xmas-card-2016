@@ -36,7 +36,7 @@ class Result extends React.Component {
 
             { drink.music && playMusic &&
               <audio controls autoPlay={ true } muted={ !musicOn }>
-                <source src={ drink.music.file } type="audio/mpeg" />
+                <source src={ `http://redshiftdigital.com/holiday2016/assets/audio/${drink.music.file}` } type="audio/mpeg" />
               </audio>
             }
 
@@ -51,7 +51,7 @@ class Result extends React.Component {
                 </div>
 
                 <div className="result__drinkimg">
-                  <img src={ drink.img } alt={ drink.name } />
+                  <img src={ `http://redshiftdigital.com/holiday2016/assets/img/drinks/${drink.img}` } alt={ drink.name } />
                 </div>
               </div>
               <div
@@ -86,7 +86,10 @@ class Result extends React.Component {
 
               <div className="recipe__keyline">
                 <div className="recipe__keyline__img">
-                  <img src={ drink.illustration } alt={ drink.name } />
+                  <img
+                    src={ `http://redshiftdigital.com/holiday2016/assets/img/drinks/${drink.illustration}` }
+                    alt={ drink.name }
+                  />
                 </div>
               </div>
 

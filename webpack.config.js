@@ -52,7 +52,7 @@ if (!inProduction) {
   });
 
   [ new webpack.NoErrorsPlugin(),
-		// new webpack.HotModuleReplacementPlugin(),
+		new webpack.HotModuleReplacementPlugin(),
 		new HtmlWebpackPlugin({
 			template: './src/template.html',
       title: 'Redshift Winter 2016'
@@ -68,10 +68,9 @@ if (!inProduction) {
 
 entry.push(`./src/index.jsx`); // Your appʼs entry point
 
-
 module.exports = {
 	entry,
-	// devtool: process.env.WEBPACK_DEVTOOL || 'cheap-module-source-map',
+	devtool: process.env.WEBPACK_DEVTOOL || 'cheap-module-source-map',
 	output: {
 		path: path.join(__dirname, 'public'),
 		filename: 'bundle.js',
