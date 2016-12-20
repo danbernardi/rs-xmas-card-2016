@@ -3,7 +3,9 @@ import { connect } from 'react-redux';
 import { setMusicTo } from '../actions';
 
 const Header = props => {
-  const { activeSheetID, music, musicOn, dispatch } = props;
+  const { activeSheetID, music, musicOn, dispatch, logoStyle } = props;
+  const logoFileName = logoStyle && logoStyle === 'dark' ? 'redshift_logo_dark.svg' : 'redshift_logo.svg';
+
 
   const initialStyles = { transition: 'opacity 0.5s ease-in-out' };
   let transformStyles = {};
@@ -20,7 +22,7 @@ const Header = props => {
       style={ Object.assign(initialStyles, transformStyles) }
     >
       <a href="http://redshiftdigital.com/" target="_blank">
-        <img src={ require('../assets/img/redshift_logo.svg') } alt="Redshift Digital" />
+        <img src={ require(`../assets/img/${logoFileName}`) } alt="Redshift Digital" />
       </a>
       <span
         className={ `audio-control ${music ? '' : 'hidden'}` }

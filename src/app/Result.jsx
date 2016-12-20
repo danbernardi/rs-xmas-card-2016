@@ -1,9 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { setActiveSheetID } from '../actions';
 import Footer from './Footer';
 
 const Result = props => {
-  const { drink, musicOn } = props;
+  const { drink, musicOn, dispatch } = props;
 
   return (
     <div className="result">
@@ -79,6 +80,16 @@ const Result = props => {
                   </li>
                 )) }
               </ol>
+            </div>
+
+            <div className="gallery-link layout--right typ--right">
+              <a
+                onClick={() => {
+                  dispatch(setActiveSheetID('gallery'));
+                }}
+              >
+                View all cocktail recipes <span className="fa fa-long-arrow-right"></span>
+              </a>
             </div>
 
             <Footer showAddress={ true } color={ drink.color } dontHide={ true } />
