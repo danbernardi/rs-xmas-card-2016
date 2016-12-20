@@ -53,7 +53,7 @@ class Dropdown extends React.Component {
       </div>
     );
   }
-};
+}
 
 Dropdown.propTypes = {
   onAnswerSelect: React.PropTypes.func,
