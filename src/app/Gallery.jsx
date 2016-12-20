@@ -6,8 +6,6 @@ import { drinks } from './data/drinks';
 
 const Gallery = props => {
   const { dispatch } = props;
-
-  console.log(drinks);
   const drinkItems = drinks.map((drink) => {
     return (
       <li
