@@ -6,6 +6,9 @@
   top: 0;
   left: 0;
   overflow: hidden;
+  @include breakpoint($tablet-sm) {
+    overflow-y: visible;
+  }
 }
 
 .navsheet__back {

@@ -29,13 +29,13 @@ const Gallery = props => {
 
   return (
     <div className="gallery">
-      <h1 className="mb6 mb3--mlg title">12 Holiday Cocktails from Redshift</h1>
+      <h1 className="mb6 my3--mlg title">12 Holiday Cocktails from Redshift</h1>
       <ul className="drink-list cf">
         { drinkItems }
       </ul>
 
       <div className="gallery-footer">
-        <h2>Thanks for a great year. See you in 2017!</h2>
+        <h2 className="mb3--tlg">Thanks for a great year. See you in 2017!</h2>
 
         <button
           className={ 'btn btn--ghost' }
