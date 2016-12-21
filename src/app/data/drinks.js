@@ -304,7 +304,7 @@ export const drinks = [
       '1 ounce Pisco',
       '½ ounce gin',
       '2 ounces blended light aged rum',
-      '½ ounce oloroso Sherry'
+      '½ ounce oloroso sherry'
     ],
     instructions: [
       'Fill a cocktail shaker with ice.',
