@@ -271,6 +271,18 @@ audio {
   }
   .audio-child {
     position: relative;
+    .pause {
+      background-image: url('http://redshiftdigital.com/holiday2016/assets/img/pause.png');
+      width: 1.6rem;
+      height: 1.6rem;
+      background-repeat: no-repeat;
+    }
+    .play {
+      background-image: url('http://redshiftdigital.com/holiday2016/assets/img/play.png');
+      width: 1.6rem;
+      height: 1.6rem;
+      background-repeat: no-repeat;
+    }
   }
   &.hidden {
     opacity: 0;
@@ -279,8 +291,8 @@ audio {
     font-size: 2.5rem;
     display: inline-block;
     position: absolute;
-    left: -2rem;
-    bottom: 0.9rem;
+    left: -1rem;
+    top: 0;
   }
   p {
     font-size: 1.2rem;

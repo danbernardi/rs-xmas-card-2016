@@ -44,9 +44,9 @@ class Index extends React.Component {
       >
         <div className="row typ--center">
           <div className="col-12 col-12--tlg col-center">
-            <h1 className="typ--bold my10 my3--mlg mt10--mlg">The Redshift Holiday Cocktail Generator</h1>
+            <h1 className="typ--bold mt7 mb5 my3--mlg mt10--mlg">The Redshift Holiday Cocktail Generator</h1>
             <img src="http://www.redshiftdigital.com/holiday2016/assets/img/empty_glasses.svg" />
-            <h2 className="typ--bold my10 my3--mlg">Answer a few questions and we’ll find your perfect holiday tipple.</h2>
+            <h2 className="typ--bold my5 my3--mlg">Answer a few questions and we’ll find your perfect holiday tipple.</h2>
             <button className="btn mb10 mb10--mlg mt3--mlg" onClick={ () => switchActiveSheet('naughty') }>Let's Get Shaking</button>
           </div>
         </div>

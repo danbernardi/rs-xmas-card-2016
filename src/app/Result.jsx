@@ -110,7 +110,7 @@ class Result extends React.Component {
                 onClick={ () => { dispatch(setMusicTo(!musicOn)) } }
               >
                 <div className="audio-child">
-                  <i className={ musicOn ? 'fa fa-pause' : 'fa fa-play' } style={{ display: 'inline-block' }}/>
+                  <i className={ musicOn ? 'pause' : 'play' } style={{ display: 'inline-block' }}/>
                   <div style={{ display: 'inline-block' }}>
                     <p>{ drink.music.name }</p>
                     <p>{ drink.music.artist }</p>
