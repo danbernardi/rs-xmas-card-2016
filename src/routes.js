@@ -3,7 +3,7 @@ import App from './app/App';
 const routeConfig = (/*store*/) => {
   return [
     {
-      path: '/',
+      path: '/holiday2016/',
       component: App
     }
   ]
