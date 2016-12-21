@@ -20,6 +20,13 @@
   height: calc(100vh - 11.5rem)
 }
 
+.result__recommend {
+  // media queries
+  @include breakpoint($mobile-lg) {
+    padding-top: 1.4rem;
+  }
+}
+
 .result__drink {
   position: absolute;
   top: 50%;
@@ -57,13 +64,13 @@
   @include breakpoint($mobile-lg) {
     position: absolute;
     right: 2rem;
-    bottom: 8rem;
+    bottom: 25rem;
     width: 48%;
     text-align: right;
     z-index: 99;
     margin-top: 2rem;
     margin-bottom: 0;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -78,9 +85,9 @@
   @include breakpoint($mobile-lg) {
     position: absolute;
     float: none;
-    width: 60%;
-    left: -2rem;
-    bottom: 2rem;
+    width: 66%;
+    left: -5rem;
+    bottom: 0rem;
   }
 }
 
@@ -92,6 +99,8 @@
     float: none;
     width: 100%;
     margin-bottom: 6rem;
+    position: relative;
+    z-index: 99;
   }
 
   h1 {
@@ -99,6 +108,7 @@
     // media queries
     @include breakpoint($mobile-lg) {
       font-size: 5rem;
+      line-height: 1.2;
     }
   }
 }
@@ -165,7 +175,7 @@ audio {
   z-index: 1000;
   // media queries
   @include breakpoint($mobile-lg) {
-    bottom: 2rem;
+    bottom: 2.8rem;
     right: 2rem;
   }
   .audio-child {

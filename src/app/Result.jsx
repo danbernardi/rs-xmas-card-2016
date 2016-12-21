@@ -81,14 +81,14 @@ class Result extends React.Component {
             <div className="theme--dark py10 py0--mlg layout--relative result__drink--frame" style={ { backgroundColor: drink.color } }>
               <div className="result__gradient-overlay"></div>
               <div className="col-8 col-center">
-                <h3 className="typ--center">{drink.heading}</h3>
-                <h3 className="mb10 typ--center result__drink--heading">May we recommend...</h3>
+                <h3 className="typ--center result__drink--heading">{drink.heading}</h3>
+                <h3 className="mb10 result__recommend typ--center">May we recommend...</h3>
 
               </div>
 
               <div className="cf result__drink row col-center pt10 pt0--mlg cf">
                 <div className="result__drinkname">
-                  <h1 className="result__name pl5 pt6 pl0--tmd pt0--tmd pt2--mlg">{ drink.name }</h1>
+                  <h1 className="result__name pl5 pt6 pl0--tmd pt0--tmd pt5--mlg">{ drink.name }</h1>
                 </div>
 
                 <div className="result__drinkimg">
