@@ -41,9 +41,7 @@ class Result extends React.Component {
   constructor(props) {
     super(props);
     this.container = null;
-    this.state = {diff: true};
-    //
-
+    this.state = {};
   }
 
   componentWillReceiveProps(newProps) {

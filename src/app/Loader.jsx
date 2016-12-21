@@ -51,10 +51,9 @@ class Loader extends React.Component {
 
     let drink = randomElem(sortedDrinks.filter(d => d.distance === sortedDrinks[0].distance));
 
-    drink = beer;
-    // if (beerFriendlyAnswers.length === questions.length) {
-    //   drink = beer;
-    // }
+    if (beerFriendlyAnswers.length === questions.length) {
+      drink = beer;
+    }
 
     return drink;
   }
