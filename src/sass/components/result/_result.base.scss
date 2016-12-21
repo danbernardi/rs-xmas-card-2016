@@ -197,6 +197,7 @@
   display: block;
   text-align: center;
   border-bottom: 1px solid #fff;
+  letter-spacing: 0.7rem;
 
   // media queries
   @include breakpoint($mobile-lg) {
