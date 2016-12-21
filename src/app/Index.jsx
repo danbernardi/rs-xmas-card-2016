@@ -45,7 +45,7 @@ class Index extends React.Component {
         <div className="row typ--center">
           <div className="col-12 col-12--tlg col-center">
             <img src="http://www.redshiftdigital.com/holiday2016/assets/img/empty_glasses.svg" />
-            <h1 className="typ--bold my10 my3--mlg">We've created a cocktail recipe generator to help you find your perfect drink this holiday season.</h1>
+            <h1 className="typ--bold my10 my3--dlg">We've created a cocktail recipe generator to help you find your perfect drink this holiday season.</h1>
             <button className="btn mb10 mb5--mlg" onClick={ () => switchActiveSheet('naughty') }>Start</button>
           </div>
         </div>

@@ -51,6 +51,26 @@
   }
 }
 
+.result__beer-drink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 105.5rem;
+  // media queries
+  @include breakpoint($tablet-md) {
+    text-align: center;
+  }
+  // @include breakpoint($mobile-lg) {
+  //   display: block;
+  //   height: 100%;
+  // }
+}
+
 .recipe {
   padding-bottom: 26rem;
   min-height: calc(100vh + 11.5rem);
@@ -82,13 +102,32 @@
   }
 }
 
-.result__beer-drinkimg {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-image: url('http://redshiftdigital.com/holiday2016/assets/img/drinks/beer_fink.png');
-  background-size: cover;
-}
+  .result__beer-drinkimg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('http://redshiftdigital.com/holiday2016/assets/img/drinks/beer_fink.png');
+    background-size: cover;
+    @include breakpoint($mobile-lg) {
+      // height: auto;
+      // max-width: 100%;
+      // bottom: 0;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      bottom: 0;
+      background-position: left bottom;
+    }
+    .result__drink {
+      top: 7%;
+    }
+  }
+  .result__drinkname {
+    @include breakpoint($mobile-lg) {
+      max-width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 
 .result__drinkimg {
   width: 33%;
@@ -113,6 +152,10 @@
   // float: right;
   padding-top: 0;
   padding-left: 8rem;
+  &.beer {
+    max-width: 100%;
+    padding-left: 0;
+  }
   // media queries
   @include breakpoint($tablet-md) {
     margin-bottom: 6rem;
@@ -126,6 +169,10 @@
     // padding-top: 0;
     padding-left: 4.5rem;
     padding-right: 4.5rem;
+    &.beer {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   h1 {
