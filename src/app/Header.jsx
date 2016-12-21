@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 
 const Header = props => {
   const { activeSheetID, logoStyle } = props;
-  const logoLightPages = ['naughty', 'party', 'snow', 'meal', 'loader'];
-  const darkLogo = logoLightPages.indexOf(activeSheetID.current) !== -1;
+  const logoDarkPages = ['naughty', 'party', 'snow', 'meal', 'loader', 'gallery'];
+  const darkLogo = logoDarkPages.indexOf(activeSheetID.current) !== -1;
 
 
 
