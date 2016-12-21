@@ -42,8 +42,6 @@ class Result extends React.Component {
     super(props);
     this.container = null;
     this.state = {};
-    //diff: true
-
   }
 
   componentWillReceiveProps(newProps) {
@@ -77,16 +75,16 @@ class Result extends React.Component {
               </audio>
             }
 
+            <div className={`${this.state.diff ? 'py0' : 'py6'} theme--dark py0--mlg layout--relative result__drink--frame`} style={ { backgroundColor: drink.color } }>
 
-            <div className="theme--dark py6 py0--mlg layout--relative result__drink--frame" style={ { backgroundColor: drink.color } }>
               <div className="result__gradient-overlay"></div>
               { this.state.diff ?
 
               <div className="result__beer-drinkimg">
-                <div className="cf result__drink col-center pt10 pt0--mlg cf">
+                <div className="cf result__beer-drink col-center pt10 pt0--mlg cf">
 
-                  <div className="result__drinkname">
-                    <img src="http://redshiftdigital.com/holiday2016/assets/img/drinks/cheap_beer.png"/>
+                  <div className="beer result__drinkname pt5">
+                    <img src="http://www.redshiftdigital.com/holiday2016/assets/img/drinks/cheap_beer.png"/>
                     <h3 className="typ--center result__drink--heading">party animal</h3>
 
                   </div>
