@@ -11,7 +11,7 @@ const Gallery = props => {
       <li
         className="list--inline"
         style={{backgroundColor: drink.color}}
-        onClick={ (event) => {
+        onClick={ () => {
           dispatch(setDrinkTo(drink));
           dispatch(setActiveSheetID('result'));
         }}
@@ -40,7 +40,7 @@ const Gallery = props => {
         <button
           className={ 'btn btn--ghost' }
           onClick={ () => {
-            window.location = 'http://redshiftdigital.com/holiday2016';
+            window.location = 'http://redshiftdigital.com/holiday2016/';
           }
         }>
           Take the quiz again

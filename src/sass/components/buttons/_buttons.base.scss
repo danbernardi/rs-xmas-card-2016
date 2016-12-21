@@ -1,6 +1,6 @@
 .btn {
   @include font(button);
-  @include font-size(default);
+  @include font-size(button);
   background: $offwhite;
   padding: 1.5rem 5.5rem;
   border-radius: 3rem;
