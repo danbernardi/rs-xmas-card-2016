@@ -1,7 +1,7 @@
 export const drinks = [
   {
     name: 'The Martinez',
-    illustration: 'the-martinez_illust.svg',
+    illustration: 'the-martinez_illust.png',
     heading: 'Your tastes are strong and steeped in tradition.',
     img: 'martinez.png',
     color: '#752719',
@@ -29,7 +29,7 @@ export const drinks = [
 
   {
     name: 'Remember The Maine',
-    illustration: 'remember-the-maine_illust.svg',
+    illustration: 'remember-the-maine_illust.png',
     heading: 'You\'ve got a dash of the revolutionary in you.',
     img: 'remember_the_maine.png',
     color: '#66385C',
@@ -61,7 +61,7 @@ export const drinks = [
 
   {
     name: 'The Jack Rose',
-    illustration: 'the-jack-rose_illust.svg',
+    illustration: 'the-jack-rose_illust.png',
     heading: 'You have a whimsical, literary sense about you.',
     img: 'jack_rose.png',
     description: 'Like so many cocktails, the Jack Rose is embodied by the colorful characters who sipped it—from prohibition-era gangsters, to author John Steinbeck, to Hemingway’s wounded, languishing narrator in The Sun Also Rises. The drink is a sour made from apple brandy — ”applejack” as it was known then — and it remains a simple but solid addition to the canon.',
@@ -84,7 +84,7 @@ export const drinks = [
 
   // // {
   // //   name: 'The Last Word',
-  // //   illustration: 'the-last-word_illust.svg',
+  // //   illustration: 'the-last-word_illust.png',
   // //   heading: 'You are positively rakish, sexy and swashbuckling, may we recommend...',
   // //   img: 'placeholder.png',
   // //   color: '#8C8E49',
@@ -112,7 +112,7 @@ export const drinks = [
 
   {
     name: 'Paper Plane',
-    illustration: 'paper-plane_illust.svg',
+    illustration: 'paper-plane_illust.png',
     heading: 'You\'re a smooth operator with swagger and style.',
     img: 'paper_plane.png',
     color: '#385A24',
@@ -137,7 +137,7 @@ export const drinks = [
 
   {
     name: 'East Side',
-    illustration: 'east-side_illust.svg',
+    illustration: 'east-side_illust.png',
     heading: 'You shake up any scene like Al Capone with a Tommy Gun.',
     img: 'east_side.png',
     color: '#243C56',
@@ -166,7 +166,7 @@ export const drinks = [
 
   {
     name: 'Oaxaca Old Fashioned',
-    illustration: 'oaxaca-old-fasioned_illust.svg',
+    illustration: 'oaxaca-old-fasioned_illust.png',
     heading: 'You aren\'t afraid to send up an old tradition with sophistication and style.',
     img: 'oaxaca_old_fashioned.png',
     color: '#6B3C1D',
@@ -194,7 +194,7 @@ export const drinks = [
 
   {
     name: 'Blood and Sand',
-    illustration: 'blood-and-sand_illust.svg',
+    illustration: 'blood-and-sand_illust.png',
     heading: 'Like a victorious matador, you are rakish, sexy, and swashbuckling.',
     img: 'blood_and_sand.png',
     color: '#A4264D',
@@ -224,7 +224,7 @@ export const drinks = [
 
   {
     name: 'Old Cuban',
-    illustration: 'old-cuban_illust.svg',
+    illustration: 'old-cuban_illust.png',
     heading: 'You are a modern day warrior and sophisticate, open to adventure and partial to aged rum.',
     img: 'old_cuban.png',
     color: '#AF5012',
@@ -257,7 +257,7 @@ export const drinks = [
 
   {
     name: 'Three Dots and a Dash',
-    illustration: 'three-dots-and-a-dash_illust.svg',
+    illustration: 'three-dots-and-a-dash_illust.png',
     heading: 'You bring adventure, glory, and a little mystery to the mix.',
     img: 'three_dots_and_a_dash.png',
     color: '#D56F22',
@@ -292,7 +292,7 @@ export const drinks = [
 
   {
     name: 'Fog Cutter',
-    illustration: 'fog-cutter_illust.svg',
+    illustration: 'fog-cutter_illust.png',
     heading: 'You are never one to let the fog of today block hopes for tomorrow.',
     img: 'fog_cutter.png',
     color: '#78767B',
@@ -325,7 +325,7 @@ export const drinks = [
 
   {
     name: 'Zombie',
-    illustration: 'zombie_illust.svg',
+    illustration: 'zombie_illust.png',
     heading: 'Zombies don\'t phase you, and memory won\'t serve you.',
     img: 'zombie.png',
     color: '#2C668E',
@@ -359,7 +359,7 @@ export const drinks = [
   {
     name: 'Hot Apple Pie',
     heading: 'Your ideal holiday is inside by the fire, swapping stories with loved ones (between naps, that is).',
-    illustration: 'hot-apple-pie_illust.svg',
+    illustration: 'hot-apple-pie_illust.png',
     img: 'hot_apple_pie.png',
     color: '#8C171F',
     description: 'Winter nights are always better with a steaming mug in your hands. But if you really want to "treat yo self," go for the Hot Apple Pie. It calls for Tuaca, a vanilla-citrus Italian liquor that dates back 500 years, which makes this apple-cinnamon treat a little more interesting than that splash of whisky in your cocoa.',
@@ -394,7 +394,7 @@ export const beer = {
   description: "Cheap beer doesn’t mean you are cheap. You are a priceless inscrutable artifact of dive bars; a life-saving, rule breaking anti-hero. When work is done, it is done. If someone tries to strike up a conversation about politics, you only respond in pig latin. Cheap beer allows you to leave the house and be in it for the long haul. You can drink all night, stay up till dawn, tell a few jokes of questionable integrity, hit four parties and still manage to hold back someone’s hair at the porcelain throne.",
   ingredients: ['1 can'],
   instructions: ['Open can'],
-  illustration: 'beer_illust.svg',
+  illustration: 'beer_illust.png',
   music: {
     file: 'beer.mp3',
     artist: 'Twisted Sister',
