@@ -6,15 +6,15 @@ const Footer = props => {
 
   const socialMedia = [
     {
-      icon: 'fa-facebook',
+      icon: 'fa fa-facebook',
       url: 'https://www.facebook.com/REDSHIFT-214656608561411/'
     },
     {
-      icon: 'fa-twitter',
+      icon: 'fa fa-twitter',
       url: 'https://twitter.com/weareredshift'
     },
     {
-      icon: 'fa-instagram',
+      icon: 'fa fa-instagram',
       url: 'https://www.instagram.com/weareredshift/'
     }
   ];

@@ -61,7 +61,7 @@ class Loader extends React.Component {
   render() {
     return (
       <div className={ `loader ${ this.state.fired ? 'hidden' : ''}`} >
-        <img src={ require('../assets/img/loader.gif') } />
+        <img src="http://www.redshiftdigital.com/holiday2016/assets/img/loader.gif" />
         <h4>[Mixing your cocktail...]</h4>
       </div>
     );
