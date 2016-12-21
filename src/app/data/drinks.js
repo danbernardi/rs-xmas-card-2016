@@ -55,7 +55,7 @@ export const drinks = [
     music: {
       file: 'remember-the-maine.mp3',
       artist: 'The Soul Saints Orchestra',
-      name: 'Santa\'s Got a Bag of Soul'
+      name: 'Santa’s Got a Bag of Soul'
     }
   },
 
@@ -117,7 +117,7 @@ export const drinks = [
     heading: "You’re a smooth operator with swagger and style. This confident, young cocktail is the perfect holiday wingman.",
     img: 'paper_plane.png',
     color: '#385A24',
-    description: "With four equal parts bourbon, aperol, amaro, and lemon juice — this <em>aperitivo</em> is a cinch to make and a pleasure to drink. If you like sour-forward cocktails, you’ll find this drink immediately likeable. And yes, its name is a reference to MIA’s hit song “Paper Planes”",
+    description: "With four equal parts bourbon, aperol, amaro, and lemon juice — this <em>aperitivo</em> is a cinch to make and a pleasure to drink. If you like sour-forward cocktails, you’ll find this drink immediately likeable. And yes, its name is a reference to MIA’s hit song “Paper Planes.”",
     ingredients: [
       '3/4 ounces bourbon',
       '3/4 ounces Aperol',
@@ -145,7 +145,7 @@ export const drinks = [
     description: "The gin that gangsters smuggled into the South Side of Chicago had a harsh bite, requiring cocktails with sweeter mixers than their North Side counterparts. At least that’s the story surrounding Al Capone and his alleged drink of choice — the South Side — a gin-based number with lime juice, simple syrup, and sprigs of mint. The East Side does something similar but with the added brightness of St. Germain and cucumber.",
     ingredients: [
       '2 ounces Plymouth gin',
-      '1 ounce St-Germain',
+      '1 ounce St Germain',
       '3/4 ounce Fresh lime juice'
     ],
     instructions: [
@@ -210,7 +210,7 @@ export const drinks = [
     instructions: [
       'Add all the ingredients to a shaker and fill with ice.',
       'Shake, and strain into a chilled coupe or cocktail glass.',
-      'Garnish with an orange peel'
+      'Garnish with an orange peel.'
     ],
     garnish: [
       'orange peel'
@@ -339,11 +339,11 @@ export const drinks = [
       '1 teaspoon grenadine',
       '6 drops Pernod',
       '1 dash of Angostura bitters',
-      '½ ounce Don\'s mix (2 parts grapefruit juice to 1 part cinnamon-infused sugar syrup blend with 6 ounces (3/4 cup) crushed ice, then blend at high speed for no more than 5 seconds.',
-      'Add ice cubes to fill.'
+      '½ ounce Don’s mix (2 parts grapefruit juice to 1 part cinnamon-infused sugar syrup blended at high speed with 6 ounces (3/4 cup) crushed ice for no more than 5 seconds)',
+      'Ice cubes to fill'
     ],
     instructions: [
-      'Mix ingredients other than the 151 in a shaker with ice',
+      'Mix ingredients other than the 151 in a shaker with ice.',
       'Pour into glass and top with the high-proof rum.'
     ],
     garnish: [
@@ -370,9 +370,9 @@ export const drinks = [
       'Whipped cream'
     ],
     instructions: [
-      'Pour the Tuaca in an Irish coffee glass',
-      'Fill with hot apple cider',
-      'Top with whipped cream',
+      'Pour the Tuaca in an Irish coffee glass.',
+      'Fill with hot apple cider.',
+      'Top with whipped cream.',
       'Garnish with a cinnamon stick.'
     ],
     garnish: [
@@ -395,7 +395,7 @@ export const beer = {
   color: '#6A3661',
   description: "Cheap beer doesn’t mean you are cheap. You are a priceless inscrutable artifact of dive bars; a life-saving, rule breaking anti-hero. When work is done, it is done. If someone tries to strike up a conversation about politics, you only respond in pig latin. Cheap beer allows you to leave the house and be in it for the long haul. You can drink all night, stay up till dawn, tell a few jokes of questionable integrity, hit four parties and still manage to hold back someone’s hair at the porcelain throne.",
   ingredients: ['1 can'],
-  instructions: ['Open can'],
+  instructions: ['Open can.'],
   illustration: 'beer_illust.png',
   music: {
     file: 'beer.mp3',
