@@ -17,7 +17,11 @@
 }
 
 .result__drink--frame {
-  height: calc(100vh - 11.5rem)
+  height: calc(100vh - 11.5rem);
+  // media queries
+  @include breakpoint($mobile-lg) {
+    height: calc(100vh - 6rem);
+  }
 }
 
 .result__recommend {
@@ -77,11 +81,6 @@
 .result__drinkimg {
   width: 50%;
   float: left;
-  // media queries
-  @include breakpoint($tablet-md) {
-    float: none;
-    width: 100%;
-  }
   @include breakpoint($mobile-lg) {
     position: absolute;
     float: none;
@@ -96,19 +95,28 @@
   float: right;
   // media queries
   @include breakpoint($tablet-md) {
-    float: none;
-    width: 100%;
     margin-bottom: 6rem;
     position: relative;
     z-index: 99;
   }
 
+  @include breakpoint($mobile-lg) {
+    width: 100%;
+  }
+
   h1 {
     font-size: 8rem;
+    padding-top: 20rem;
+    line-height: 1;
     // media queries
+    @include breakpoint($tablet-md) {
+      padding-top: 15rem;
+    }
     @include breakpoint($mobile-lg) {
+      padding-top: 5rem;
+      position: relative;
       font-size: 5rem;
-      line-height: 1.2;
+      top: 0;
     }
   }
 }
