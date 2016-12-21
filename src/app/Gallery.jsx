@@ -40,7 +40,7 @@ const Gallery = props => {
         <button
           className={ 'btn btn--ghost' }
           onClick={ () => {
-            window.location = 'http://redshiftdigital.com/';
+            window.location = 'http://redshiftdigital.com/holiday2016';
           }
         }>
           Take the quiz again
