@@ -41,7 +41,7 @@ class Result extends React.Component {
     super(props);
     this.container = null;
     this.state = {};
-    // diff: true
+    //diff: true
 
   }
 
@@ -82,28 +82,29 @@ class Result extends React.Component {
               { this.state.diff ?
 
               <div>
-                <div className="cf result__drink row col-center pt10 pt0--mlg cf">
+                <div className="cf result__drink col-center pt10 pt0--mlg cf">
+                  <div className="result__beer-drinkimg">
+                    <img src="http://redshiftdigital.com/holiday2016/assets/img/drinks/beer_fink.png"/>
+                  </div>
                   <div className="result__drinkname">
                     <img src="http://redshiftdigital.com/holiday2016/assets/img/drinks/cheap_beer.png"/>
                     <h3 className="typ--center result__drink--heading">party animal</h3>
 
                   </div>
-                  <div className="result__beer-drinkimg">
-                    <img src="http://redshiftdigital.com/holiday2016/assets/img/drinks/beer_fink.png"/>
-                  </div>
+
                 </div>
               </div>
               :
               <div>
-                <div className="cf result__drink row col-center pt10 pt0--mlg cf">
-                  <div className="result__drinkname">
-                    <h1 className="result__name pb7">{ drink.name }</h1>
-                    <h3 className="result__drink--heading">{drink.heading}</h3>
-
-                  </div>
-                  <div className="result__drinkimg">
+                <div className="cf result__drink col-center pt10 pt0--mlg cf">
+                  <div className="result__drinkimg ">
                     <img src={ `http://redshiftdigital.com/holiday2016/assets/img/drinks/${drink.img}` } alt={ drink.name } />
                   </div>
+                  <div className="result__drinkname">
+                    <h1 className="result__name pb4">{ drink.name }</h1>
+                    <h3 className="result__drink--heading">{drink.heading}</h3>
+                  </div>
+
                 </div>
               </div>
               }

@@ -32,6 +32,9 @@
 }
 
 .result__drink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -43,6 +46,7 @@
     text-align: center;
   }
   @include breakpoint($mobile-lg) {
+    display: block;
     height: 100%;
   }
 }
@@ -67,7 +71,7 @@
   // media queries
   @include breakpoint($mobile-lg) {
     position: absolute;
-    right: 0;
+    right: 2rem;
     bottom: 10rem;
     width: 48%;
     text-align: right;
@@ -80,12 +84,13 @@
 
 .result__beer-drinkimg {
   width: 100%;
+  position: absolute;
 }
 
 .result__drinkimg {
-  width: 34%;
-  float: left;
-  margin-left: 10rem;
+  width: 33%;
+  // float: left;
+  margin-right: 0rem;
   @include breakpoint($mobile-lg) {
     margin-left: 0;
     position: absolute;
@@ -97,9 +102,10 @@
 }
 
 .result__drinkname {
-  width: 50%;
-  float: right;
-  padding-top: 10rem;
+  max-width: 50%;
+  // float: right;
+  padding-top: 0;
+  padding-left: 8rem;
   // media queries
   @include breakpoint($tablet-md) {
     margin-bottom: 6rem;
@@ -108,9 +114,11 @@
   }
 
   @include breakpoint($mobile-lg) {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
-    padding-top: 2rem;
+    padding-top: 0;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
   }
 
   h1 {
@@ -121,11 +129,17 @@
     // @include breakpoint($tablet-md) {
     //   padding-top: 15rem;
     // }
+    @include breakpoint($tablet-sm) {
+      // padding-top: 5rem;
+      position: relative;
+      font-size: 5rem;
+      top: 1.6rem;
+    }
     @include breakpoint($mobile-lg) {
       // padding-top: 5rem;
       position: relative;
       font-size: 5rem;
-      top: 0;
+      top: 1.6rem;
     }
   }
 }
