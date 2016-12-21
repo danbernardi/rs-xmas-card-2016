@@ -3,12 +3,21 @@ import { connect } from 'react-redux';
 
 const Header = props => {
   const { activeSheetID, logoStyle } = props;
-  const logoFileName = logoStyle && logoStyle === 'dark' ? 'redshift_logo_dark.svg' : 'redshift_logo.svg';
+  const logoLightPages = ['naughty', 'party', 'snow', 'meal', 'loader'];
+  const darkLogo = logoLightPages.indexOf(activeSheetID.current) !== -1;
+
+
+
+  console.log(activeSheetID.current, darkLogo);
+
+
+
+  const logoFileName = darkLogo ? 'redshift_logo_dark.svg' : 'redshift_logo.svg';
 
   const initialStyles = { transition: 'opacity 0.5s ease-in-out' };
   let transformStyles = {};
 
-  if (activeSheetID.current === 'index') {
+  if (activeSheetID.current === 'index' || darkLogo) {
     transformStyles = { opacity: '1' };
   } else {
     transformStyles = { opacity: '0.3' };

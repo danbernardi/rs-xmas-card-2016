@@ -1,6 +1,10 @@
 
 .gallery {
   margin-top: 14rem;
+  @include breakpoint($tablet-sm) {
+    margin-top: 0;
+    overflow-y: visible;
+  }
 }
 
 .gallery .title {
@@ -74,8 +78,18 @@
 .gallery-footer {
   text-align: center;
   margin: 6rem 0;
+  @include breakpoint($mobile-lg) {
+    margin: 0;
+    button {
+      max-width: 70%;
+      margin-bottom: 2rem;
+    }
+  }
 }
 
-  .gallery-footer h2 {
-    margin-bottom: 2rem;
+.gallery-footer h2 {
+  margin-bottom: 2rem;
+  @include breakpoint($tablet-lg) {
+    margin-bottom: 3rem;
   }
+}
