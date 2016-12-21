@@ -2,10 +2,10 @@ export const drinks = [
   {
     name: 'The Martinez',
     illustration: 'the_martinez_illust.png',
-    heading: 'Your tastes are strong and steeped in tradition.',
+    heading: 'Your tastes are strong and steeped in tradition. This cocktail is the definition of old school.',
     img: 'martinez.png',
     color: '#752719',
-    description: 'For what some call the evolutionary link between the Manhattan and the Martini, the Martinez came from humble beginnings. As the story goes, a traveller came into a San Francisco bar and asked for a stout drink before his trip to Martinez, a town north of the city. The bartender reached for Old Tom Gin, which, at the time, was a “poorly distilled gin with sugar added so it’d be palatable.” This sweetened gin became the signature ingredient of this robust yet balanced sipping cocktail.',
+    description: "For what some call the evolutionary link between the Manhattan and the Martini, the Martinez came from humble beginnings. As the story goes, a traveller came into a San Francisco bar and asked for a stout drink before his trip to Martinez, a town north of the city. The bartender reached for Old Tom Gin, which, at the time, was a “poorly distilled gin with sugar added so it’d be palatable.” This sweetened gin became the signature ingredient of this robust yet balanced sipping cocktail.",
     ingredients: [
       '1½ ounces Old Tom gin',
       'Sweet vermouth',
@@ -30,10 +30,10 @@ export const drinks = [
   {
     name: 'Remember The Maine',
     illustration: 'remember_the_maine_illust.png',
-    heading: 'You\'ve got a dash of the revolutionary in you.',
+    heading: "You’ve got a dash of the revolutionary in you. Make this cocktail your rallying cry.",
     img: 'remember_the_maine.png',
     color: '#66385C',
-    description: '"Remember the Maine, to hell with Spain!" went the rallying cry of warmongering journalists when the USS Maine exploded in the Havana Harbor in 1898 under mysterious circumstances. But when famed spirits writer Charles H. Baker first told of this drink, a rye-based number that draws comparisons to both the Sazerac and Manhattan, he was speaking in context of the 1933 Cuban revolution. At the time, he sat in a hotel bar in Havana, "when each swallow was punctuated with bombs going off on the Prado."',
+    description: "“Remember the Maine, to hell with Spain!” screamed warmongering journalists when the USS Maine exploded in the Havana Harbor in 1898 under mysterious circumstances. But when famed spirits writer Charles H. Baker first told of this drink, a rye-based number that draws comparisons to both the Sazerac and Manhattan, he was speaking in context of the 1933 Cuban revolution. At the time, he sat in a hotel bar in Havana, “when each swallow was punctuated with bombs going off on the Prado.”",
     ingredients: [
       '2 ounces rye',
       '3/4 ounce sweet vermouth',
@@ -63,9 +63,9 @@ export const drinks = [
     name: 'The Jack Rose',
     color: '#438270',
     illustration: 'the_jack_rose_illust.png',
-    heading: 'You have a whimsical, literary sense about you.',
+    heading: 'You have a whimsical, literary sense about you. This boozy sour cocktail has your name written all over it.',
     img: 'jack_rose.png',
-    description: 'Like so many cocktails, the Jack Rose is embodied by the colorful characters who sipped it—from prohibition-era gangsters, to author John Steinbeck, to Hemingway’s wounded, languishing narrator in The Sun Also Rises. The drink is a sour made from apple brandy — ”applejack” as it was known then — and it remains a simple but solid addition to the canon.',
+    description: "Like so many cocktails, the Jack Rose is embodied by the colorful characters who sipped it — from prohibition-era gangsters, to author John Steinbeck, to Hemingway’s wounded, languishing narrator in “The Sun Also Rises”. The drink is a sour made from apple brandy — “applejack” as it was known then — and it remains a simple but solid addition to the canon.",
     ingredients: [
       '1 ounce fresh lemon juice',
       '½ ounce grenadine',
@@ -114,10 +114,10 @@ export const drinks = [
   {
     name: 'Paper Plane',
     illustration: 'paper_plane_illust.png',
-    heading: 'You\'re a smooth operator with swagger and style.',
+    heading: "You’re a smooth operator with swagger and style. This confident, young cocktail is the perfect holiday wingman.",
     img: 'paper_plane.png',
     color: '#385A24',
-    description: 'With four equal parts bourbon, aperol, amaro, and lemon juice—this aperitivo is a cinch to make and a pleasure to drink. If you like sour-forward cocktails, you\'ll find this drink immediately likeable. And yes, its name is a reference to MIA\'s hit song "Paper Planes"',
+    description: "With four equal parts bourbon, aperol, amaro, and lemon juice — this <em>aperitivo</em> is a cinch to make and a pleasure to drink. If you like sour-forward cocktails, you’ll find this drink immediately likeable. And yes, its name is a reference to MIA’s hit song “Paper Planes”",
     ingredients: [
       '3/4 ounces bourbon',
       '3/4 ounces Aperol',
@@ -139,10 +139,10 @@ export const drinks = [
   {
     name: 'East Side',
     illustration: 'east_side_illust.png',
-    heading: 'You shake up any scene like Al Capone with a Tommy Gun.',
+    heading: "You shake up a scene like Al Capone with a Tommy Gun. This cocktail is flamboyant, fruity, and full-on gangster.",
     img: 'east_side.png',
     color: '#243C56',
-    description: 'The gin that gangsters smuggled into the South Side of Chicago had a harsh bite, requiring cocktails with sweeter mixers than their North Side counterparts. At least that\'s the story surrounding Al Capone and his alleged drink of choice -- the South Side -- a gin-based number with lime juice, simple syrup, and sprigs of mint. The East Side does something similar but with the added brightness of St. Germain’s and cucumber.',
+    description: "The gin that gangsters smuggled into the South Side of Chicago had a harsh bite, requiring cocktails with sweeter mixers than their North Side counterparts. At least that’s the story surrounding Al Capone and his alleged drink of choice — the South Side — a gin-based number with lime juice, simple syrup, and sprigs of mint. The East Side does something similar but with the added brightness of St. Germain and cucumber.",
     ingredients: [
       '2 ounces Plymouth gin',
       '1 ounce St-Germain',
@@ -168,7 +168,7 @@ export const drinks = [
   {
     name: 'Oaxaca Old Fashioned',
     illustration: 'oaxaca_old_fashioned_illust.png',
-    heading: 'You aren\'t afraid to send up an old tradition with sophistication and style.',
+    heading: "You aren’t afraid to send up an old tradition with sophistication and style. This smokey cocktail nods to the past even as it winks to the future.",
     img: 'oaxaca_old_fashioned.png',
     color: '#6B3C1D',
     description: 'Swap whiskey with tequila and mezcal for this smokey and strong yet subtly balanced South-of-the-Border riff on an old classic. Invented by Philip Ward in the East Village in 2007, the instant popularity of the Oaxaca Old Fashioned helped lead to a resurgence in cocktails featuring Mexican spirits.',
@@ -196,10 +196,10 @@ export const drinks = [
   {
     name: 'Blood and Sand',
     illustration: 'blood_and_sand_illust.png',
-    heading: 'Like a victorious matador, you are rakish, sexy, and swashbuckling.',
+    heading: 'Like a victorious matador, you are rakish, sexy, and swashbuckling. Equal parts fruity and smoky, this potent cocktail will have you seeing red and taking risks.',
     img: 'blood_and_sand.png',
     color: '#A4264D',
-    description: 'Rudolph Valentino, known as "The Latin Lover," was a star and sex symbol of the silent film era. While his 1922 bullfighter movie "Blood and Sand" may not have stood the test of time, the dashing drink named after it sure has.',
+    description: "Rudolph Valentino, known as “The Latin Lover,” was a star and sex symbol of the silent film era. While his 1922 bullfighter movie “Blood and Sand” has not stood the test of time, the dashing drink sure has.",
     ingredients: [
       '3/4 ounces The Glenrothes Select',
       'Reserve Single Malt Scotch Whisky',
@@ -226,10 +226,10 @@ export const drinks = [
   {
     name: 'Old Cuban',
     illustration: 'old_cuban_illust.png',
-    heading: 'You are a modern day warrior and sophisticate, open to adventure and partial to aged rum.',
+    heading: 'You are a modern-day adventurer — charming, brave  and partial to aged rum. Here’s a bubbly drink to refresh your soul and loosen your tongue.',
     img: 'old_cuban.png',
     color: '#AF5012',
-    description: 'A sophisticated cousin to the mojito, The Old Cuban is the creation of modern cocktail master Audry Saunders. Its name conjures up the classic Hemingway tale The Old Man and the Sea, in which an old Cuban fisherman wrestles with a legendary marlin for days on end—a toiling, painful, delirious battle—and when the marlin is finally caught, the fisherman must watch in horror as his prize is eaten by sharks. Surely time for a drink, no?',
+    description: 'A sophisticated cousin to the mojito, The Old Cuban is the creation of modern cocktail master Audry Saunders. Its name conjures up the classic Hemingway tale “The Old Man and the Sea”, in which an old Cuban fisherman wrestles with a legendary marlin for days on end — a toiling, painful, delirious battle — and when the marlin is finally caught, the fisherman must watch in horror as his prize is eaten by sharks. Surely time for a drink, no?',
     ingredients: [
       '1½ ounces Bacardí 8-year-old rum',
       'Freshly squeezed lime juice',
@@ -259,10 +259,10 @@ export const drinks = [
   {
     name: 'Three Dots and a Dash',
     illustration: 'three_dots_and_a_dash_illust.png',
-    heading: 'You bring adventure, glory, and a little mystery to the mix.',
+    heading: 'You bring adventure, glory, and a little mystery to the mix. After a few of these rummy drinks you may need to send out three dots, three dashes and three more dots.',
     img: 'three_dots_and_a_dash.png',
     color: '#D56F22',
-    description: 'A strong but dangerously drinkable tiki cocktail invented by legendary Don the Beachcomber after World War II, this cocktail gets its namesake from the morse code signal for “Victory”: two dots and a dash. Its name is cleverly reflected in the garnish of three maraschino cherries on a cocktail pick (the dots) and one pineapple frond (the dash).',
+    description: 'A strong but dangerously drinkable tiki drink created by legendary Don the Beachcomber after World War II, this cocktail gets its namesake from the morse code signal for “Victory”: three dots and a dash. Its name is cleverly reflected in the garnish of three maraschino cherries on a cocktail pick (the dots) and one pineapple frond (the dash).',
     ingredients: [
       '1 ounce rhum agricole (preferably Duquesne Agricole Eleve Sous Bois)',
       '1 ounce rum, Guyanese (preferably El Dorado 5 Year)',
@@ -294,10 +294,10 @@ export const drinks = [
   {
     name: 'Fog Cutter',
     illustration: 'fog_cutter_illust.png',
-    heading: 'You are never one to let the fog of today block hopes for tomorrow.',
+    heading: 'You are never one to let the fog of today block hopes for tomorrow. Fruity, fun, and bright — let this liquid sunshine guide the way.',
     img: 'fog_cutter.png',
     color: '#78767B',
-    description: 'In the 50’s and 60’s there were two Tiki Bar gods in California: Hollywood’s Donn Beach (“Don the Beachcomber”) and Oakland’s Victor Bergeron (“Trader Vic”). Fierce rivals, their followings each lay claim to classics like the Mai Tai, the Zombie, and every variation of Punch you can imagine. The Fog-Cutter is a lesser-known Tiki drink from Trader Vic, but it\'s not to be underestimated. A flamboyant combination of fruity flavor and boozey pep, it’s your island vacation in a glass.',
+    description: 'In the ’50s and ’60s there were two Tiki Bar gods in California: Hollywood’s Donn Beach (“Don the Beachcomber”) and Oakland’s Victor Bergeron (“Trader Vic”). Fierce rivals, their followings each lay claim to classics like the Mai Tai, the Zombie, and every variation of punch you can imagine. The Fog-Cutter is a lesser-known Tiki drink from Trader Vic, but it’s not to be underestimated. A flamboyant combination of fruity flavor and boozey pep—it’s your island vacation in a glass.',
     ingredients: [
       '½ ounce fresh lemon juice',
       '1½ ounce fresh orange juice',
@@ -327,10 +327,10 @@ export const drinks = [
   {
     name: 'Zombie',
     illustration: 'zombie_illust.png',
-    heading: 'Zombies don\'t phase you, and memory won\'t serve you.',
+    heading: 'Zombies don’t phase you, and memory won’t serve you. This fruity drink hints at a hangover to come... but what a way to go.',
     img: 'zombie.png',
     color: '#2C668E',
-    description: 'A hungover customer walked into the legendary Don the Beachcomber’s tikli bar and asked for something to help him through his business travels. Several days later, the customer returned rubbing his head, complaining that Don’s concoction had turned him into a zombie for the rest of the trip. And thus, bleary-eyed and troublemaking, the Zombie was born. The drink’s fun and fruity tenor belies a potency that has forced Beachcomber restaurants to instill a two-Zombie-per-person limit.',
+    description: 'A hungover customer walked into the legendary Don the Beachcomber’s tiki bar and asked for something to help him through his business travels. Several days later, the customer returned rubbing his head, complaining that Don’s concoction had turned him into a zombie for the rest of the trip. And thus, bleary-eyed and troublemaking, the Zombie was born. The drink’s fun and fruity tenor belies a potency that has forced Beachcomber restaurants to instill a two-Zombie-per-person limit.',
     ingredients: [
       '3/4 ounce fresh lime juice',
       '½ ounce felernum',
@@ -343,8 +343,8 @@ export const drinks = [
       'Add ice cubes to fill.'
     ],
     instructions: [
-      'Mix ingredients other than the 151 in a shaker with ice.',
-      'Pour into glass and top with the high-proof rum'
+      'Mix ingredients other than the 151 in a shaker with ice',
+      'Pour into glass and top with the high-proof rum.'
     ],
     garnish: [
       '1 mint sprig'
@@ -359,11 +359,11 @@ export const drinks = [
 
   {
     name: 'Hot Apple Pie',
-    heading: 'Your ideal holiday is inside by the fire, swapping stories with loved ones (between naps, that is).',
+    heading: 'Your ideal holiday is inside by the fire, swapping stories with loved ones (between naps, that is). This warm and fruity cocktail will ease you on your way to slumberland.',
     illustration: 'hot_apple_pie_illust.png',
     img: 'hot_apple_pie.png',
     color: '#8C171F',
-    description: 'Winter nights are always better with a steaming mug in your hands. But if you really want to "treat yo self," go for the Hot Apple Pie. It calls for Tuaca, a vanilla-citrus Italian liquor that dates back 500 years, which makes this apple-cinnamon treat a little more interesting than that splash of whisky in your cocoa.',
+    description: 'Winter nights are always better with a steaming mug in your hands. But if you really want to “treat yo self,” go for the Hot Apple Pie. It calls for Tuaca, a vanilla-citrus Italian liquor that dates back 500 years, which makes this apple-cinnamon treat a little more interesting than that splash of whiskey in your cocoa.',
     ingredients: [
       '2 ounces Tuaca',
       'Hot apple cider',
@@ -389,7 +389,7 @@ export const drinks = [
 
 export const beer = {
   name: "Cheap Beer",
-  heading: "You are a rock and roll party animal. May we recommend...",
+  heading: "You are a rock and roll party animal. You already know what to drink...",
   img: 'cheap_beer.svg',
   diff: true,
   color: '#6A3661',
