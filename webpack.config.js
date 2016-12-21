@@ -11,8 +11,6 @@ const PORT = process.env.PORT || "8888";
 
 const inProduction = process.env.NODE_ENV === 'production';
 
-//NODE_ENV=production node --max_old_space_size=4096 node_modules/webpack/bin/webpack -p --config webpack.config.js --progress --profile --colors
-
 // global css
 loaders.push({
 	test: /[\/\\](node_modules|global)[\/\\].*\.css$/,
@@ -67,6 +65,23 @@ if (!inProduction) {
 }
 
 entry.push(`./src/index.jsx`); // Your appʼs entry point
+
+
+//Puts react in production mode
+//https://facebook.github.io/react/docs/optimizing-performance.html#use-the-production-build
+if(inProduction) {
+	[
+		new webpack.optimize.UglifyJsPlugin({
+      sourceMap: false,
+      // mangle: false
+    }),
+		new HtmlWebpackPlugin({
+			template: './src/template.html',
+      title: 'Redshift Winter 2016'
+		})
+   ].map(plugin => plugins.push(plugin));
+	// plugins.push();
+}
 
 module.exports = {
 	entry,
