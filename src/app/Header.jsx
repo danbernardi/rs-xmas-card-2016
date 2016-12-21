@@ -20,7 +20,7 @@ const Header = props => {
       style={ Object.assign(initialStyles, transformStyles) }
     >
       <a href="http://redshiftdigital.com/" target="_blank">
-        <img src={ require(`../assets/img/${logoFileName}`) } alt="Redshift Digital" />
+        <img src={ `http://redshiftdigital.com/holiday2016/assets/img/${logoFileName}` } alt="Redshift Digital" />
       </a>
     </div>
   );

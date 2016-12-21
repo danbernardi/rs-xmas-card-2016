@@ -27,7 +27,7 @@ class Dropdown extends React.Component {
               null
           }
           <span className="dropdown__icon">
-            <img src={ require('../../assets/img/dropdown-carrot.svg')} />
+            <img src="http://redshiftdigital.com/holiday2016/assets/img/dropdown-carrot.svg" />
           </span>
         </div>
         { open &&

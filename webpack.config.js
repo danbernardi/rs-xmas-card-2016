@@ -74,7 +74,7 @@ module.exports = {
 	output: {
 		path: path.join(__dirname, 'public'),
 		filename: 'bundle.js',
-		publicPath: `http://localhost:${PORT}/`
+		publicPath: inProduction ? 'http://www.redshiftdigital.com/holiday2016' : `http://localhost:${PORT}/`
 	},
 	resolve: {
 		extensions: ['', '.js', '.jsx']
