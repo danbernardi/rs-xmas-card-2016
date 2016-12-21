@@ -9,7 +9,7 @@ export const drinks = [
     ingredients: [
       '1½ ounces Old Tom gin',
       'Sweet vermouth',
-      '1/4 ounce Luxardo Maraschino liqueur',
+      '¼ ounce Luxardo Maraschino liqueur',
       '2 dashses Angostura bitters'
     ],
     instructions: [
@@ -36,7 +36,7 @@ export const drinks = [
     description: "“Remember the Maine, to hell with Spain!” screamed warmongering journalists when the USS Maine exploded in the Havana Harbor in 1898 under mysterious circumstances. But when famed spirits writer Charles H. Baker first told of this drink, a rye-based number that draws comparisons to both the Sazerac and Manhattan, he was speaking in context of the 1933 Cuban revolution. At the time, he sat in a hotel bar in Havana, “when each swallow was punctuated with bombs going off on the Prado.”",
     ingredients: [
       '2 ounces rye',
-      '3/4 ounce sweet vermouth',
+      '¾ ounce sweet vermouth',
       '2 teaspoons Cherry Heering',
       '1 dash absinthe'
     ],
@@ -48,8 +48,7 @@ export const drinks = [
       'Garnish with a brandied cherry.'
     ],
     garnish: [
-      'Brandied cherry',
-      '(preferably Luxardo)'
+      'Brandied cherry (preferably Luxardo)'
     ],
     scores: [7, 0, 2],
     music: {
@@ -91,10 +90,10 @@ export const drinks = [
   // //   color: '#8C8E49',
   // //   description: 'The Last Word is a gin-based prohibition-era cocktail originally developed at the Detroit Athletic Club. While the drink eventually fell out of favor, it has recently enjoyed a renewed popularity after being rediscovered as a cult hit in the Seattle area by bartender Murray Stenson during his tenure at the Zig Zag Café.',
   // //   ingredients: [
-  // //     '3/4 ounce gin',
-  // //     '3/4 ounce marachino liqueur',
-  // //     '3/4 ounce green Chartreuse',
-  // //     '3/4 ounce line juice'
+  // //     '¾ ounce gin',
+  // //     '¾ ounce marachino liqueur',
+  // //     '¾ ounce green Chartreuse',
+  // //     '¾ ounce line juice'
   // //   ],
   // //   instructions: [
   // //     'Vigorously shake all ingredients together with ice.',
@@ -119,10 +118,10 @@ export const drinks = [
     color: '#385A24',
     description: "With four equal parts bourbon, aperol, amaro, and lemon juice — this <em>aperitivo</em> is a cinch to make and a pleasure to drink. If you like sour-forward cocktails, you’ll find this drink immediately likeable. And yes, its name is a reference to MIA’s hit song “Paper Planes.”",
     ingredients: [
-      '3/4 ounces bourbon',
-      '3/4 ounces Aperol',
-      '3/4 ounces Amaro Nonino',
-      '3/4 ounces lemon juice'
+      '¾ ounces bourbon',
+      '¾ ounces Aperol',
+      '¾ ounces Amaro Nonino',
+      '¾ ounces lemon juice'
     ],
     instructions: [
       'Add all ingredients to a shaker and fill with ice.',
@@ -146,7 +145,7 @@ export const drinks = [
     ingredients: [
       '2 ounces Plymouth gin',
       '1 ounce St Germain',
-      '3/4 ounce Fresh lime juice'
+      '¾ ounce Fresh lime juice'
     ],
     instructions: [
       'Add several mint leaves (no stems) and several cucumber slices into a shaker tin, along with the lime and simple syrup, then muddle for several seconds.',
@@ -201,11 +200,11 @@ export const drinks = [
     color: '#A4264D',
     description: "Rudolph Valentino, known as “The Latin Lover,” was a star and sex symbol of the silent film era. While his 1922 bullfighter movie “Blood and Sand” has not stood the test of time, the dashing drink sure has.",
     ingredients: [
-      '3/4 ounces The Glenrothes Select',
+      '¾ ounces The Glenrothes Select',
       'Reserve Single Malt Scotch Whisky',
-      '3/4 ounces Sweet vermouth',
-      '3/4 ounces Cherry Heering',
-      '3/4 ounces orange juice'
+      '¾ ounces Sweet vermouth',
+      '¾ ounces Cherry Heering',
+      '¾ ounces orange juice'
     ],
     instructions: [
       'Add all the ingredients to a shaker and fill with ice.',
@@ -268,7 +267,7 @@ export const drinks = [
       '1 ounce rum, Guyanese (preferably El Dorado 5 Year)',
       '½ ounce dry curaçao',
       '½ ounce falernum',
-      '1/4 ounce St. Elizabeth Allspice Dram',
+      '¼ ounce St. Elizabeth Allspice Dram',
       '1 ounce lime juice',
       '½ ounce honey syrup (2:1, honey:water)',
       '3 dashes Angostura bitters'
@@ -332,14 +331,14 @@ export const drinks = [
     color: '#2C668E',
     description: 'A hungover customer walked into the legendary Don the Beachcomber’s tiki bar and asked for something to help him through his business travels. Several days later, the customer returned rubbing his head, complaining that Don’s concoction had turned him into a zombie for the rest of the trip. And thus, bleary-eyed and troublemaking, the Zombie was born. The drink’s fun and fruity tenor belies a potency that has forced Beachcomber restaurants to instill a two-Zombie-per-person limit.',
     ingredients: [
-      '3/4 ounce fresh lime juice',
+      '¾ ounce fresh lime juice',
       '½ ounce felernum',
       '1½ ounces each gold Puerto Rican rum and gold or dark Jamaican rum',
       '1 ounce 151-proof Lemon Hard Demerara rum',
       '1 teaspoon grenadine',
       '6 drops Pernod',
       '1 dash of Angostura bitters',
-      '½ ounce Don’s mix (2 parts grapefruit juice to 1 part cinnamon-infused sugar syrup blended at high speed with 6 ounces (3/4 cup) crushed ice for no more than 5 seconds)',
+      '½ ounce Don’s mix (2 parts grapefruit juice to 1 part cinnamon-infused sugar syrup blended at high speed with 6 ounces (¾ cup) crushed ice for no more than 5 seconds)',
       'Ice cubes to fill'
     ],
     instructions: [
