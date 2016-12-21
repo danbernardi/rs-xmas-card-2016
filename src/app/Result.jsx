@@ -81,11 +81,9 @@ class Result extends React.Component {
               <div className="result__gradient-overlay"></div>
               { this.state.diff ?
 
-              <div>
+              <div className="result__beer-drinkimg">
                 <div className="cf result__drink col-center pt10 pt0--mlg cf">
-                  <div className="result__beer-drinkimg">
-                    <img src="http://redshiftdigital.com/holiday2016/assets/img/drinks/beer_fink.png"/>
-                  </div>
+
                   <div className="result__drinkname">
                     <img src="http://redshiftdigital.com/holiday2016/assets/img/drinks/cheap_beer.png"/>
                     <h3 className="typ--center result__drink--heading">party animal</h3>
