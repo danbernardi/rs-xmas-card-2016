@@ -9,7 +9,7 @@ var WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 var autoprefixer = require('autoprefixer');
 var lostGrid = require('lost');
 
-//NODE_ENV=production node --max_old_space_size=4096 node_modules/webpack/bin/webpack --config webpack.config.js --progress --profile --colors
+//NODE_ENV=production node --max_old_space_size=4096 node_modules/webpack/bin/webpack --config webpack.production.config.js --progress --profile --colors
 
 // global css
 loaders.push({
@@ -84,7 +84,7 @@ module.exports = {
 		}),
 		new HtmlWebpackPlugin({
 			template: './src/template.html',
-			title: 'Webpack App'
+			title: 'Redshift Winter 2016'
 		}),
 		new webpack.optimize.DedupePlugin()
 	],
