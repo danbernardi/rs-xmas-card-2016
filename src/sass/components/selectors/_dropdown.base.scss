@@ -30,10 +30,18 @@
     padding: 1.2rem 2rem;
     cursor: pointer;
     border-radius: 0.5rem;
+    //media queries
+    @include breakpoint($mobile-lg) {
+      padding: 0.8rem 0rem;
+    }
 
     &:hover {
       background: rgba($red, 0.1);
     }
+  }
+  //media queries
+  @include breakpoint($mobile-lg) {
+    top: 6rem;
   }
 }
 
@@ -42,6 +50,12 @@
   left: 0;
   top: 1.5rem;
   padding-left: 2rem;
+  // media queries
+  @include breakpoint($mobile-lg) {
+    text-align: left;
+    padding-left: 0;
+    font-size: 1.5rem;
+  }
 }
 
 .dropdown__hint {
@@ -50,4 +64,9 @@
   padding-left: 2rem;
   opacity: 0.5;
   top: -1rem;
+  // media queries
+  @include breakpoint($mobile-lg) {
+    padding-left: 0rem;
+    top: 0.8rem;
+  }
 }

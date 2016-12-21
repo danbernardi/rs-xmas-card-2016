@@ -3,6 +3,9 @@
   padding: 1rem 8rem;
   display: block;
   cursor: pointer;
+  @include breakpoint($mobile-lg) {
+    padding: 1rem 0 1rem 9.6rem
+  }
 
   input[type='radio'] {
     display: block;
@@ -49,4 +52,7 @@
   border: 0.2rem solid $bodytext;
   border-radius: 50%;
   display: block;
+  @include breakpoint($mobile-lg) {
+    left: 5rem;
+  }
 }

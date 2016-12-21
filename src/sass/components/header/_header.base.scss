@@ -5,5 +5,12 @@
 
   img {
     width: 3.1rem;
+    @include breakpoint($mobile-lg) {
+      width: 2rem;
+    }
+  }
+
+  @include breakpoint($mobile-lg) {
+    top: 2rem;
   }
 }

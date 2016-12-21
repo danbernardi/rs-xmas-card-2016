@@ -1,3 +1,11 @@
 .rangeslider {
-  
+
+}
+
+.rangeslider-label {
+  //media queries
+  @include breakpoint ($mobile-lg) {
+    position: absolute;
+    top: -2rem;
+  }
 }
