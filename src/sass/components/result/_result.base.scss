@@ -193,9 +193,11 @@
 }
 
 .gallery-link {
-  margin-top: 8rem;
-  font-weight: 600;
   clear: both;
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+
   // media queries
   @include breakpoint($mobile-lg) {
     margin-top: 5rem;
