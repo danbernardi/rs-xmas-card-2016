@@ -61,6 +61,7 @@ export const drinks = [
 
   {
     name: 'The Jack Rose',
+    color: '#438270',
     illustration: 'the_jack_rose_illust.png',
     heading: 'You have a whimsical, literary sense about you.',
     img: 'jack_rose.png',
