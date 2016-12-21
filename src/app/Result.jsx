@@ -36,14 +36,13 @@ Math.easeInOutQuad = function (t, b, c, d) {
   return -c / 2 * (t * (t - 2) - 1) + b;
 };
 
-
-
-
 class Result extends React.Component {
   constructor(props) {
     super(props);
     this.container = null;
     this.state = {};
+    // diff: true
+
   }
 
   componentWillReceiveProps(newProps) {
@@ -80,21 +79,34 @@ class Result extends React.Component {
 
             <div className="theme--dark py6 py0--mlg layout--relative result__drink--frame" style={ { backgroundColor: drink.color } }>
               <div className="result__gradient-overlay"></div>
-              <div className="col-8 col-center">
-                <h3 className="typ--center result__drink--heading">{drink.heading}</h3>
-                <h3 className="mb10 result__recommend typ--center">May we recommend...</h3>
+              { this.state.diff ?
 
-              </div>
+              <div>
+                <div className="cf result__drink row col-center pt10 pt0--mlg cf">
+                  <div className="result__drinkname">
+                    <img src="http://redshiftdigital.com/holiday2016/assets/img/drinks/cheap_beer.png"/>
+                    <h3 className="typ--center result__drink--heading">party animal</h3>
 
-              <div className="cf result__drink row col-center pt10 pt0--mlg cf">
-                <div className="result__drinkname">
-                  <h1 className="result__name">{ drink.name }</h1>
+                  </div>
+                  <div className="result__beer-drinkimg">
+                    <img src="http://redshiftdigital.com/holiday2016/assets/img/drinks/beer_fink.png"/>
+                  </div>
                 </div>
+              </div>
+              :
+              <div>
+                <div className="cf result__drink row col-center pt10 pt0--mlg cf">
+                  <div className="result__drinkname">
+                    <h1 className="result__name pb7">{ drink.name }</h1>
+                    <h3 className="result__drink--heading">{drink.heading}</h3>
 
-                <div className="result__drinkimg">
-                  <img src={ `http://redshiftdigital.com/holiday2016/assets/img/drinks/${drink.img}` } alt={ drink.name } />
+                  </div>
+                  <div className="result__drinkimg">
+                    <img src={ `http://redshiftdigital.com/holiday2016/assets/img/drinks/${drink.img}` } alt={ drink.name } />
+                  </div>
                 </div>
               </div>
+              }
               <div
                 className={ `audio-control ${drink.music ? '' : 'hidden'}` }
                 onClick={ () => { dispatch(setMusicTo(!musicOn)) } }

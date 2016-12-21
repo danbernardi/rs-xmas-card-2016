@@ -390,6 +390,7 @@ export const beer = {
   name: "Cheap Beer",
   heading: "You are a rock and roll party animal. May we recommend...",
   img: 'cheap_beer.svg',
+  diff: true,
   color: '#6A3661',
   description: "Cheap beer doesn’t mean you are cheap. You are a priceless inscrutable artifact of dive bars; a life-saving, rule breaking anti-hero. When work is done, it is done. If someone tries to strike up a conversation about politics, you only respond in pig latin. Cheap beer allows you to leave the house and be in it for the long haul. You can drink all night, stay up till dawn, tell a few jokes of questionable integrity, hit four parties and still manage to hold back someone’s hair at the porcelain throne.",
   ingredients: ['1 can'],
