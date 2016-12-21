@@ -9,7 +9,7 @@ export const drinks = [
     ingredients: [
       '1½ ounces Old Tom gin',
       'Sweet vermouth',
-      '1/4 ounce Luxardo Maraschino liqueur',
+      '¼ ounce Luxardo Maraschino liqueur',
       '2 dashses Angostura bitters'
     ],
     instructions: [
@@ -36,7 +36,7 @@ export const drinks = [
     description: "“Remember the Maine, to hell with Spain!” screamed warmongering journalists when the USS Maine exploded in the Havana Harbor in 1898 under mysterious circumstances. But when famed spirits writer Charles H. Baker first told of this drink, a rye-based number that draws comparisons to both the Sazerac and Manhattan, he was speaking in context of the 1933 Cuban revolution. At the time, he sat in a hotel bar in Havana, “when each swallow was punctuated with bombs going off on the Prado.”",
     ingredients: [
       '2 ounces rye',
-      '3/4 ounce sweet vermouth',
+      '¾ ounce sweet vermouth',
       '2 teaspoons Cherry Heering',
       '1 dash absinthe'
     ],
@@ -48,14 +48,13 @@ export const drinks = [
       'Garnish with a brandied cherry.'
     ],
     garnish: [
-      'Brandied cherry',
-      '(preferably Luxardo)'
+      'Brandied cherry (preferably Luxardo)'
     ],
     scores: [7, 0, 2],
     music: {
       file: 'remember-the-maine.mp3',
       artist: 'The Soul Saints Orchestra',
-      name: 'Santa\'s Got a Bag of Soul'
+      name: 'Santa’s Got a Bag of Soul'
     }
   },
 
@@ -91,10 +90,10 @@ export const drinks = [
   // //   color: '#8C8E49',
   // //   description: 'The Last Word is a gin-based prohibition-era cocktail originally developed at the Detroit Athletic Club. While the drink eventually fell out of favor, it has recently enjoyed a renewed popularity after being rediscovered as a cult hit in the Seattle area by bartender Murray Stenson during his tenure at the Zig Zag Café.',
   // //   ingredients: [
-  // //     '3/4 ounce gin',
-  // //     '3/4 ounce marachino liqueur',
-  // //     '3/4 ounce green Chartreuse',
-  // //     '3/4 ounce line juice'
+  // //     '¾ ounce gin',
+  // //     '¾ ounce marachino liqueur',
+  // //     '¾ ounce green Chartreuse',
+  // //     '¾ ounce line juice'
   // //   ],
   // //   instructions: [
   // //     'Vigorously shake all ingredients together with ice.',
@@ -117,12 +116,12 @@ export const drinks = [
     heading: "You’re a smooth operator with swagger and style. This confident, young cocktail is the perfect holiday wingman.",
     img: 'paper_plane.png',
     color: '#385A24',
-    description: "With four equal parts bourbon, aperol, amaro, and lemon juice — this <em>aperitivo</em> is a cinch to make and a pleasure to drink. If you like sour-forward cocktails, you’ll find this drink immediately likeable. And yes, its name is a reference to MIA’s hit song “Paper Planes”",
+    description: "With four equal parts bourbon, aperol, amaro, and lemon juice — this <em>aperitivo</em> is a cinch to make and a pleasure to drink. If you like sour-forward cocktails, you’ll find this drink immediately likeable. And yes, its name is a reference to MIA’s hit song “Paper Planes.”",
     ingredients: [
-      '3/4 ounces bourbon',
-      '3/4 ounces Aperol',
-      '3/4 ounces Amaro Nonino',
-      '3/4 ounces lemon juice'
+      '¾ ounces bourbon',
+      '¾ ounces Aperol',
+      '¾ ounces Amaro Nonino',
+      '¾ ounces lemon juice'
     ],
     instructions: [
       'Add all ingredients to a shaker and fill with ice.',
@@ -145,8 +144,8 @@ export const drinks = [
     description: "The gin that gangsters smuggled into the South Side of Chicago had a harsh bite, requiring cocktails with sweeter mixers than their North Side counterparts. At least that’s the story surrounding Al Capone and his alleged drink of choice — the South Side — a gin-based number with lime juice, simple syrup, and sprigs of mint. The East Side does something similar but with the added brightness of St. Germain and cucumber.",
     ingredients: [
       '2 ounces Plymouth gin',
-      '1 ounce St-Germain',
-      '3/4 ounce Fresh lime juice'
+      '1 ounce St Germain',
+      '¾ ounce Fresh lime juice'
     ],
     instructions: [
       'Add several mint leaves (no stems) and several cucumber slices into a shaker tin, along with the lime and simple syrup, then muddle for several seconds.',
@@ -201,16 +200,16 @@ export const drinks = [
     color: '#A4264D',
     description: "Rudolph Valentino, known as “The Latin Lover,” was a star and sex symbol of the silent film era. While his 1922 bullfighter movie “Blood and Sand” has not stood the test of time, the dashing drink sure has.",
     ingredients: [
-      '3/4 ounces The Glenrothes Select',
+      '¾ ounces The Glenrothes Select',
       'Reserve Single Malt Scotch Whisky',
-      '3/4 ounces Sweet vermouth',
-      '3/4 ounces Cherry Heering',
-      '3/4 ounces orange juice'
+      '¾ ounces Sweet vermouth',
+      '¾ ounces Cherry Heering',
+      '¾ ounces orange juice'
     ],
     instructions: [
       'Add all the ingredients to a shaker and fill with ice.',
       'Shake, and strain into a chilled coupe or cocktail glass.',
-      'Garnish with an orange peel'
+      'Garnish with an orange peel.'
     ],
     garnish: [
       'orange peel'
@@ -268,7 +267,7 @@ export const drinks = [
       '1 ounce rum, Guyanese (preferably El Dorado 5 Year)',
       '½ ounce dry curaçao',
       '½ ounce falernum',
-      '1/4 ounce St. Elizabeth Allspice Dram',
+      '¼ ounce St. Elizabeth Allspice Dram',
       '1 ounce lime juice',
       '½ ounce honey syrup (2:1, honey:water)',
       '3 dashes Angostura bitters'
@@ -305,7 +304,7 @@ export const drinks = [
       '1 ounce Pisco',
       '½ ounce gin',
       '2 ounces blended light aged rum',
-      '½ ounce oloroso Sherry'
+      '½ ounce oloroso sherry'
     ],
     instructions: [
       'Fill a cocktail shaker with ice.',
@@ -332,18 +331,18 @@ export const drinks = [
     color: '#2C668E',
     description: 'A hungover customer walked into the legendary Don the Beachcomber’s tiki bar and asked for something to help him through his business travels. Several days later, the customer returned rubbing his head, complaining that Don’s concoction had turned him into a zombie for the rest of the trip. And thus, bleary-eyed and troublemaking, the Zombie was born. The drink’s fun and fruity tenor belies a potency that has forced Beachcomber restaurants to instill a two-Zombie-per-person limit.',
     ingredients: [
-      '3/4 ounce fresh lime juice',
+      '¾ ounce fresh lime juice',
       '½ ounce felernum',
       '1½ ounces each gold Puerto Rican rum and gold or dark Jamaican rum',
       '1 ounce 151-proof Lemon Hard Demerara rum',
       '1 teaspoon grenadine',
       '6 drops Pernod',
       '1 dash of Angostura bitters',
-      '½ ounce Don\'s mix (2 parts grapefruit juice to 1 part cinnamon-infused sugar syrup blend with 6 ounces (3/4 cup) crushed ice, then blend at high speed for no more than 5 seconds.',
-      'Add ice cubes to fill.'
+      '½ ounce Don’s mix (2 parts grapefruit juice to 1 part cinnamon-infused sugar syrup blended at high speed with 6 ounces (¾ cup) crushed ice for no more than 5 seconds)',
+      'Ice cubes to fill'
     ],
     instructions: [
-      'Mix ingredients other than the 151 in a shaker with ice',
+      'Mix ingredients other than the 151 in a shaker with ice.',
       'Pour into glass and top with the high-proof rum.'
     ],
     garnish: [
@@ -370,9 +369,9 @@ export const drinks = [
       'Whipped cream'
     ],
     instructions: [
-      'Pour the Tuaca in an Irish coffee glass',
-      'Fill with hot apple cider',
-      'Top with whipped cream',
+      'Pour the Tuaca in an Irish coffee glass.',
+      'Fill with hot apple cider.',
+      'Top with whipped cream.',
       'Garnish with a cinnamon stick.'
     ],
     garnish: [
@@ -395,7 +394,7 @@ export const beer = {
   color: '#6A3661',
   description: "Cheap beer doesn’t mean you are cheap. You are a priceless inscrutable artifact of dive bars; a life-saving, rule breaking anti-hero. When work is done, it is done. If someone tries to strike up a conversation about politics, you only respond in pig latin. Cheap beer allows you to leave the house and be in it for the long haul. You can drink all night, stay up till dawn, tell a few jokes of questionable integrity, hit four parties and still manage to hold back someone’s hair at the porcelain throne.",
   ingredients: ['1 can'],
-  instructions: ['Open can'],
+  instructions: ['Open can.'],
   illustration: 'beer_illust.png',
   music: {
     file: 'beer.mp3',

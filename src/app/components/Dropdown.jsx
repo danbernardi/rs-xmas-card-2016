@@ -4,7 +4,7 @@ class Dropdown extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {open: false};
+    this.state = {};
   }
 
   render() {
