@@ -11,13 +11,21 @@ $sliderThumbHeight: 2rem;
 .flex-inline {
   flex-shrink: 0;
   margin: 0 1.5rem;
-  padding: 0.8rem 0 0;
+  padding: 0.5rem 0 0;
 }
 
 .rangeslider-component {
   .flex-inline {
     @include font(button);
-    @include font-size(default);
+    @include font-size(h5);
+  }
+}
+
+.rangeslider-label {
+  //media queries
+  @include breakpoint ($mobile-lg) {
+    position: absolute;
+    top: -2rem;
   }
 }
 

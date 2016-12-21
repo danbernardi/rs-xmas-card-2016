@@ -1,18 +1,36 @@
 .hero {
   color: $offwhite;
 
+  h1, h2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1 {
+    width: 50%;
+    @include breakpoint($tablet-lg) {
+      width: 70%;
+    }
+  }
+
+  h2 {
+    width: 65%;
+  }
+
   &.index {
     background-color: $darkblue;
     // background-image: url(http://redshiftdigital.com/holiday2016/assets/img/hero_bg.svg);
     // background-position: center;
     // background-repeat: no-repeat;
   }
+
   .btn {
     color: #235e94;
   }
 
   .typ--center {
     position: relative;
+
     .col--center {
       position: absolute;
       margin: auto;
@@ -22,6 +40,9 @@
   }
 
   img {
-    max-width: 70%;
+    max-width: 33%;
+    @include breakpoint($tablet-lg) {
+      max-width: 50%;
+    }
   }
 }
