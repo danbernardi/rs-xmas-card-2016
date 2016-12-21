@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { setDrinkTo, setActiveSheetID } from '../actions';
+import Footer from './Footer';
 
 import { drinks } from './data/drinks';
 
@@ -11,7 +12,7 @@ const Gallery = props => {
       <li
         className="list--inline"
         style={{backgroundColor: drink.color}}
-        onClick={ (event) => {
+        onClick={ () => {
           dispatch(setDrinkTo(drink));
           dispatch(setActiveSheetID('result'));
         }}
@@ -38,13 +39,14 @@ const Gallery = props => {
         <h2 className="mb3--tlg">Thanks for a great year. See you in 2017!</h2>
 
         <button
-          className={ 'btn btn--ghost' }
+          className={ 'btn btn--ghost mt3' }
           onClick={ () => {
-            window.location = 'http://redshiftdigital.com/holiday2016';
+            window.location = 'http://redshiftdigital.com/holiday2016/';
           }
         }>
           Take the quiz again
         </button>
+        <Footer showAddress={ true } color={ 'black' } dontHide={ true } />
       </div>
     </div>
   )
