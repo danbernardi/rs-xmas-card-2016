@@ -4,7 +4,7 @@
   "description": "",
   "main": "''",
   "scripts": {
-    "build": "NODE_ENV=production node node_modules/webpack/bin/webpack -p --config webpack.config.js --progress --profile --colors",
+    "build": "NODE_ENV=production node --max_old_space_size=4096 node_modules/webpack/bin/webpack --config webpack.production.config.js --progress --profile --colors",
     "start": "webpack-dev-server --progress --profile --colors",
     "lint": "eslint --ext js --ext jsx src || exit 0"
   },
