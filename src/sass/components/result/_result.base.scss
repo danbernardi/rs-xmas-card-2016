@@ -67,7 +67,7 @@
   // media queries
   @include breakpoint($mobile-lg) {
     position: absolute;
-    right: 2rem;
+    right: 0;
     bottom: 10rem;
     width: 48%;
     text-align: right;
@@ -90,7 +90,7 @@
     margin-left: 0;
     position: absolute;
     float: none;
-    width: 66%;
+    width: 61%;
     left: -5rem;
     bottom: 0rem;
   }
@@ -109,6 +109,8 @@
 
   @include breakpoint($mobile-lg) {
     width: 100%;
+    height: 100%;
+    padding-top: 2rem;
   }
 
   h1 {
