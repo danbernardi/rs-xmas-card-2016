@@ -182,7 +182,7 @@ class Result extends React.Component {
                   </ol>
                 </div>
               </div>
-              <div className="gallery-link typ--caps" style={{ borderBottomColor: drink.color }}>
+              <div className="gallery-link pb2 typ--caps" style={{ borderBottomColor: drink.color }}>
                 <a
                   onClick={() => {
                     dispatch(setActiveSheetID('gallery'));

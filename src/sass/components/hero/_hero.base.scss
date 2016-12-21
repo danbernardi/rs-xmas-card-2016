@@ -9,12 +9,17 @@
   h1 {
     width: 50%;
     @include breakpoint($tablet-lg) {
-      width: 70%;
+      width: 90%;
+      font-size: 3.6rem;
     }
   }
 
   h2 {
     width: 65%;
+    @include breakpoint($tablet-lg) {
+      width: 50%;
+      font-size: 2.4rem;
+    }
   }
 
   &.index {
@@ -41,7 +46,7 @@
 
   img {
     max-width: 33%;
-    @include breakpoint($tablet-lg) {
+    @include breakpoint($mobile-lg) {
       max-width: 50%;
     }
   }

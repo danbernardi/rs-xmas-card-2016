@@ -78,6 +78,13 @@
   @include breakpoint($mobile-lg) {
     padding-bottom: 20rem;
   }
+  .fa-angle-down {
+    font-size: 2rem;
+    padding-left: 0.6rem;
+    @include breakpoint($mobile-lg) {
+      font-size: 1.6rem;
+    }
+  }
 }
 
 .recipe__description {
@@ -245,11 +252,7 @@
   text-align: center;
   border-bottom: 1px solid #fff;
   letter-spacing: 0.7rem;
-
-  // media queries
-  @include breakpoint($mobile-lg) {
-    margin-top: 5rem;
-  }
+  margin-top: 12rem;
 }
 
 audio {

@@ -13,10 +13,10 @@
 
 .footer__social {
   //media queries
-  @include breakpoint($mobile-lg) {
-    position: absolute;
-    bottom: -7rem;
-  }
+  // @include breakpoint($mobile-lg) {
+  //   position: absolute;
+  //   bottom: -7rem;
+  // }
 }
 
 .footer__social li {
