@@ -130,7 +130,7 @@ class Result extends React.Component {
               >
                 See recipe
                 <i
-                  className="fa fa-chevron-down"
+                  className="fa fa-angle-down"
                   style={{ color: drink.color }}
                 />
               </span>
@@ -148,49 +148,53 @@ class Result extends React.Component {
                   />
                 </div>
               </div>
+              <div className="recipe-wrapper cf mb3">
+                <div className="col-5">
+                  <h3 className="mb3">Ingredients</h3>
+                  <ul className="mb2">
+                    { drink.ingredients.map((ing, index) => (
+                      <li className="mb1" key={ index }>
+                        { ing }
+                      </li>
+                    )) }
+                  </ul>
 
-              <div className="col-5">
-                <h3 className="mb2">Ingredients</h3>
-                <ul className="mb2">
-                  { drink.ingredients.map((ing, index) => (
-                    <li key={ index }>
-                      { ing }
-                    </li>
-                  )) }
-                </ul>
+                  { drink.garnish ?
+                    <div className="cf">
+                      <p className="mb0">Garnish:</p>
+                      <ul>
+                        { drink.garnish.map((gar, index) => (
+                          <li key={ index }>
+                            { gar }
+                          </li>
+                        )) }
+                      </ul>
+                    </div>
+                  : null }
+                </div>
 
-                { drink.garnish ?
-                  <div className="cf">
-                    <p className="mb0">Garnish:</p>
-                    <ul>
-                      { drink.garnish.map((gar, index) => (
-                        <li key={ index }>
-                          { gar }
-                        </li>
-                      )) }
-                    </ul>
-                  </div>
-                : null }
+                <div className="col-7 col-last">
+                  <h3 className="mb3">Instructions</h3>
+                  <ol>
+                    { drink.instructions.map((ins, index) => (
+                      <li className="mb1" key={ index }>
+                        { ins }
+                      </li>
+                    )) }
+                  </ol>
+                </div>
               </div>
-
-              <div className="col-7 col-last">
-                <h3 className="mb2">Instructions</h3>
-                <ol>
-                  { drink.instructions.map((ins, index) => (
-                    <li key={ index }>
-                      { ins }
-                    </li>
-                  )) }
-                </ol>
-              </div>
-
-              <div className="gallery-link layout--right typ--right">
+              <div className="gallery-link typ--caps" style={{ borderBottomColor: drink.color }}>
                 <a
                   onClick={() => {
                     dispatch(setActiveSheetID('gallery'));
                   }}
                 >
-                  View all cocktail recipes <span className="fa fa-long-arrow-right"></span>
+                  View all cocktail recipes
+                  <i
+                    className="fa fa-angle-down"
+                    style={{ color: drink.color }}
+                  />
                 </a>
               </div>
 
