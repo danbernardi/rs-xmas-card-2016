@@ -1,4 +1,5 @@
 import React from 'react';
+// import ReactMarkdown from 'react-markdown';
 import { connect } from 'react-redux';
 import { setActiveSheetID } from '../actions';
 import Footer from './Footer';
@@ -134,7 +135,10 @@ class Result extends React.Component {
                 />
               </span>
 
-              <h3 className="recipe__description">{ drink.description }</h3>
+              <h3
+                className="recipe__description"
+                dangerouslySetInnerHTML={{ __html: drink.description }}
+              />
 
               <div className="recipe__keyline">
                 <div className="recipe__keyline__img">
