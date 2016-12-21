@@ -47,7 +47,7 @@ class Index extends React.Component {
             <h1 className="typ--bold my10 my3--mlg mt10--mlg">The Redshift Holiday Cocktail Generator</h1>
             <img src="http://www.redshiftdigital.com/holiday2016/assets/img/empty_glasses.svg" />
             <h2 className="typ--bold my10 my3--mlg">Answer a few questions and we’ll find your perfect holiday tipple.</h2>
-            <button className="btn my10 mb10--mlg mt3--mlg" onClick={ () => switchActiveSheet('naughty') }>Let's Get Shaking</button>
+            <button className="btn mb10 mb10--mlg mt3--mlg" onClick={ () => switchActiveSheet('naughty') }>Let's Get Shaking</button>
           </div>
         </div>
       </div>
