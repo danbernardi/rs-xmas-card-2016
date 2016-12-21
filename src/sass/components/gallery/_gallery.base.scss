@@ -1,4 +1,6 @@
-
+.nav__sheet.sheet-gallery {
+  overflow-y: visible;
+}
 .gallery {
   margin-top: 14rem;
   @include breakpoint($tablet-sm) {

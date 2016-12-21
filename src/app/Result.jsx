@@ -93,7 +93,7 @@ class Result extends React.Component {
               </div>
               :
               <div>
-                <div className="cf result__drink col-center pt10 pt0--mlg cf">
+                <div className="cf result__drink col-center pt0--mlg cf">
                   <div className="result__drinkimg ">
                     <img src={ `http://redshiftdigital.com/holiday2016/assets/img/drinks/${drink.img}` } alt={ drink.name } />
                   </div>

@@ -1,6 +1,6 @@
 export const drinks = [
   {
-    name: 'The Martinez',
+    name: 'Martinez',
     illustration: 'the_martinez_illust.png',
     heading: 'Your tastes are strong and steeped in tradition. This cocktail is the definition of old school.',
     img: 'martinez.png',
@@ -59,7 +59,7 @@ export const drinks = [
   },
 
   {
-    name: 'The Jack Rose',
+    name: 'Jack Rose',
     color: '#438270',
     illustration: 'the_jack_rose_illust.png',
     heading: 'You have a whimsical, literary sense about you. This boozy sour cocktail has your name written all over it.',
@@ -116,7 +116,7 @@ export const drinks = [
     heading: "You’re a smooth operator with swagger and style. This confident, young cocktail is the perfect holiday wingman.",
     img: 'paper_plane.png',
     color: '#385A24',
-    description: "With four equal parts bourbon, aperol, amaro, and lemon juice — this <em>aperitivo</em> is a cinch to make and a pleasure to drink. If you like sour-forward cocktails, you’ll find this drink immediately likeable. And yes, its name is a reference to MIA’s hit song “Paper Planes.”",
+    description: "With four equal parts bourbon, aperol, amaro, and lemon juice — this <em>aperitivo</em> is a cinch to make and a pleasure to drink. If you like sour-forward cocktails, you’ll find this drink immediately likeable. And yes, its name is a reference to MIA’s hit song “Paper Planes”.",
     ingredients: [
       '¾ ounces bourbon',
       '¾ ounces Aperol',
@@ -228,7 +228,7 @@ export const drinks = [
     heading: 'You are a modern-day adventurer — charming, brave  and partial to aged rum. Here’s a bubbly drink to refresh your soul and loosen your tongue.',
     img: 'old_cuban.png',
     color: '#AF5012',
-    description: 'A sophisticated cousin to the mojito, The Old Cuban is the creation of modern cocktail master Audry Saunders. Its name conjures up the classic Hemingway tale “The Old Man and the Sea”, in which an old Cuban fisherman wrestles with a legendary marlin for days on end — a toiling, painful, delirious battle — and when the marlin is finally caught, the fisherman must watch in horror as his prize is eaten by sharks. Surely time for a drink, no?',
+    description: 'A sophisticated cousin to the mojito, the Old Cuban is the creation of modern cocktail master Audry Saunders. Its name conjures up the classic Hemingway tale “The Old Man and the Sea”, in which an old Cuban fisherman wrestles with a legendary marlin for days on end — a toiling, painful, delirious battle — and when the marlin is finally caught, the fisherman must watch in horror as his prize is eaten by sharks. Surely time for a drink, no?',
     ingredients: [
       '1½ ounces Bacardí 8-year-old rum',
       'Freshly squeezed lime juice',
