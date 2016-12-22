@@ -23,7 +23,6 @@ class Question extends React.Component {
 
   respondOrSwitchPages(targetID) {
     const { selectedAnswer } = this.state;
-
     if (!selectedAnswer) {
       return null;
     }
