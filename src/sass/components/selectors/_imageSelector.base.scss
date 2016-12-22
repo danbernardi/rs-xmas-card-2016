@@ -59,19 +59,19 @@ ul.image-list {
     width: 10.9rem;
   }
   @include breakpoint($mobile-xsm) {
-    width: 7.9rem;
+    width: 8.9rem;
   }
 }
 
 .svg__takeout {
-  width: 13.8rem;
+  width: 12.8rem;
   // height: 18.3rem;
   // media queries
   @include breakpoint($tablet-md) {
-    width: 11.8rem;
+    width: 10.8rem;
   }
   @include breakpoint($mobile-lg) {
-    width: 7.8rem;
+    width: 6.8rem;
   }
   @include breakpoint($mobile-xsm) {
     width: 5.8rem;
