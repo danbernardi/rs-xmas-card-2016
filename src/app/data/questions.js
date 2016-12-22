@@ -9,7 +9,7 @@ export const questions = [
     question: 'Have you been naughty or nice?',
     answers: [{
       name: 'Naughty',
-      responses: ["Meow 😼\nWe'll make it a double then..."],
+      responses: ["We'll make it a double then..."],
       scores: [8, 4, 6], // [Badassness, Weirdness, Fun], out of 10
       beer: true
     }, {
