@@ -128,7 +128,7 @@ class Question extends React.Component {
             }>
               Next
             </button>
-            <p className="mt3 warning">{ triedToContinue && !selectedAnswer ? 'Please select an option, your bartender\'s waiting.' : nbsp }</p>
+            <p className="mt3 warning">{ triedToContinue && !selectedAnswer ? 'Pick one, your bartender\'s waiting.' : nbsp }</p>
           </div>
         </div>
       </div>

@@ -17,10 +17,10 @@ $content-width: 120rem;
     padding-left: 4rem;
     padding-right: 4rem;
   }
-  @include breakpoint($mobile-xsm) {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
+  // @include breakpoint($mobile-xsm) {
+  //   padding-left: 2rem;
+  //   padding-right: 2rem;
+  // }
 }
 
 // base grid styles
