@@ -25,11 +25,11 @@ export const questions = [
   },
   {
     id: 'party',
-    question: 'My idea of a holiday party consists of',
+    question: 'My idea of a holiday party consists of...',
     answers: [
       {
         name: 'Setting intentions and expressing gratitude.',
-        responses: ["Not sure we know any drink recipes with Kombucha.."],
+        responses: ["Not sure we know any drink recipes with Kombucha."],
         scores: [0, 0, 0]
       },
       {
@@ -67,7 +67,7 @@ export const questions = [
         scores: [0, 9, 2]
       },
       {
-        name: 'Write my name...',
+        name: 'Write my name in the snow',
         responses: ["In yellow? Chartreuse drinker?"],
         scores: [9, 9, 0]
       }

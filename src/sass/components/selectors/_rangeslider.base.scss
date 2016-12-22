@@ -11,13 +11,16 @@ $sliderThumbHeight: 2rem;
 .flex-inline {
   flex-shrink: 0;
   margin: 0 1.5rem;
-  padding: 0.5rem 0 0;
+  padding: 0.2rem 0 0;
+  @include breakpoint($mobile-lg) {
+    margin: 0;
+  }
 }
 
 .rangeslider-component {
   .flex-inline {
     @include font(default);
-    @include font-size(h5);
+    @include font-size(h4);
   }
 }
 
@@ -28,6 +31,13 @@ $sliderThumbHeight: 2rem;
   @include breakpoint ($mobile-lg) {
     position: absolute;
     top: -2rem;
+  }
+}
+
+.rangeslider-label-right {
+  text-align: left;
+  @include breakpoint ($mobile-lg) {
+    text-align: right;
   }
 }
 
@@ -106,6 +116,9 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   top: 1.7rem;
   margin: 0 1rem;
   z-index: -1;
+  @include breakpoint($mobile-lg) {
+    margin: 0;
+  }
 }
 
 .tick-mark{

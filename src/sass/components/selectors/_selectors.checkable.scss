@@ -57,7 +57,7 @@
   display: block;
   @include breakpoint($mobile-lg) {
     top: 1.3rem;
-    left: 5rem;
+    left: 4rem;
 
   }
   @include breakpoint($mobile-xsm) {

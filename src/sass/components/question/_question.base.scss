@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   background-image: url(http://redshiftdigital.com/holiday2016/assets/img/question_bg.svg);
   position: relative;
+  background-size: 100% 100%;
 }
 
 .question-section, .response-section, .next-section {
@@ -57,13 +58,11 @@
 
 .question-button {
   margin-top: 10rem;
-  // media queries
+  //media queries
   @include breakpoint($mobile-lg) {
-    margin-top: 15rem;
+    width: calc(100% - 8rem);
     position: absolute;
-    bottom: 12rem;
-    left: 2rem;
-    right: 2rem;
+    bottom: 5rem;
   }
 }
 
