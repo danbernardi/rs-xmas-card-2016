@@ -23,7 +23,6 @@ class Question extends React.Component {
 
   respondOrSwitchPages(targetID) {
     const { selectedAnswer } = this.state;
-
     if (!selectedAnswer) {
       return null;
     }
@@ -51,7 +50,7 @@ class Question extends React.Component {
     const callbacks = [];
 
     // Fill array of sequential actions to fade out question, show responses, then move
-    this.setState({ hideQuestion: true }); // Fade out old
+    this.setState({ hideQuestion: true,  }); // Fade out old
 
     responses.forEach(response => {
       callbacks.push(() => {

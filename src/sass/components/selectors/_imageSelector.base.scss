@@ -16,13 +16,6 @@ ul.image-list {
     margin: 0 2rem;
     // media queries
     @include breakpoint($mobile-lg) {
-      width: calc(100% - 12rem);
-      margin: 0;
-      height: 10rem;
-      margin: 0 6rem;
-    }
-
-    @include breakpoint($mobile-lg) {
       width: 33%;
       margin: 0;
       height: 10rem;
@@ -56,6 +49,7 @@ ul.image-list {
 
 .svg__ham {
   width: 21.9rem;
+  padding-top: 1rem;
   // height: 11.5rem;
   // media queries
   @include breakpoint($tablet-md) {

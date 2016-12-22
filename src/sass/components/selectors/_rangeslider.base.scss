@@ -22,6 +22,8 @@ $sliderThumbHeight: 2rem;
 }
 
 .rangeslider-label {
+  font-family: 'Averia Serif Libre';
+  width: 9rem;
   //media queries
   @include breakpoint ($mobile-lg) {
     position: absolute;
