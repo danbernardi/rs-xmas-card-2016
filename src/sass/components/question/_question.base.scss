@@ -56,8 +56,10 @@
 }
 
 .question-button {
+  margin-top: 10rem;
   // media queries
   @include breakpoint($mobile-lg) {
+    margin-top: 15rem;
     position: absolute;
     bottom: 12rem;
     left: 2rem;

@@ -9,12 +9,12 @@ export const questions = [
     question: 'Have you been naughty or nice?',
     answers: [{
       name: 'Naughty',
-      responses: ["We'll make it a double then..."],
+      responses: ["We'll make it a double."],
       scores: [8, 4, 6], // [Badassness, Weirdness, Fun], out of 10
       beer: true
     }, {
       name: 'Middle',
-      responses: ["Hmm. Bartender's choice..."],
+      responses: ["Indecisive. Bartender's choice."],
       scores: [2, 8, 2]
     }, {
       name: 'Nice',
@@ -29,7 +29,7 @@ export const questions = [
     answers: [
       {
         name: 'Setting intentions and expressing gratitude.',
-        responses: ["Not sure we know any recipes with Kombucha."],
+        responses: ["Not sure we know any drink recipes with Kombucha.."],
         scores: [0, 0, 0]
       },
       {
@@ -57,7 +57,7 @@ export const questions = [
       },
       {
         name: 'Start a snowball fight',
-        responses: ["Early bird gets the unsuspecting victim..."],
+        responses: ["Playful...yet aggressive."],
         scores: [5, 2, 9],
         beer: true
       },
@@ -68,7 +68,7 @@ export const questions = [
       },
       {
         name: 'Write my name...',
-        responses: ["In yellow?"],
+        responses: ["In yellow? Chartreuse drinker?"],
         scores: [9, 9, 0]
       }
     ],
@@ -85,7 +85,7 @@ export const questions = [
       },
       {
         name: <Takeout />,
-        responses: ["Burned (by) one too many turkeys..."],
+        responses: ["Burned one too many turkeys? Something easy then..."],
         scores: [5, 9, 2]
       },
       {

@@ -54,7 +54,7 @@ module.exports = {
 	],
 	output: {
 		path: path.join(__dirname, 'public'),
-		filename: 'bundle.js',
+		filename: '[name].[hash].js',
 		publicPath: 'http://www.redshiftdigital.com/holiday2016/'
 	},
 	resolve: {
