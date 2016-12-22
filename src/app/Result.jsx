@@ -3,27 +3,40 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { setActiveSheetID } from '../actions';
 import Footer from './Footer';
+import Gallery from './Gallery';
 import { setMusicTo } from '../actions';
 
 
 //Animated scroll function
-function scrollTo(element, to, duration) {
-    var start = element.scrollTop,
-        change = to - start,
-        currentTime = 0,
-        increment = 20;
+export const scrollTo = (element, to, duration) => {
+  var start = element.scrollTop,
+      change = to - start,
+      currentTime = 0,
+      increment = 20;
 
-    var animateScroll = function(){
-        currentTime += increment;
-        var val = Math.easeInOutQuad(currentTime, start, change, duration);
-        element.scrollTop = val;
-        if(currentTime < duration) {
-            setTimeout(animateScroll, increment);
-        }
-    };
-    animateScroll();
+  var animateScroll = function(){
+      currentTime += increment;
+      var val = Math.easeInOutQuad(currentTime, start, change, duration);
+      element.scrollTop = val;
+      if(currentTime < duration) {
+          setTimeout(animateScroll, increment);
+      }
+  };
+  animateScroll();
 }
 
+function getPosition(element) {
+    var xPosition = 0;
+    var yPosition = 0;
+
+    while(element) {
+        xPosition += (element.offsetLeft - element.scrollLeft + element.clientLeft);
+        yPosition += (element.offsetTop - element.scrollTop + element.clientTop);
+        element = element.offsetParent;
+    }
+
+    return { x: xPosition, y: yPosition };
+}
 
 //Add Easing To scrolling animation
 //t = current time
@@ -46,7 +59,7 @@ class Result extends React.Component {
 
   componentWillReceiveProps(newProps) {
     if (this.drinkChanged(newProps)) {
-      scrollTo(this.container, 0, 0);
+      // scrollTo(this.container, 0, 0);
       this.setState({ playMusic: false });
       setTimeout(() => {
         this.setState({ playMusic: true });
@@ -182,13 +195,21 @@ class Result extends React.Component {
                   </ol>
                 </div>
               </div>
-              <div className="gallery-link pb2 typ--caps" style={{ borderBottomColor: drink.color }}>
+              <div className="gallery-link pb2 typ--caps" >
                 <a
                   onClick={() => {
-                    dispatch(setActiveSheetID('gallery'));
+                    window.s = scrollTo;
+                    const gallery = document.getElementsByClassName('gallery')[0];
+                    const position = getPosition(gallery);
+
+                    scrollTo(
+                      this.container,
+                      position.y, // Cancel out margin-top
+                      500
+                    );
                   }}
                 >
-                  View all cocktail recipes
+                  View all cocktails
                   <i
                     className="fa fa-angle-down"
                     style={{ color: drink.color }}
@@ -196,6 +217,7 @@ class Result extends React.Component {
                 </a>
               </div>
 
+              <Gallery container={ this.container } />
               <Footer showAddress={ true } color={ drink.color } dontHide={ true } />
             </article>
           </div>

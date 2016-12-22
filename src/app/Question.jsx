@@ -24,6 +24,7 @@ class Question extends React.Component {
   respondOrSwitchPages(targetID) {
     const { selectedAnswer } = this.state;
     if (!selectedAnswer) {
+      this.setState({ triedToContinue: true });
       return null;
     }
 
@@ -82,7 +83,7 @@ class Question extends React.Component {
 
   render() {
     const { question, answers, nextPage, id, activeSheetID, dispatch } = this.props;
-    const { showResponse, hideQuestion, selectedAnswer, response } = this.state;
+    const { showResponse, hideQuestion, selectedAnswer, response, triedToContinue } = this.state;
 
     const onAnswerSelect = (answer) => {
       this.setState({ selectedAnswer: answer });
@@ -96,6 +97,7 @@ class Question extends React.Component {
       meal: ImageSelector
     }[id];
 
+    const nbsp = '\u00a0';
 
     return (
       <div className="question__page typ--center">
@@ -126,6 +128,7 @@ class Question extends React.Component {
             }>
               Next
             </button>
+            <p className="mt3 warning">{ triedToContinue && !selectedAnswer ? 'Please select an option' : nbsp }</p>
           </div>
         </div>
       </div>
