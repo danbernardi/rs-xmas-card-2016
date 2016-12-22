@@ -5,6 +5,9 @@
     background-image: url(http://redshiftdigital.com/holiday2016/assets/img/drink_bg.svg);
     background-position: center;
     background-repeat: no-repeat;
+    @include breakpoint($mobile-lg) {
+      background-position: 40% -60%;
+    }
   }
 }
 
@@ -56,7 +59,7 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 7%;
+  top: 13%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -65,10 +68,9 @@
   @include breakpoint($tablet-md) {
     text-align: center;
   }
-  // @include breakpoint($mobile-lg) {
-  //   display: block;
-  //   height: 100%;
-  // }
+  @include breakpoint($mobile-lg) {
+    top: 18%;
+  }
 }
 
 .recipe {
@@ -119,14 +121,15 @@
       // height: auto;
       // max-width: 100%;
       // bottom: 0;
-      background-size: 100%;
+      background-position: 27% bottom !important;
+      background-size: 140%;
       background-repeat: no-repeat;
       bottom: 0;
       background-position: left bottom;
     }
-    .result__drink {
-      top: 7%;
-    }
+    // .result__drink {
+    //   top: 7%;
+    // }
   }
   .result__drinkname {
     @include breakpoint($mobile-lg) {
