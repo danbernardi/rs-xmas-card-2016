@@ -88,35 +88,33 @@ class Result extends React.Component {
               </audio>
             }
 
-            <div className={`${this.state.diff ? 'py0' : 'py6'} theme--dark py0--mlg layout--relative result__drink--frame`} style={ { backgroundColor: drink.color } }>
-
+            <div className={`${drink.diff ? 'py0' : 'py6'} theme--dark py0--mlg layout--relative result__drink--frame`} style={ { backgroundColor: drink.color } }>
               <div className="result__gradient-overlay"></div>
-              { this.state.diff ?
+              { drink.diff ?
+                <div className="result__beer-drinkimg">
+                  <div className="cf result__beer-drink col-center pt10 pt0--mlg cf">
 
-              <div className="result__beer-drinkimg">
-                <div className="cf result__beer-drink col-center pt10 pt0--mlg cf">
+                    <div className="beer result__drinkname pt5">
+                      <img src="http://www.redshiftdigital.com/holiday2016/assets/img/drinks/cheap_beer.png"/>
+                      <h3 className="typ--center result__drink--heading">{drink.heading}</h3>
 
-                  <div className="beer result__drinkname pt5">
-                    <img src="http://www.redshiftdigital.com/holiday2016/assets/img/drinks/cheap_beer.png"/>
-                    <h3 className="typ--center result__drink--heading">party animal</h3>
+                    </div>
 
                   </div>
-
                 </div>
-              </div>
-              :
-              <div>
-                <div className="cf result__drink col-center pt0--mlg cf">
-                  <div className="result__drinkimg ">
-                    <img src={ `http://redshiftdigital.com/holiday2016/assets/img/drinks/${drink.img}` } alt={ drink.name } />
-                  </div>
-                  <div className="result__drinkname">
-                    <h1 className="result__name pb4">{ drink.name }</h1>
-                    <h3 className="result__drink--heading">{drink.heading}</h3>
-                  </div>
+                :
+                <div>
+                  <div className="cf result__drink col-center pt0--mlg cf">
+                    <div className="result__drinkimg ">
+                      <img src={ `http://redshiftdigital.com/holiday2016/assets/img/drinks/${drink.img}` } alt={ drink.name } />
+                    </div>
+                    <div className="result__drinkname">
+                      <h1 className="result__name pb4">{ drink.name }</h1>
+                      <h3 className="result__drink--heading">{drink.heading}</h3>
+                    </div>
 
+                  </div>
                 </div>
-              </div>
               }
               <div
                 className={ `audio-control ${drink.music ? '' : 'hidden'}` }
