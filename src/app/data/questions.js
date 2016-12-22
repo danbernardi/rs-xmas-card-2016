@@ -9,7 +9,7 @@ export const questions = [
     question: 'Have you been naughty or nice?',
     answers: [{
       name: 'Naughty',
-      responses: ["Meow 😼\nWe'll make it a double then..."],
+      responses: ["We'll make it a double then..."],
       scores: [8, 4, 6], // [Badassness, Weirdness, Fun], out of 10
       beer: true
     }, {
@@ -18,7 +18,7 @@ export const questions = [
       scores: [2, 8, 2]
     }, {
       name: 'Nice',
-      responses: ["Sounds good.\nWe'll put some ice in your water..."],
+      responses: ["This cocktail should change that."],
       scores: [0, 0, 0]
     }],
     color: '#95801D'
@@ -29,18 +29,18 @@ export const questions = [
     answers: [
       {
         name: 'Setting intentions and expressing gratitude.',
-        responses: ["Mmm Hmm... Totally.\nSo... light on the drink?"],
+        responses: ["Not sure we know any recipes with Kombucha."],
         scores: [0, 0, 0]
       },
       {
         name: 'Lots of sequins and screaming.',
-        responses: ["Wooooooooooooooooo!\nLive hard die young.",  "We've got just the drink for you..."],
+        responses: ["Wooooooooooooooooo!\nLive hard die young."],
         scores: [4, 2, 8],
         beer: true
       },
       {
         name: 'Is it still a party if I\'m asleep in bed?',
-        responses: ["Ummm....\nI guess if you drank a few of these first..."],
+        responses: ["I guess if you drank a few of these first..."],
         scores: [0, 6, 3]
       }
     ],
@@ -57,18 +57,18 @@ export const questions = [
       },
       {
         name: 'Start a snowball fight',
-        responses: ["Nice!\nEarly bird gets the unsuspecting victim..."],
+        responses: ["Early bird gets the unsuspecting victim..."],
         scores: [5, 2, 9],
         beer: true
       },
       {
         name: 'Eww... snow!',
-        responses: ["Huh.\nDifferent strokes I guess..."],
+        responses: ["Light on the ice?"],
         scores: [0, 9, 2]
       },
       {
         name: 'Write my name...',
-        responses: ["Wait. In the snow?\nGross..."],
+        responses: ["In yellow?"],
         scores: [9, 9, 0]
       }
     ],
@@ -85,12 +85,12 @@ export const questions = [
       },
       {
         name: <Takeout />,
-        responses: ["I feel ya.\nBurned (by) one too many turkeys..."],
+        responses: ["Burned (by) one too many turkeys..."],
         scores: [5, 9, 2]
       },
       {
         name: <Drinks />,
-        responses: ["Well that's convenient.\nWe've got just the holiday \"meal\" for you..."],
+        responses: ["We've got just the holiday \"meal\" for you..."],
         scores: [9, 5, 5],
         beer: true
       }

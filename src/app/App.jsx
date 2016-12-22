@@ -32,7 +32,6 @@ const App = () => {
 
   pages.push({ id: 'loader', component: <Loader /> });
   pages.push({ id: 'result', component: <Result /> });
-  pages.push({ id: 'gallery', component: <Gallery /> });
 
   // return (
   //   <div className="pages">
