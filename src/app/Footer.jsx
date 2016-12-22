@@ -7,11 +7,13 @@ const Footer = props => {
   const socialMedia = [
     {
       icon: 'fa fa-facebook',
-      url: 'https://www.facebook.com/REDSHIFT-214656608561411/'
+      url: 'http://www.facebook.com/share.php?u=http://redshiftdigital.com/holiday2016&title=Redshift%20Cocktail%20Generator'
+      // url: 'https://www.facebook.com/REDSHIFT-214656608561411/'
     },
     {
       icon: 'fa fa-twitter',
-      url: 'https://twitter.com/weareredshift'
+      // url: 'https://twitter.com/weareredshift'
+      url: 'http://twitter.com/intent/tweet?status=Redshift%20Cocktail%20Generator+http://redshiftdigital.com/holiday2016'
     },
     {
       icon: 'fa fa-instagram',

@@ -34,6 +34,9 @@ class Gallery extends React.Component {
     return (
       <div className="gallery">
         { /* <h1 className="mb6 my3--mlg title">12 Holiday Cocktails from Redshift</h1> */ }
+        <div className="gallery-footer">
+          <h2 className="my3--tlg">12 Holiday Cocktails</h2>
+        </div>
         <ul className="drink-list cf">
           { drinkItems }
         </ul>

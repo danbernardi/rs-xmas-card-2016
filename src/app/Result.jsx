@@ -193,27 +193,6 @@ class Result extends React.Component {
                   </ol>
                 </div>
               </div>
-              <div className="gallery-link pb2 mb3--tlg typ--caps" >
-                <a
-                  onClick={() => {
-                    window.s = scrollTo;
-                    const gallery = document.getElementsByClassName('gallery')[0];
-                    const position = getPosition(gallery);
-
-                    scrollTo(
-                      this.container,
-                      position.y, // Cancel out margin-top
-                      500
-                    );
-                  }}
-                >
-                  View all cocktails
-                  <i
-                    className="fa fa-angle-down"
-                    style={{ color: drink.color }}
-                  />
-                </a>
-              </div>
 
               <Gallery container={ this.container } />
               <Footer showAddress={ true } color={ drink.color } dontHide={ true } />

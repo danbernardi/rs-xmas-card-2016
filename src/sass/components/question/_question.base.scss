@@ -37,8 +37,26 @@
     left: 0;
     transform: none;
     padding-top: 12rem;
+    padding-top: 32%;
     padding-bottom: 0;
     height: 100%
+  }
+}
+
+.question-wrapper {
+
+ @include breakpoint($mobile-lg) {
+    height: 60%;
+    position: relative;
+  }
+
+  .question-wrapper-inner {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
 }
 
@@ -62,7 +80,11 @@
   @include breakpoint($mobile-lg) {
     width: calc(100% - 8rem);
     position: absolute;
-    bottom: 5rem;
+    margin: auto;
+    right: 0;
+    left: 0;
+    // bottom: 5rem;
+    bottom: 7.5%;
   }
 }
 
