@@ -127,9 +127,15 @@
       opacity: 0;
       align-self: center;
       display: flex;
+      @include breakpoint($mobile-lg) {
+        opacity: 1;
+      }
     }
     .drink-name {
       opacity: 1;
+      @include breakpoint($mobile-lg) {
+        opacity: 0;
+      }
     }
   }
 }

@@ -27,6 +27,15 @@
   }
 }
 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  /* Safari only override */
+  ::i-block-chrome,.result__drink--frame {
+    @include breakpoint($mobile-lg) {
+      height: calc(100vh - 12rem);
+    }
+  }
+}
+
 .result__recommend {
   // media queries
   @include breakpoint($mobile-lg) {
