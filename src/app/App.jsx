@@ -43,7 +43,7 @@ const App = () => {
 
 
   return (
-    <div className="pages">
+    <div className="pages cf">
       <Header />
       <Nav sheets={ pages } />
       <Footer />
