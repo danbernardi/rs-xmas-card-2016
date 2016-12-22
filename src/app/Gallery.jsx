@@ -39,7 +39,7 @@ class Gallery extends React.Component {
         </ul>
 
         <div className="gallery-footer">
-          <h2 className="mb3--tlg">Thanks for a great year. See you in 2017!</h2>
+          <h2 className="my3--tlg">Thanks for a great year. See you in 2017!</h2>
 
           <button
             className={ 'btn btn--ghost mt3' }

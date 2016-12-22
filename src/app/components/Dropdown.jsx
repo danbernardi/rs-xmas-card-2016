@@ -26,9 +26,9 @@ class Dropdown extends React.Component {
               <h1 className="dropdown__hint">select one</h1> :
               null
           }
-          <span className="dropdown__icon">
+          {title ? null : <span className="dropdown__icon">
             <img src="http://redshiftdigital.com/holiday2016/assets/img/dropdown-carrot.svg" />
-          </span>
+          </span>}
         </div>
         { open &&
           <div className="dropdown__menu">

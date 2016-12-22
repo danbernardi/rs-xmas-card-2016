@@ -1,7 +1,7 @@
 import React from 'react';
 // import ReactMarkdown from 'react-markdown';
 import { connect } from 'react-redux';
-import { setActiveSheetID } from '../actions';
+// import { setActiveSheetID } from '../actions';
 import Footer from './Footer';
 import Gallery from './Gallery';
 import { setMusicTo } from '../actions';
@@ -105,7 +105,7 @@ class Result extends React.Component {
                 :
                 <div>
                   <div className="cf result__drink col-center pt0--mlg cf">
-                    <div className="result__drinkimg ">
+                    <div className="result__drinkimg">
                       <img src={ `http://redshiftdigital.com/holiday2016/assets/img/drinks/${drink.img}` } alt={ drink.name } />
                     </div>
                     <div className="result__drinkname">
@@ -132,7 +132,7 @@ class Result extends React.Component {
 
             <article className="recipe row" style={ { color: drink.color } }>
               <span
-                className="recipe__trigger typ--caps"
+                className="recipe__trigger typ--caps mb3--mlg"
                 onClick={() => {
                   scrollTo(this.container, window.innerHeight, 500);
                 }}
@@ -193,7 +193,7 @@ class Result extends React.Component {
                   </ol>
                 </div>
               </div>
-              <div className="gallery-link pb2 typ--caps" >
+              <div className="gallery-link pb2 mb3--tlg typ--caps" >
                 <a
                   onClick={() => {
                     window.s = scrollTo;
