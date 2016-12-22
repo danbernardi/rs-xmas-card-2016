@@ -100,3 +100,36 @@
     margin-bottom: 3rem;
   }
 }
+
+.drinks-list {
+
+  .drink-wrapper img {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+  .drink-name {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    position: absolute;
+    font-family: 'Averia Serif Libre', cursive;
+    color: white;
+    line-height: 1;
+  }
+
+  .drink-wrapper {
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &:hover {
+    .drink-wrapper img {
+      opacity: 0;
+      align-self: center;
+      display: flex;
+    }
+    .drink-name {
+      opacity: 1;
+    }
+  }
+}

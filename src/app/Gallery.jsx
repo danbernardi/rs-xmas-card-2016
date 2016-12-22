@@ -12,7 +12,7 @@ class Gallery extends React.Component {
     const drinkItems = drinks.map((drink) => {
       return (
         <li
-          className="list--inline"
+          className="list--inline drinks-list"
           style={{backgroundColor: drink.color}}
           onClick={ () => {
             dispatch(setDrinkTo(drink));
@@ -22,9 +22,10 @@ class Gallery extends React.Component {
           }}
         >
           <div className="drink-wrapper">
-
-              <img src={ `http://redshiftdigital.com/holiday2016/assets/img/drinks/${drink.img}` } alt={ drink.name }/>
-              {/*<span className="grid-title">{ drink.name }</span>*/}
+            <img src={ `http://redshiftdigital.com/holiday2016/assets/img/drinks/${drink.img}` } alt={ drink.name }/>
+            <div className="drink-name" style={{ color: 'white', fontWeight: 'bold' }}>
+              { drink.name }
+            </div>
           </div>
         </li>
       );
