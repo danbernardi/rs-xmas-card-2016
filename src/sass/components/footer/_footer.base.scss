@@ -12,11 +12,11 @@
 }
 
 .footer__social {
-  //media queries
-  // @include breakpoint($mobile-lg) {
-  //   position: absolute;
-  //   bottom: -7rem;
-  // }
+  @include breakpoint($mobile-lg) {
+    float: none;
+    display: block;
+    text-align: center;
+  }
 }
 
 .footer__social li {
@@ -27,5 +27,13 @@
     &:last-of-type {
       margin-right: 0;
     }
+  }
+}
+
+.address {
+  @include breakpoint($mobile-lg) {
+    float: none;
+    display: block;
+    text-align: center;
   }
 }

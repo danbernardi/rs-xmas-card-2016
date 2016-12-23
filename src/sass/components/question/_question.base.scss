@@ -37,9 +37,14 @@
     left: 0;
     transform: none;
     padding-top: 12rem;
-    padding-top: 32%;
     padding-bottom: 0;
     height: 100%
+  }
+
+   @include breakpoint($mobile-sm) {
+
+    padding-top: 8rem;
+
   }
 }
 

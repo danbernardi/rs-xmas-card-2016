@@ -46,7 +46,7 @@ const Footer = props => {
         </ul>
 
         { showAddress ?
-          <ul className="layout--right typ--right">
+          <ul className="address layout--right typ--right">
             <li>8 California St. San Francisco, CA 94111</li>
             <li><a style={ { color } } href="mailto:hello@redshiftdigital.com">hello@redshiftdigital.com</a></li>
             <li><a style={ { color } } href="tel:14154333776">415 433 3776</a></li>
