@@ -16,9 +16,13 @@ const Footer = props => {
       url: 'http://twitter.com/intent/tweet?status=Redshift%20Cocktail%20Generator+http://redshiftdigital.com/holiday2016'
     },
     {
-      icon: 'fa fa-instagram',
-      url: 'https://www.instagram.com/weareredshift/'
+      icon: 'fa fa-pinterest',
+      url: 'http://pinterest.com/pin/create/bookmarklet/?url=http://redshiftdigital.com/holiday2016&is_video=false&description=http://redshiftdigital.com/holiday2016'
     }
+    // {
+    //   icon: 'fa fa-instagram',
+    //   url: 'https://www.instagram.com/weareredshift/'
+    // }
   ];
 
   const initialStyles = { transition: 'opacity 0.2s ease-in-out', color };
