@@ -8,7 +8,7 @@
 
   h1 {
     width: 50%;
-    @include breakpoint($tablet-lg) {
+    @include breakpoint($desktop-sm) {
       width: 90%;
       font-size: 3rem;
     }
@@ -19,7 +19,7 @@
 
   h2 {
     width: 65%;
-    @include breakpoint($tablet-lg) {
+    @include breakpoint($desktop-sm) {
       width: 90%;
       font-size: 2.4rem;
     }

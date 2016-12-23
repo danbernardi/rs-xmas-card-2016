@@ -104,15 +104,11 @@ class Question extends React.Component {
         <div className="question__wrap row">
           <div className={ `question-section ${ hideQuestion ? 'hidden' : '' }` }>
             <h1 className="question__label mb6 mb3--mlg">{ question }</h1>
-            <div className="question-wrapper">
-              <div className="question-wrapper-inner">
-                  <QuestionComponent
-                    answers={ answers }
-                    onAnswerSelect={ answer => { onAnswerSelect(answer) } }
-                    selectedAnswer={ selectedAnswer }
-                  />
-                </div>
-            </div>
+            <QuestionComponent
+              answers={ answers }
+              onAnswerSelect={ answer => { onAnswerSelect(answer) } }
+              selectedAnswer={ selectedAnswer }
+            />
           </div>
 
           <div className={ `response-section ${showResponse ? '' : 'hidden'}` }>

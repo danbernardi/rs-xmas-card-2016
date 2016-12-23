@@ -9,6 +9,10 @@
   }
 }
 
+.result__drink--frame {
+  overflow: hidden;
+}
+
 .result__gradient-overlay {
   position: absolute;
   top: 0;
@@ -52,10 +56,8 @@
   width: 100%;
   max-width: 105.5rem;
   // media queries
-  @include breakpoint($tablet-md) {
-    text-align: center;
-  }
   @include breakpoint($mobile-lg) {
+    text-align: center;
     display: block;
     height: 100%;
   }
@@ -147,6 +149,11 @@
   @include breakpoint($mobile-lg) {
     max-width: 40%;
     margin: 0 auto;
+    padding-top: 55%
+  }
+  @include breakpoint($mobile-sm) {
+    max-width: 40%;
+    margin: 0 auto;
     padding-top: 70%
   }
 }
@@ -160,7 +167,20 @@
   left: 0;
   bottom: 0;
   right: 0;
+
+  @include breakpoint($desktop-lg) {
+    max-height: 45%;
+    // margin: 50% auto 0;
+    left: 33%;
+  }
+
   @include breakpoint($mobile-lg) {
+    left: 0;
+    max-height: 65%;
+    margin: 50% auto 0;
+  }
+
+  @include breakpoint($mobile-sm) {
     max-height: 80%;
     margin: 50% auto 0;
   }
@@ -176,6 +196,7 @@
   }
   // media queries
   @include breakpoint($tablet-md) {
+    padding-left: 6rem;
     margin-bottom: 6rem;
     position: relative;
     z-index: 99;
@@ -198,6 +219,10 @@
     padding-top: 0rem;
     line-height: 1;
     // media queries
+    @include breakpoint($desktop-lg) {
+      font-size: 6rem;
+    }
+
     @include breakpoint($tablet-sm) {
       position: relative;
       font-size: 5rem;
@@ -210,6 +235,11 @@
 
     @include breakpoint($mobile-xsm) {
       font-size: 3rem;
+    }
+  }
+  h3 {
+    @include breakpoint($desktop-lg) {
+      font-size: 2.2rem;
     }
   }
 }
