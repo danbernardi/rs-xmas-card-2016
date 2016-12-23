@@ -17,7 +17,7 @@ const Footer = props => {
     },
     {
       icon: 'fa fa-pinterest',
-      url: 'http://pinterest.com/pin/create/bookmarklet/?url=http://redshiftdigital.com/holiday2016&is_video=false&description=http://redshiftdigital.com/holiday2016'
+      url: 'http://pinterest.com/pin/create/bookmarklet/?media=http://redshiftdigital.com/holiday2016/assets/img/share_image.jpg&url=http://redshiftdigital.com/holiday2016&is_video=false&description=Redshift%20Cocktail%20Generator'
     }
     // {
     //   icon: 'fa fa-instagram',
