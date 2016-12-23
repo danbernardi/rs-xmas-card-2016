@@ -43,22 +43,22 @@
   }
 }
 
-.question-wrapper {
+// .question-wrapper {
 
- @include breakpoint($mobile-lg) {
-    height: 60%;
-    position: relative;
-  }
+//  @include breakpoint($mobile-lg) {
+//     height: 60%;
+//     position: relative;
+//   }
 
-  .question-wrapper-inner {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-}
+//   .question-wrapper-inner {
+//     position: absolute;
+//     margin: auto;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//   }
+// }
 
 .question__answers li {
   @include font(medium);
